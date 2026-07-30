@@ -35,7 +35,7 @@ O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare),
 ## Próximos Passos Planejados (Backlog)
 
 1. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado — PRÓXIMO PASSO CRÍTICO.
-2. **Vídeo institucional do Beto:** primeiro vídeo de campanha da marca com lip sync usando a voz oficial (Fenrir) e cena do estúdio.
+2. ~~**Vídeo institucional do Beto:** primeiro vídeo de campanha da marca com lip sync usando a voz oficial (Fenrir) e cena do estúdio.~~ **CONCLUÍDO** — `templates/videos/beto_institucional_final.mp4` (27s, 4 takes, legendas TikTok queimadas, voz Fenrir com estilo baseado na voz real do criador).
 3. **Templates de post/grid** para Instagram e TikTok usando a identidade visual.
 4. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
 5. **Sistema de captação de leads:** site/app da Movie Money.
