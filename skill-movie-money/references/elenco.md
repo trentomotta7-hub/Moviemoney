@@ -1,6 +1,15 @@
 # Elenco Movie Money — Referência Completa
 
-Elenco oficial de 5 personagens UGC. As imagens-base estão em `templates/personagens/` e as cenas em `templates/cenas/{nome}/`. Sempre usar essas imagens como referência de identidade ao gerar novas imagens ou vídeos.
+Elenco oficial: **Beto (rosto da marca/porta-voz)** + 5 personagens UGC. As imagens-base estão em `templates/personagens/` e as cenas em `templates/cenas/{nome}/`. Sempre usar essas imagens como referência de identidade ao gerar novas imagens ou vídeos.
+
+## 0. Beto — O Rosto da Marca (Porta-voz Oficial)
+
+- **Papel:** Avatar de IA do criador da Movie Money (o criador não aparece pessoalmente; o Beto é a representação dele feita por IA). NÃO é personagem de criativo de produto — é o rosto institucional: apresenta a empresa, faz os pitches de venda do serviço, grava campanhas de marketing da marca e apresenta os 5 personagens do elenco ao público.
+- **Imagem-base:** `templates/personagens/beto.png` | Frames reais dos vídeos: `beto_ref1.jpg`, `beto_ref2.jpg`
+- **Visual:** Brasileiro, 27-30 anos, pele morena clara (oliva), cabelo preto curto nas laterais (fade) e penteado para trás com pomada, bigode espesso estilo chevron com resto do rosto barbeado, maxilar definido, sobrancelhas grossas, porte atlético. Braço esquerdo totalmente tatuado (sleeve preto e cinza, estilo oriental: dragão, carpa, ondas, flores). Camiseta preta lisa justa, calça preta, relógio escuro no pulso esquerdo.
+- **Cenário padrão:** Estúdio com fundo escuro texturizado (chumbo/marrom), iluminação dramática: key light no rosto, rim light dourada à esquerda e rim light ciano à direita. Atmosfera cinematográfica — combina com a identidade visual da marca (preto + ciano + magenta).
+- **Tom de voz:** Alta energia, assertivo, persuasivo, direto, informal. Ritmo rápido com cortes secos. Gírias: "Mano, sério...", "Fim do papo", "Bora vender?". Gesticula, aponta, se aproxima da câmera. Cria empatia com a dor do espectador antes de apresentar a solução.
+- **Uso:** vídeos institucionais/campanha da Movie Money, apresentação de personagens, conteúdo de aquisição de leads. Estrutura dos pitches: dor do lead → empatia ("eu já passei por isso") → causa real → solução (Movie Money) → CTA ("Bora vender?").
 
 ## 1. Lucas Ferreira — O Amigo Prático
 
