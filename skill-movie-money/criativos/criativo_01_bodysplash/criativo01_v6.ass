@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Arial,22,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2.5,1.0,2,20,20,80,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.28,0:00:01.79,Karaoke,,0,0,0,,{\kf41}Passei {\kf27}esse {\kf27}body {\kf41}splash {\kf15}de
+Dialogue: 0,0:00:01.79,0:00:03.30,Karaoke,,0,0,0,,{\kf30}manhã {\kf6}e {\kf30}minha {\kf30}amiga {\kf55}perguntou
+Dialogue: 0,0:00:03.30,0:00:04.81,Karaoke,,0,0,0,,{\kf9}o {\kf28}que {\kf19}eu {\kf38}tava {\kf57}usando
+Dialogue: 0,0:00:04.81,0:00:06.32,Karaoke,,0,0,0,,{\kf27}às {\kf27}10 {\kf27}da {\kf70}noite
+Dialogue: 0,0:00:06.32,0:00:08.64,Karaoke,,0,0,0,,{\kf23}Eu {\kf23}já {\kf70}testei {\kf58}tanta {\kf58}marca
+Dialogue: 0,0:00:08.64,0:00:10.36,Karaoke,,0,0,0,,{\kf36}Passa {\kf14}de {\kf36}manhã {\kf36}chega {\kf50}meiodia
+Dialogue: 0,0:00:10.36,0:00:12.08,Karaoke,,0,0,0,,{\kf29}e {\kf143}sumiu
+Dialogue: 0,0:00:12.08,0:00:13.25,Karaoke,,0,0,0,,{\kf31}Fico {\kf8}o {\kf23}dia {\kf31}todo {\kf24}sem
+Dialogue: 0,0:00:13.25,0:00:14.42,Karaoke,,0,0,0,,{\kf88}cheiro {\kf29}né
+Dialogue: 0,0:00:14.42,0:00:15.54,Karaoke,,0,0,0,,{\kf12}Aí {\kf19}uma {\kf31}amiga {\kf12}me {\kf38}mandou
+Dialogue: 0,0:00:15.54,0:00:16.66,Karaoke,,0,0,0,,{\kf112}esse
+Dialogue: 0,0:00:16.66,0:00:17.90,Karaoke,,0,0,0,,{\kf46}Fui {\kf46}sem {\kf32}fé
+Dialogue: 0,0:00:17.90,0:00:20.26,Karaoke,,0,0,0,,{\kf12}O {\kf71}cheiro {\kf47}fica {\kf24}na {\kf82}memória
+Dialogue: 0,0:00:20.26,0:00:22.62,Karaoke,,0,0,0,,{\kf52}doce {\kf39}sem {\kf79}enjoar {\kf13}e {\kf53}fixa
+Dialogue: 0,0:00:22.62,0:00:24.98,Karaoke,,0,0,0,,{\kf52}de {\kf184}verdade
+Dialogue: 0,0:00:24.98,0:00:27.12,Karaoke,,0,0,0,,{\kf21}Já {\kf21}tô {\kf21}no {\kf86}terceiro {\kf65}frasco
+Dialogue: 0,0:00:27.12,0:00:29.12,Karaoke,,0,0,0,,{\kf21}Tá {\kf21}no {\kf42}link {\kf42}aqui {\kf74}embaixo
+Dialogue: 0,0:00:29.12,0:00:30.33,Karaoke,,0,0,0,,{\kf36}Corre {\kf21}que {\kf14}os {\kf28}kits {\kf22}tão
+Dialogue: 0,0:00:30.33,0:00:31.54,Karaoke,,0,0,0,,{\kf121}acabando

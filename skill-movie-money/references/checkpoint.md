@@ -37,7 +37,7 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | **Logo dark** para uso em vídeos e fundos escuros | ✅ Concluído | `templates/identidade_visual/logo_dark.png` |
 | **Banco narrativo expandido** — 9 nichos, 71 dores reais, 43 combinações prontas (+Fitness, Perfumaria, Tecnologia, Pets, Infantil) | ✅ Concluído | `references/banco_narrativo.md` |
 | **Análise forense completa** — 17 achados diagnosticados e 8 críticos/altos corrigidos | ✅ Concluído | `references/relatorio_forense.md` |
-| **Criativo 01 — Bodysplash Feminino v4** — takes regenerados com novos prompts, áudio TTS único sincronizado, karaokê \kf palavra a palavra, 36s, 1080p | ✅ Concluído | `criativos/criativo_01_bodysplash/criativo01_v4_final.mp4` |
+| **Criativo 01 — Bodysplash Feminino v6** — Reconstrução total com lip sync real (fala exata no prompt), roteiro otimizado, 32s, 1080p | ✅ Concluído | `criativos/criativo_01_bodysplash/criativo01_v6_final.mp4` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
 
