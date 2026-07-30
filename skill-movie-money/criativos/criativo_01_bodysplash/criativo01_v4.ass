@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Arial,22,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2.5,1.0,2,20,20,80,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.26,0:00:01.47,Karaoke,,0,0,0,,{\kf33}Passei {\kf22}esse {\kf22}body {\kf33}splash {\kf11}às
+Dialogue: 0,0:00:01.47,0:00:02.68,Karaoke,,0,0,0,,{\kf44}sete {\kf22}da {\kf55}manhã
+Dialogue: 0,0:00:02.68,0:00:04.09,Karaoke,,0,0,0,,{\kf35}Eram {\kf35}nove {\kf18}da {\kf44}noite {\kf9}e
+Dialogue: 0,0:00:04.09,0:00:05.51,Karaoke,,0,0,0,,{\kf28}minha {\kf28}amiga {\kf28}ainda {\kf51}perguntou {\kf6}o
+Dialogue: 0,0:00:05.51,0:00:06.92,Karaoke,,0,0,0,,{\kf28}que {\kf19}eu {\kf38}tava {\kf56}usando
+Dialogue: 0,0:00:06.92,0:00:08.65,Karaoke,,0,0,0,,{\kf19}Eu {\kf19}já {\kf38}usei {\kf38}body {\kf59}splash
+Dialogue: 0,0:00:08.65,0:00:10.38,Karaoke,,0,0,0,,{\kf19}de {\kf38}tudo {\kf58}quanto {\kf10}é {\kf48}marca
+Dialogue: 0,0:00:10.38,0:00:12.13,Karaoke,,0,0,0,,{\kf49}Passa {\kf19}de {\kf49}manhã {\kf49}chega {\kf9}o
+Dialogue: 0,0:00:12.13,0:00:13.88,Karaoke,,0,0,0,,{\kf94}meiodia {\kf13}e {\kf68}sumiu
+Dialogue: 0,0:00:13.88,0:00:14.77,Karaoke,,0,0,0,,{\kf13}Aí {\kf13}cê {\kf25}fica {\kf6}o {\kf32}resto
+Dialogue: 0,0:00:14.77,0:00:15.65,Karaoke,,0,0,0,,{\kf9}do {\kf13}dia {\kf13}sem {\kf27}cheiro {\kf27}nenhum
+Dialogue: 0,0:00:15.65,0:00:16.54,Karaoke,,0,0,0,,{\kf89}lé
+Dialogue: 0,0:00:16.54,0:00:17.81,Karaoke,,0,0,0,,{\kf14}Aí {\kf21}uma {\kf35}amiga {\kf14}me {\kf43}mandou
+Dialogue: 0,0:00:17.81,0:00:19.08,Karaoke,,0,0,0,,{\kf127}esse
+Dialogue: 0,0:00:19.08,0:00:20.76,Karaoke,,0,0,0,,{\kf20}Eu {\kf30}fui {\kf30}sem {\kf20}fé {\kf68}nenhuma
+Dialogue: 0,0:00:20.76,0:00:22.26,Karaoke,,0,0,0,,{\kf11}O {\kf64}cheiro {\kf11}é {\kf32}dos {\kf32}que
+Dialogue: 0,0:00:22.26,0:00:23.76,Karaoke,,0,0,0,,{\kf54}ficam {\kf21}na {\kf75}memória
+Dialogue: 0,0:00:23.76,0:00:26.40,Karaoke,,0,0,0,,{\kf56}Doce {\kf42}mas {\kf42}não {\kf124}enjoativo
+Dialogue: 0,0:00:26.40,0:00:28.07,Karaoke,,0,0,0,,{\kf9}E {\kf37}fixa {\kf37}tipo {\kf19}de {\kf65}verdade
+Dialogue: 0,0:00:28.07,0:00:29.74,Karaoke,,0,0,0,,{\kf167}fixa
+Dialogue: 0,0:00:29.74,0:00:31.82,Karaoke,,0,0,0,,{\kf23}Já {\kf12}é {\kf12}o {\kf92}terceiro {\kf69}frasco
+Dialogue: 0,0:00:31.82,0:00:33.52,Karaoke,,0,0,0,,{\kf21}Não {\kf50}consigo {\kf28}usar {\kf35}outra {\kf36}coisa
+Dialogue: 0,0:00:33.52,0:00:35.90,Karaoke,,0,0,0,,{\kf25}Tá {\kf25}no {\kf50}link {\kf50}aqui {\kf88}embaixo
+Dialogue: 0,0:00:35.90,0:00:35.94,Karaoke,,0,0,0,,{\kf1}Se {\kf1}você {\kf1}quer {\kf1}ser {\kf1}lembrada
+Dialogue: 0,0:00:35.94,0:00:35.99,Karaoke,,0,0,0,,{\kf1}pelo {\kf1}seu {\kf1}cheiro {\kf1}esse {\kf1}é
+Dialogue: 0,0:00:35.99,0:00:36.03,Karaoke,,0,0,0,,{\kf1}o {\kf4}caminho
