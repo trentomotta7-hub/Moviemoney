@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Arial,22,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,2,1,2,20,20,80,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.62,0:00:01.35,Karaoke,,0,0,0,,{\k14}Mano {\k14}eu {\k14}vou {\k14}ser {\k14}direto
+Dialogue: 0,0:00:01.35,0:00:02.09,Karaoke,,0,0,0,,{\k37}com {\k37}você
+Dialogue: 0,0:00:02.10,0:00:03.50,Karaoke,,0,0,0,,{\k27}A {\k27}maioria {\k27}das {\k27}pessoas {\k27}que
+Dialogue: 0,0:00:03.50,0:00:04.90,Karaoke,,0,0,0,,{\k27}tenta {\k27}vender {\k27}no {\k27}TikTok {\k27}Shop
+Dialogue: 0,0:00:04.90,0:00:06.30,Karaoke,,0,0,0,,{\k27}erra {\k27}no {\k27}mesmo {\k27}lugar {\k27}o
+Dialogue: 0,0:00:06.29,0:00:07.69,Karaoke,,0,0,0,,{\k140}criativo
+Dialogue: 0,0:00:07.70,0:00:08.40,Karaoke,,0,0,0,,{\k14}Não {\k14}é {\k14}o {\k14}produto {\k14}não
+Dialogue: 0,0:00:08.40,0:00:09.10,Karaoke,,0,0,0,,{\k14}é {\k14}o {\k14}preço {\k14}é {\k14}o
+Dialogue: 0,0:00:09.10,0:00:09.80,Karaoke,,0,0,0,,{\k70}vídeo
+Dialogue: 0,0:00:09.80,0:00:10.87,Karaoke,,0,0,0,,{\k21}E {\k21}os {\k21}gurus {\k21}da {\k21}internet
+Dialogue: 0,0:00:10.87,0:00:11.94,Karaoke,,0,0,0,,{\k21}não {\k21}vão {\k21}te {\k21}contar {\k21}isso
+Dialogue: 0,0:00:11.94,0:00:13.02,Karaoke,,0,0,0,,{\k21}porque {\k21}eles {\k21}ganham {\k21}dinheiro {\k21}vendendo
+Dialogue: 0,0:00:13.02,0:00:14.09,Karaoke,,0,0,0,,{\k21}curso {\k21}de {\k21}como {\k21}ganhar {\k21}dinheiro
+Dialogue: 0,0:00:14.09,0:00:15.10,Karaoke,,0,0,0,,{\k20}É {\k20}exatamente {\k20}isso {\k20}que {\k20}a
+Dialogue: 0,0:00:15.10,0:00:16.10,Karaoke,,0,0,0,,{\k33}Movie {\k33}Money {\k33}resolve
+Dialogue: 0,0:00:16.10,0:00:17.10,Karaoke,,0,0,0,,{\k20}A {\k20}gente {\k20}pega {\k20}o {\k20}seu
+Dialogue: 0,0:00:17.10,0:00:18.10,Karaoke,,0,0,0,,{\k20}produto {\k20}e {\k20}transforma {\k20}em {\k20}criativo
+Dialogue: 0,0:00:18.10,0:00:19.10,Karaoke,,0,0,0,,{\k20}que {\k20}para {\k20}a {\k20}rolagem {\k20}nos
+Dialogue: 0,0:00:19.10,0:00:20.10,Karaoke,,0,0,0,,{\k20}quatro {\k20}primeiros {\k20}segundos {\k20}sem {\k20}você
+Dialogue: 0,0:00:20.10,0:00:21.10,Karaoke,,0,0,0,,{\k20}aparecer {\k20}sem {\k20}filmar {\k20}nada {\k20}sem
+Dialogue: 0,0:00:21.10,0:00:22.10,Karaoke,,0,0,0,,{\k50}contratar {\k50}ninguém
+Dialogue: 0,0:00:22.10,0:00:23.60,Karaoke,,0,0,0,,{\k30}Vem {\k30}pra {\k30}Movie {\k30}Money {\k30}dê
+Dialogue: 0,0:00:23.60,0:00:25.10,Karaoke,,0,0,0,,{\k37}brilho {\k37}no {\k37}seu {\k37}caminho
+Dialogue: 0,0:00:25.10,0:00:26.69,Karaoke,,0,0,0,,{\k79}Bora {\k79}vender
