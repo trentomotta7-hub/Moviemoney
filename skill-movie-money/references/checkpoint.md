@@ -1,6 +1,6 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 30 de julho de 2026
+**Última atualização:** 30 de julho de 2026 — Sessão 2
 
 ## Visão do Projeto
 
@@ -18,28 +18,52 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 
 | Entrega | Status | Localização |
 |---------|--------|-------------|
-| Definição dos 5 personagens (nome, personalidade, tom de voz, nichos, hook-assinatura) | Concluído | `references/elenco.md` |
-| Imagens-base oficiais dos 5 personagens (selfie UGC realista, 3:4) | Concluído | `templates/personagens/` |
-| Banco de cenas: 4 cenários por personagem, 20 imagens 9:16 | Concluído | `templates/cenas/{lucas,marina,rafael,beatriz,diego}/` |
-| Framework mestre de roteiros (estruturas, hooks, CTAs, transições, fórmulas, regras) | Concluído | `references/framework_roteiros.md` |
-| Roteiros-exemplo completos (5 roteiros: 1 por personagem/formato/nicho + matriz de variação) | Concluído | `references/roteiros_exemplo.md` |
-| Beto — rosto oficial da marca: perfil completo + imagem-base + frames de referência dos vídeos reais | Concluído | `references/elenco.md` (seção 0), `templates/personagens/beto.png`, `beto_ref1.jpg`, `beto_ref2.jpg` |
-| Kit de identidade visual: logo final, ícone de perfil (avatar redondo), capa/banner 16:9 | Concluído | `templates/identidade_visual/` |
-| Vozes oficiais dos 6 personagens (Beto + 5 UGC): mapa de vozes TTS + amostras .wav | Concluído | `references/mapa_vozes.md`, `templates/vozes/` |
-| **Voz do Beto v2 e v3:** prompt de estilo reescrito com base na análise da voz real do criador (jul/2026) — ritmo, ironia, autenticidade, CTA como afirmação | Concluído | `templates/vozes/beto_v2.wav`, `templates/vozes/beto_v3.wav`, `references/mapa_vozes.md` (seção Notas de Estilo) |
-| Banco de cenas do Beto: 4 cenários (estúdio oficial, escritório agência, carro premium, rooftop urbano) | Concluído | `templates/cenas/beto/` |
-| Guia mestre de produção POV: pesquisa, tipos de take, regras de câmera/som, pipeline, checklist de qualidade | Concluído | `references/guia_pov.md` |
+| Definição dos 5 personagens (nome, personalidade, tom de voz, nichos, hook-assinatura) | ✅ Concluído | `references/elenco.md` |
+| Imagens-base oficiais dos 5 personagens (selfie UGC realista, 3:4) | ✅ Concluído | `templates/personagens/` |
+| Banco de cenas: 4 cenários por personagem, 20 imagens 9:16 | ✅ Concluído | `templates/cenas/{lucas,marina,rafael,beatriz,diego}/` |
+| Framework mestre de roteiros (estruturas, hooks, CTAs, transições, fórmulas, regras) | ✅ Concluído | `references/framework_roteiros.md` |
+| Roteiros-exemplo completos (5 roteiros: 1 por personagem/formato/nicho + matriz de variação) | ✅ Concluído | `references/roteiros_exemplo.md` |
+| Beto — rosto oficial da marca: perfil completo + imagem-base + frames de referência | ✅ Concluído | `references/elenco.md` (seção 0), `templates/personagens/beto.png`, `beto_ref1.jpg`, `beto_ref2.jpg` |
+| Kit de identidade visual: logo final, ícone de perfil (avatar redondo), capa/banner 16:9 | ✅ Concluído | `templates/identidade_visual/` |
+| Vozes oficiais dos 6 personagens (Beto + 5 UGC): mapa de vozes TTS + amostras .wav | ✅ Concluído | `references/mapa_vozes.md`, `templates/vozes/` |
+| Banco de cenas do Beto: 5 cenários (estúdio oficial, escritório agência, carro premium, rooftop urbano, **escritório moderno**) | ✅ Concluído | `templates/cenas/beto/` |
+| Guia mestre de produção POV: pesquisa, tipos de take, regras de câmera/som, pipeline, checklist de qualidade | ✅ Concluído | `references/guia_pov.md` |
+| **Voz do Beto v2/v3 — estilo baseado na voz real do criador** (jul/2026): prompt reescrito com ritmo, ironia, autenticidade, CTA como afirmação, abertura calorosa | ✅ Concluído | `templates/vozes/beto_v2.wav`, `templates/vozes/beto_v3.wav`, `references/mapa_vozes.md` (seção Notas de Estilo) |
+| **Vídeo institucional do Beto v2** — 27s, 4 takes, cenário escritório moderno, proporções corretas, legendas karaokê (palavras ficando amarelas progressivamente, canto inferior) | ✅ Concluído | `templates/videos/beto_institucional_v2.mp4` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
 
+## Padrão de Legendas Karaokê (Definido na Sessão 2)
+
+Legendas estilo karaokê para todos os vídeos do projeto a partir de agora:
+
+- **Formato:** ASS (Advanced SubStation Alpha) com tag `\k` para karaokê progressivo
+- **Estilo:** fonte Arial Bold tamanho 22, branca com contorno preto, fundo semi-transparente
+- **Posição:** canto inferior da tela, alinhamento centralizado, margem vertical 80px
+- **Efeito:** palavras ficam **amarelas** (`SecondaryColour: &H0000FFFF`) conforme são faladas
+- **Chunks:** até 5 palavras por linha, duração proporcional ao tempo de fala de cada segmento
+- **Geração:** transcrever o vídeo com `manus-speech-to-text`, usar os timestamps dos segmentos para calcular `\k` por palavra, renderizar com `ffmpeg -vf "ass=arquivo.ass"`
+
+## Notas de Estilo do Beto — Voz (Definido na Sessão 2)
+
+Baseado na análise de dois áudios reais do criador da marca (jul/2026):
+
+| Elemento | Como aplicar |
+|----------|-------------|
+| Abertura | Sempre "Mano" ou "Oi" — nunca direto no argumento |
+| Ritmo | Médio-rápido com `[short pause]` antes de viradas e antes do CTA |
+| Ironia | Observações afiadas sobre gurus/concorrência para construir credibilidade |
+| Frases | Curtas e cortadas — máximo ~12 palavras por frase |
+| CTA | Afirmação, não pergunta — tom de convite, não de súplica |
+| Taglines | "Dê brilho no seu caminho", "Sempre um passo à frente da concorrência" |
+
 ## Próximos Passos Planejados (Backlog)
 
-1. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado — PRÓXIMO PASSO CRÍTICO.
-2. ~~**Vídeo institucional do Beto:** primeiro vídeo de campanha da marca com lip sync usando a voz oficial (Fenrir) e cena do estúdio.~~ **CONCLUÍDO** — `templates/videos/beto_institucional_final.mp4` (27s, 4 takes, legendas TikTok queimadas, voz Fenrir com estilo baseado na voz real do criador).
-3. **Templates de post/grid** para Instagram e TikTok usando a identidade visual.
-4. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
-5. **Sistema de captação de leads:** site/app da Movie Money.
-6. **Melhorias do motor de roteiros:** banco de roteiros vencedores, roteiros para VSL longa, biblioteca de respostas a objeções.
+1. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado — **PRÓXIMO PASSO CRÍTICO**.
+2. **Templates de post/grid** para Instagram e TikTok usando a identidade visual.
+3. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
+4. **Sistema de captação de leads:** site/app da Movie Money.
+5. **Melhorias do motor de roteiros:** banco de roteiros vencedores, roteiros para VSL longa, biblioteca de respostas a objeções.
 
 ## Decisões Já Tomadas (Não Rediscutir)
 
@@ -48,3 +72,6 @@ O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare),
 - Vídeos com lip sync real gerados internamente (imagem do personagem + roteiro/áudio → vídeo).
 - Formato vertical 9:16 para os vídeos (Reels/TikTok).
 - Trabalhar em Português Brasileiro; personagens falam PT-BR.
+- Voz do Beto: Fenrir, com prompt de estilo baseado na voz real do criador (ver Notas de Estilo acima e `references/mapa_vozes.md`).
+- Cenário preferencial do Beto para vídeos institucionais: escritório moderno (`templates/cenas/beto/escritorio_moderno.png`), não estúdio cinematográfico.
+- Legendas de todos os vídeos: karaokê progressivo ASS (palavras amarelas), não SRT estático.
