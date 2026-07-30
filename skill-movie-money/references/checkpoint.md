@@ -1,6 +1,6 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 30 de julho de 2026 — Sessão 4
+**Última atualização:** 30 de julho de 2026 — Sessão 5
 
 ## Visão do Projeto
 
@@ -37,6 +37,7 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | **Logo dark** para uso em vídeos e fundos escuros | ✅ Concluído | `templates/identidade_visual/logo_dark.png` |
 | **Banco narrativo expandido** — 9 nichos, 71 dores reais, 43 combinações prontas (+Fitness, Perfumaria, Tecnologia, Pets, Infantil) | ✅ Concluído | `references/banco_narrativo.md` |
 | **Análise forense completa** — 17 achados diagnosticados e 8 críticos/altos corrigidos | ✅ Concluído | `references/relatorio_forense.md` |
+| **Criativo 01 — Bodysplash Feminino** — primeiro criativo de teste ponta a ponta: Marina Costa, 28s, 1080p, 4 takes, karaokê palavra a palavra, combinação Per-1 (Prova de Resultado) | ✅ Concluído | `criativos/criativo_01_bodysplash/criativo01_final.mp4` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
 
