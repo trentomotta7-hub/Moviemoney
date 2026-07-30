@@ -26,6 +26,7 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | Beto — rosto oficial da marca: perfil completo + imagem-base + frames de referência dos vídeos reais | Concluído | `references/elenco.md` (seção 0), `templates/personagens/beto.png`, `beto_ref1.jpg`, `beto_ref2.jpg` |
 | Kit de identidade visual: logo final, ícone de perfil (avatar redondo), capa/banner 16:9 | Concluído | `templates/identidade_visual/` |
 | Vozes oficiais dos 6 personagens (Beto + 5 UGC): mapa de vozes TTS + amostras .wav | Concluído | `references/mapa_vozes.md`, `templates/vozes/` |
+| **Voz do Beto v2 e v3:** prompt de estilo reescrito com base na análise da voz real do criador (jul/2026) — ritmo, ironia, autenticidade, CTA como afirmação | Concluído | `templates/vozes/beto_v2.wav`, `templates/vozes/beto_v3.wav`, `references/mapa_vozes.md` (seção Notas de Estilo) |
 | Banco de cenas do Beto: 4 cenários (estúdio oficial, escritório agência, carro premium, rooftop urbano) | Concluído | `templates/cenas/beto/` |
 | Guia mestre de produção POV: pesquisa, tipos de take, regras de câmera/som, pipeline, checklist de qualidade | Concluído | `references/guia_pov.md` |
 
