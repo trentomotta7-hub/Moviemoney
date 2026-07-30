@@ -19,16 +19,17 @@ A empresa terá identidade visual própria no Instagram e no TikTok (ainda não 
 | Definição dos 5 personagens (nome, personalidade, tom de voz, nichos, hook-assinatura) | Concluído | `references/elenco.md` |
 | Imagens-base oficiais dos 5 personagens (selfie UGC realista, 3:4) | Concluído | `templates/personagens/` |
 | Banco de cenas: 4 cenários por personagem, 20 imagens 9:16 | Concluído | `templates/cenas/{lucas,marina,rafael,beatriz,diego}/` |
+| Framework mestre de roteiros (estruturas, hooks, CTAs, transições, fórmulas, regras) | Concluído | `references/framework_roteiros.md` |
+| Roteiros-exemplo completos (5 roteiros: 1 por personagem/formato/nicho + matriz de variação) | Concluído | `references/roteiros_exemplo.md` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
 
 ## Próximos Passos Planejados (Backlog)
 
 1. **Identidade visual da Movie Money:** logo, paleta de cores, templates de perfil e grid para Instagram e TikTok.
-2. **Framework mestre de roteiro:** documento padrão que define como todo criativo é escrito (hooks por categoria, transições problema→causa→solução, biblioteca de CTAs).
-3. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado.
-4. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
-5. **Sistema de captação de leads:** site/app da Movie Money.
+2. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado.
+3. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
+4. **Sistema de captação de leads:** site/app da Movie Money.
 
 ## Decisões Já Tomadas (Não Rediscutir)
 

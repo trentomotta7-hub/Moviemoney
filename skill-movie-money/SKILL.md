@@ -14,9 +14,10 @@ Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o 
 | Pronto | Pendente (backlog) |
 |--------|--------------------|
 | 5 personagens definidos (visual + voz + personalidade + nichos) | Identidade visual (logo, paleta, templates IG/TikTok) |
-| Imagens-base oficiais (5 retratos UGC) | Framework mestre de roteiro |
-| Banco de cenas: 20 imagens (4 cenários por personagem) | Primeiro criativo de teste ponta a ponta |
-| Pipeline de produção documentado | Sistema de captação de leads (site/app) |
+| Imagens-base oficiais (5 retratos UGC) | Primeiro criativo de teste ponta a ponta |
+| Banco de cenas: 20 imagens (4 cenários por personagem) | Pipeline/automação completa |
+| Framework mestre de roteiros + 5 roteiros-exemplo | Sistema de captação de leads (site/app) |
+| Pipeline de produção documentado | |
 
 ## Recursos da Skill
 
@@ -25,6 +26,8 @@ Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o 
 | Elenco completo (perfis, tons de voz, hooks, cenas) | `references/elenco.md` | Antes de escalar personagem ou gerar qualquer criativo |
 | Checkpoint do projeto | `references/checkpoint.md` | No início de qualquer sessão do projeto |
 | Pipeline de produção passo a passo | `references/pipeline_producao.md` | Ao produzir um criativo de venda |
+| Framework mestre de roteiros | `references/framework_roteiros.md` | Ao escrever qualquer roteiro de criativo |
+| Roteiros-exemplo (5 completos + matriz de variação) | `references/roteiros_exemplo.md` | Como referência de qualidade e estilo |
 | Imagens-base dos personagens | `templates/personagens/{nome}.png` | Como `references` ao gerar imagem/vídeo do personagem |
 | Banco de cenas (20 cenários 9:16) | `templates/cenas/{personagem}/{cena}.png` | Como keyframe/referência ao gerar takes de vídeo UGC |
 
