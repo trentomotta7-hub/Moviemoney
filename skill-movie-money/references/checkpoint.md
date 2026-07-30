@@ -10,7 +10,7 @@ Os dois formatos de criativo são: **POV** (câmera na altura dos olhos/ombro mo
 
 Estrutura narrativa obrigatória de todo criativo: **Hook fortíssimo nos 4 segundos iniciais** (parar a rolagem) → **Problema** → **Causa** → **Solução** (apresentação do produto) → **CTA forte** no final. Os takes são divididos entre essas seções.
 
-A empresa terá identidade visual própria no Instagram e no TikTok (em andamento — conceito escolhido: glitch estilo TikTok, fundo preto, cores ciano/magenta, monograma "MM"; 3 variações de logo geradas aguardando escolha do usuário em `identidade_visual/`).
+Identidade visual definida: glitch estilo TikTok, fundo preto, cores ciano #25F4EE / magenta #FE2C55, monograma "MM" com botão play entre as letras, tagline "Criativos que vendem no TikTok Shop". Kit em `templates/identidade_visual/` (logo_final.png, perfil_icone.png redondo, capa_banner.png 16:9).
 
 A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não quer aparecer pessoalmente). O Beto é o porta-voz institucional: apresenta a empresa, grava os vídeos de campanha/marketing e apresentará os 5 personagens ao público. Perfil completo em `references/elenco.md` (seção 0).
 
@@ -24,16 +24,20 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | Framework mestre de roteiros (estruturas, hooks, CTAs, transições, fórmulas, regras) | Concluído | `references/framework_roteiros.md` |
 | Roteiros-exemplo completos (5 roteiros: 1 por personagem/formato/nicho + matriz de variação) | Concluído | `references/roteiros_exemplo.md` |
 | Beto — rosto oficial da marca: perfil completo + imagem-base + frames de referência dos vídeos reais | Concluído | `references/elenco.md` (seção 0), `templates/personagens/beto.png`, `beto_ref1.jpg`, `beto_ref2.jpg` |
-| Logo — 3 variações geradas a partir da referência do usuário (V1 glitch refinado, V2 play+money, V3 neon premium) | Aguardando escolha | projeto local `identidade_visual/` |
+| Kit de identidade visual: logo final, ícone de perfil (avatar redondo), capa/banner 16:9 | Concluído | `templates/identidade_visual/` |
+| Vozes oficiais dos 6 personagens (Beto + 5 UGC): mapa de vozes TTS + amostras .wav | Concluído | `references/mapa_vozes.md`, `templates/vozes/` |
+| Banco de cenas do Beto: 4 cenários (estúdio oficial, escritório agência, carro premium, rooftop urbano) | Concluído | `templates/cenas/beto/` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
 
 ## Próximos Passos Planejados (Backlog)
 
-1. **Identidade visual da Movie Money:** usuário escolher variação do logo → expandir para kit completo (foto de perfil, capa, templates de post/grid, manual de marca com paleta oficial: preto + branco + ciano #25F4EE + magenta #FE2C55).
-2. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado.
-3. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
-4. **Sistema de captação de leads:** site/app da Movie Money.
+1. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado — PRÓXIMO PASSO CRÍTICO.
+2. **Vídeo institucional do Beto:** primeiro vídeo de campanha da marca com lip sync usando a voz oficial (Fenrir) e cena do estúdio.
+3. **Templates de post/grid** para Instagram e TikTok usando a identidade visual.
+4. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
+5. **Sistema de captação de leads:** site/app da Movie Money.
+6. **Melhorias do motor de roteiros:** banco de roteiros vencedores, roteiros para VSL longa, biblioteca de respostas a objeções.
 
 ## Decisões Já Tomadas (Não Rediscutir)
 
