@@ -21,6 +21,7 @@ Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o 
 | Vozes oficiais TTS dos 6 personagens (mapa + amostras .wav) | Pipeline/automação completa |
 | Identidade visual: logo final, ícone de perfil, capa/banner | Sistema de captação de leads (site/app) |
 | Framework mestre de roteiros + 5 roteiros-exemplo | Melhorias do motor de roteiros (banco de vencedores, VSL longa, objeções) |
+| Guia mestre de produção POV (pesquisa + documento completo) | |
 | Pipeline de produção documentado | |
 
 ## Recursos da Skill
@@ -33,6 +34,7 @@ Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o 
 | Framework mestre de roteiros | `references/framework_roteiros.md` | Ao escrever qualquer roteiro de criativo |
 | Roteiros-exemplo (5 completos + matriz de variação) | `references/roteiros_exemplo.md` | Como referência de qualidade e estilo |
 | Mapa de vozes oficiais (voz TTS + estilo por personagem) | `references/mapa_vozes.md` | Ao gerar qualquer áudio/fala de personagem |
+| Guia mestre de produção POV (tipos de take, regras, pipeline, checklist) | `references/guia_pov.md` | Ao produzir qualquer criativo no formato POV |
 | Imagens-base dos personagens (Beto + 5) | `templates/personagens/{nome}.png` | Como `references` ao gerar imagem/vídeo do personagem |
 | Banco de cenas (24 cenários 9:16, incluindo 4 do Beto) | `templates/cenas/{personagem}/{cena}.png` | Como keyframe/referência ao gerar takes de vídeo UGC |
 | Amostras de voz oficiais (.wav) | `templates/vozes/{nome}.wav` | Referência de timbre/estilo de cada personagem |

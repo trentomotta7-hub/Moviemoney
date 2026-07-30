@@ -27,6 +27,7 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | Kit de identidade visual: logo final, ícone de perfil (avatar redondo), capa/banner 16:9 | Concluído | `templates/identidade_visual/` |
 | Vozes oficiais dos 6 personagens (Beto + 5 UGC): mapa de vozes TTS + amostras .wav | Concluído | `references/mapa_vozes.md`, `templates/vozes/` |
 | Banco de cenas do Beto: 4 cenários (estúdio oficial, escritório agência, carro premium, rooftop urbano) | Concluído | `templates/cenas/beto/` |
+| Guia mestre de produção POV: pesquisa, tipos de take, regras de câmera/som, pipeline, checklist de qualidade | Concluído | `references/guia_pov.md` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
 
