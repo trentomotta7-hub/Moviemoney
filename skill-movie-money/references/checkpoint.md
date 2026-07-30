@@ -28,6 +28,8 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | Vozes oficiais dos 6 personagens (Beto + 5 UGC): mapa de vozes TTS + amostras .wav | ✅ Concluído | `references/mapa_vozes.md`, `templates/vozes/` |
 | Banco de cenas do Beto: 5 cenários (estúdio oficial, escritório agência, carro premium, rooftop urbano, **escritório moderno**) | ✅ Concluído | `templates/cenas/beto/` |
 | Guia mestre de produção POV: pesquisa, tipos de take, regras de câmera/som, pipeline, checklist de qualidade | ✅ Concluído | `references/guia_pov.md` |
+| **Banco de Inteligência Narrativa** — 4 nichos (Beleza, Moda, Casa, Eletrônicos), 30+ dores reais, 5 ângulos narrativos universais, frases gatilho PT-BR, 18 combinações prontas, motor anti-repetição | ✅ Concluído | `references/banco_narrativo.md` |
+| **Pesquisa de Mercado TikTok Shop Brasil** — dados de GMV, produtos mais vendidos, nichos em alta, insights estratégicos (jul/2026) | ✅ Concluído | `references/pesquisa_tiktok_brasil.md` |
 | **Voz do Beto v2/v3 — estilo baseado na voz real do criador** (jul/2026): prompt reescrito com ritmo, ironia, autenticidade, CTA como afirmação, abertura calorosa | ✅ Concluído | `templates/vozes/beto_v2.wav`, `templates/vozes/beto_v3.wav`, `references/mapa_vozes.md` (seção Notas de Estilo) |
 | **Vídeo institucional do Beto v2** — 27s, 4 takes, cenário escritório moderno, proporções corretas, legendas karaokê (palavras ficando amarelas progressivamente, canto inferior) | ✅ Concluído | `templates/videos/beto_institucional_v2.mp4` |
 
@@ -59,7 +61,7 @@ Baseado na análise de dois áudios reais do criador da marca (jul/2026):
 
 ## Próximos Passos Planejados (Backlog)
 
-1. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado — **PRÓXIMO PASSO CRÍTICO**.
+1. **Primeiro criativo de teste (prova da máquina):** rodar o pipeline completo de ponta a ponta com um produto real minerado — **PRÓXIMO PASSO CRÍTICO**. Usar o banco narrativo para escolher dor + ângulo + personagem antes de escrever o roteiro.
 2. **Templates de post/grid** para Instagram e TikTok usando a identidade visual.
 3. **Pipeline/automação:** estrutura que recebe produto (link/imagens da mineração) e produz o vídeo final automaticamente.
 4. **Sistema de captação de leads:** site/app da Movie Money.

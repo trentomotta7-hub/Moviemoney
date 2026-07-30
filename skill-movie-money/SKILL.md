@@ -41,6 +41,8 @@ Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o 
 | Amostras de voz oficiais (.wav) | `templates/vozes/{nome}.wav` | Referência de timbre/estilo de cada personagem |
 | Kit de identidade visual (logo, ícone, capa) | `templates/identidade_visual/` | Em qualquer material da marca Movie Money |
 | Vídeo institucional do Beto v2 | `templates/videos/beto_institucional_v2.mp4` | Referência de qualidade e formato para vídeos institucionais |
+| **Banco de Inteligência Narrativa** (dores, ângulos, frases gatilho, combinações — 4 nichos) | `references/banco_narrativo.md` | **OBRIGATÓRIO** antes de escrever qualquer roteiro — escolher dor + ângulo + personagem |
+| Pesquisa de Mercado TikTok Shop Brasil (jul/2026) | `references/pesquisa_tiktok_brasil.md` | Contexto de mercado, produtos em alta, dados de GMV |
 
 ## Regras Invioláveis
 
@@ -54,6 +56,15 @@ Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o 
 8. **Legendas de todos os vídeos:** karaokê progressivo ASS — palavras ficando amarelas conforme são faladas, fonte pequena, canto inferior da tela. Nunca usar SRT estático.
 9. **Cenário do Beto para vídeos institucionais:** usar `escritorio_moderno.png` como keyframe padrão. Estúdio cinematográfico apenas se explicitamente solicitado.
 10. **Voz do Beto:** sempre usar o prompt de estilo da sessão 2 (ver `references/mapa_vozes.md` — seção Notas de Estilo). Abertura calorosa, ironia de mercado, frases curtas, CTA como afirmação.
+
+## Regra do Banco Narrativo
+
+Antes de escrever qualquer roteiro, SEMPRE consultar `references/banco_narrativo.md` e:
+1. Identificar o nicho do produto
+2. Escolher a dor real mais relevante para o produto
+3. Escolher o ângulo narrativo (A–E)
+4. Selecionar o hook de abertura correspondente
+5. Registrar a combinação usada para evitar repetição em criativos futuros do mesmo produto
 
 ## Fluxo de Produção de Criativo
 
