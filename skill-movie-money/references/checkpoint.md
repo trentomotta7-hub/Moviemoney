@@ -1,6 +1,6 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 30 de julho de 2026 — Sessão 2
+**Última atualização:** 30 de julho de 2026 — Sessão 4
 
 ## Visão do Projeto
 
@@ -32,8 +32,22 @@ A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não q
 | **Pesquisa de Mercado TikTok Shop Brasil** — dados de GMV, produtos mais vendidos, nichos em alta, insights estratégicos (jul/2026) | ✅ Concluído | `references/pesquisa_tiktok_brasil.md` |
 | **Voz do Beto v2/v3 — estilo baseado na voz real do criador** (jul/2026): prompt reescrito com ritmo, ironia, autenticidade, CTA como afirmação, abertura calorosa | ✅ Concluído | `templates/vozes/beto_v2.wav`, `templates/vozes/beto_v3.wav`, `references/mapa_vozes.md` (seção Notas de Estilo) |
 | **Vídeo institucional do Beto v2** — 27s, 4 takes, cenário escritório moderno, proporções corretas, legendas karaokê (palavras ficando amarelas progressivamente, canto inferior) | ✅ Concluído | `templates/videos/beto_institucional_v2.mp4` |
+| **Vídeo institucional do Beto v4** — 1080×1920, sem pausa inicial, karaokê palavra a palavra com timestamps proporcionais | ✅ Concluído | `templates/videos/beto_institucional_v4.mp4` |
+| **25 cenas padronizadas em 1440×2560** — todas as pastas renomeadas para nome completo, pastas antigas removidas, estrutura limpa | ✅ Concluído | `templates/cenas/{beto,marina_costa,lucas_ferreira,beatriz_oliveira,rafael_santos,diego_almeida}/` |
+| **Logo dark** para uso em vídeos e fundos escuros | ✅ Concluído | `templates/identidade_visual/logo_dark.png` |
+| **Banco narrativo expandido** — 9 nichos, 71 dores reais, 43 combinações prontas (+Fitness, Perfumaria, Tecnologia, Pets, Infantil) | ✅ Concluído | `references/banco_narrativo.md` |
+| **Análise forense completa** — 17 achados diagnosticados e 8 críticos/altos corrigidos | ✅ Concluído | `references/relatorio_forense.md` |
 
 O elenco: Lucas Ferreira (27, tech/gadgets), Marina Costa (24, beleza/skincare), Rafael Santos (32, fitness/premium), Beatriz Oliveira (29, produtividade/casa), Diego Almeida (22, virais/unboxing). Detalhes completos em `references/elenco.md`.
+
+## Padrão Técnico de Produção (Atualizado Sessão 4)
+
+- **Resolução de vídeo:** 1080×1920 (1080p, 9:16) — upscale automático via `scripts/montar_video.sh`
+- **Resolução de cenas:** 1440×2560 (9:16) — padrão único para todos os personagens
+- **Keyframe de vídeo:** sempre usar cena 9:16 — NUNCA retrato 3:4
+- **Voz oficial do Beto:** `templates/vozes/beto_oficial.wav` (baseada na voz real do criador)
+- **Nomenclatura de pastas de cenas:** sempre nome completo (`marina_costa/`, `lucas_ferreira/`, etc.)
+- **Scripts de produção:** `scripts/montar_video.sh` (montagem + upscale), `scripts/transcrever_palavras.py` (timestamps), `scripts/gerar_karaoke_preciso.py` (ASS karaokê)
 
 ## Padrão de Legendas Karaokê (Definido na Sessão 2)
 
