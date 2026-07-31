@@ -1,0 +1,22 @@
+{
+  "duration": 8,
+  "language": "por",
+  "segments": [
+    {
+      "start": 0.219,
+      "end": 2.159,
+      "text": "Tá no link aqui embaixo."
+    },
+    {
+      "start": 2.159,
+      "end": 5.759,
+      "text": "Se você quer ser lembrada pelo seu cheiro, esse é o caminho."
+    },
+    {
+      "start": 5.759,
+      "end": 7.359,
+      "text": "Corre que os kits tão acabando"
+    }
+  ],
+  "full_text": "Tá no link aqui embaixo. Se você quer ser lembrada pelo seu cheiro, esse é o caminho. Corre que os kits tão acabando"
+}
