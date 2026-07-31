@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Arial Rounded MT Bold,34,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,100,100,1,0,1,4.0,2.0,2,30,30,320,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:01.57,Karaoke,,0,0,0,,{\kf32}Passei {\kf21}esse {\kf21}body {\kf32}splash {\kf11}de
+Dialogue: 0,0:00:01.57,0:00:02.75,Karaoke,,0,0,0,,{\kf23}manhã {\kf5}e {\kf23}minha {\kf23}amiga {\kf43}perguntou
+Dialogue: 0,0:00:02.75,0:00:03.92,Karaoke,,0,0,0,,{\kf7}o {\kf22}que {\kf15}eu {\kf29}tava {\kf44}usando
+Dialogue: 0,0:00:03.92,0:00:05.10,Karaoke,,0,0,0,,{\kf21}às {\kf21}10 {\kf21}da {\kf55}noite
+Dialogue: 0,0:00:05.10,0:00:07.70,Karaoke,,0,0,0,,{\kf26}Eu {\kf26}já {\kf78}testei {\kf65}tanta {\kf65}marca
+Dialogue: 0,0:00:07.70,0:00:09.40,Karaoke,,0,0,0,,{\kf34}Passa {\kf14}de {\kf34}manhã {\kf34}chega {\kf54}meio-dia
+Dialogue: 0,0:00:09.40,0:00:11.10,Karaoke,,0,0,0,,{\kf28}e {\kf142}sumiu
+Dialogue: 0,0:00:11.10,0:00:12.55,Karaoke,,0,0,0,,{\kf39}Fico {\kf10}o {\kf29}dia {\kf39}todo {\kf28}sem
+Dialogue: 0,0:00:12.55,0:00:14.00,Karaoke,,0,0,0,,{\kf145}cheiro
+Dialogue: 0,0:00:14.00,0:00:15.00,Karaoke,,0,0,0,,{\kf11}Aí {\kf17}uma {\kf28}amiga {\kf11}me {\kf33}mandou
+Dialogue: 0,0:00:15.00,0:00:16.00,Karaoke,,0,0,0,,{\kf100}esse
+Dialogue: 0,0:00:16.00,0:00:18.70,Karaoke,,0,0,0,,{\kf51}Fui {\kf51}sem {\kf34}fé {\kf51}mas {\kf83}gente
+Dialogue: 0,0:00:18.70,0:00:21.40,Karaoke,,0,0,0,,{\kf14}o {\kf81}cheiro {\kf54}fixa {\kf27}de {\kf94}verdade
+Dialogue: 0,0:00:21.40,0:00:22.80,Karaoke,,0,0,0,,{\kf14}Já {\kf14}tô {\kf14}no {\kf56}terceiro {\kf42}frasco
+Dialogue: 0,0:00:22.80,0:00:24.80,Karaoke,,0,0,0,,{\kf200}Corre!
+Dialogue: 0,0:00:24.80,0:00:26.50,Karaoke,,0,0,0,,{\kf45}Link {\kf45}aqui {\kf80}embaixo
