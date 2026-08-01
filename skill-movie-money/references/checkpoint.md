@@ -1,6 +1,6 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 01 de agosto de 2026 — Sessão 7 (Montagem v4 — Áudios v2 + Ken Burns)
+**Última atualização:** 01 de agosto de 2026 — Sessão 7 (Montagem v4c — Lip Sync Nativo + Ken Burns + Áudio Normalizado)
 
 ## Visão do Projeto
 Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para TikTok Shop e VSL. O foco é retenção visual e conversão através de roteiros validados e lip sync real.
@@ -11,6 +11,7 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 |---------|--------|-------------|
 | **Vídeo YouTube 1 (Quebra-Mitos) v3** | ✅ Montado | `criativos/video_institucional_youtube/` |
 | **Vídeo YouTube 1 (Quebra-Mitos) v4** | ✅ Montado | `criativos/video_institucional_youtube/video1_quebra_mitos_v4_FINAL.mp4` |
+| **Vídeo YouTube 1 (Quebra-Mitos) v4c** | ✅ **FINAL APROVADO** | `criativos/video_institucional_youtube/video1_quebra_mitos_v4c_FINAL.mp4` |
 | **Takes de Talking Head (Beto)** | ✅ 17 takes únicos | `criativos/video_institucional_youtube/takes/` |
 | **Narração Beto (Fenrir) v1** | ✅ Gerados | `criativos/video_institucional_youtube/takes/audio_s*.wav` |
 | **Narração Beto (Fenrir) v2** | ✅ Gerados | `criativos/video_institucional_youtube/takes/audio_s*_v2.wav` |
@@ -21,6 +22,7 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 | **Skill de Auditoria Forense** | ✅ Atualizada | `skills/tiktokshop-creative-audit/SKILL.md` |
 | **Script de Montagem v3** | ✅ Finalizado | `scripts/montar_video1_v3.sh` |
 | **Script de Montagem v4** | ✅ Finalizado | `scripts/montar_video1_v4.sh` |
+| **Script de Montagem v4c** | ✅ **FINAL** | `scripts/montar_video1_v4c.sh` |
 
 ## Padrão Técnico das Sessões 6 e 7
 - **Zero Loop:** Cada take de Talking Head é único (mínimo 10s).
@@ -30,22 +32,21 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 - **Áudios v2:** Voz Fenrir mais assertiva e rítmica (usados na v4).
 - **Ken Burns:** Efeito de zoom dinâmico (1.0→1.08) nos Screen Recordings (implementado na v4).
 
-## Vídeo 1 v4 — Especificações Técnicas
+## Vídeo 1 v4c — Especificações Técnicas (VERSÃO FINAL)
 
 | Parâmetro | Valor |
 |-----------|-------|
-| Arquivo | `video1_quebra_mitos_v4_FINAL.mp4` |
-| Duração | 6 min 41s (~401s) |
+| Arquivo | `video1_quebra_mitos_v4c_FINAL.mp4` |
+| Duração | **3 min 57s (237.5s)** |
 | Resolução | 2560×1440 (YouTube 2K) |
 | FPS | 24 |
-| Codec vídeo | H.264 |
-| Codec áudio | AAC |
-| Tamanho | ~159 MB |
-| Bitrate total | ~3.326 kbps |
+| Codec vídeo | H.264 CRF 18 |
+| Codec áudio | AAC 48kHz stereo 192kbps |
+| Tamanho | 163 MB |
 | Marca d'água | ✅ Injetada (canto inferior direito) |
-| Takes TH | 17 únicos, sem loop |
-| Áudios | v2 (Fenrir assertivo) |
-| SCs | Ken Burns (zoom dinâmico) |
+| Takes TH | 17 únicos, lip sync nativo |
+| Áudios TH | Lip sync embutido (nativo do modelo) |
+| SCs | Ken Burns (zoom 1.0→1.08) + VO v2 |
 
 ## Estrutura do Vídeo v4
 
@@ -76,15 +77,15 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 - A voz oficial do Beto é a **Fenrir** (pt-BR), com tom enérgico e assertivo.
 - O keyframe de referência do Beto está em: `criativos/video_institucional_youtube/beto_keyframe_16x9.jpg`
 
-## Sessão 7 (01/08/2026) — Montagem v4 com Áudios v2 e Ken Burns
+## Sessão 7 (01/08/2026) — Montagem v4c: Arquitetura Correta
 
 - **Diagnóstico:** Sessão anterior (perdida) estava gerando o script de montagem v4 com áudios v2 e Ken Burns.
 - **Reconstrução:** Análise forense completa do repositório para identificar exatamente o ponto de parada.
-- **Script v4:** Criado `montar_video1_v4.sh` com todas as melhorias planejadas.
-- **Montagem:** Executada com sucesso — vídeo de 6min41s em 2560×1440.
-- **Ken Burns:** Efeito aplicado em todos os 7 screen recordings (zoom 1.0→1.08).
-- **Áudios v2:** Todos os 5 blocos de TH e 5 VOs usando versões v2 (mais assertivas).
-- **GitHub:** Sincronização de script v4 e checkpoint atualizado.
+- **Bug identificado (v3/v4):** Os takes de TH têm áudio de lip sync embutido (nativo do modelo). As versões v3 e v4 tentavam substituir esse áudio por áudios externos, causando conflito de duração (400s de silêncio).
+- **Solução v4c:** Takes de TH usam áudio nativo (lip sync real). SCs recebem Ken Burns + VO v2. Todos os segmentos normalizados para 48kHz stereo antes da concatenação.
+- **Resultado:** Vídeo limpo de 3min57s, sem silêncio espúrio, 2560×1440, 163MB.
+- **Script v4c:** Criado `montar_video1_v4c.sh` — versão definitiva.
+- **GitHub:** Sincronização de script v4c e checkpoint atualizado.
 
 ## Sessão 6 (01/08/2026) — Expansão YouTube e Rigor Técnico
 - **Vídeo 1 YouTube:** Montagem completa em 2K com 17 takes únicos de 10s (sem loop).
