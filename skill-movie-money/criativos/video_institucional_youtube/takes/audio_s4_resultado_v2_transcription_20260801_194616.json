@@ -1,0 +1,37 @@
+{
+  "duration": 29.76,
+  "language": "por",
+  "segments": [
+    {
+      "start": 0.439,
+      "end": 2.74,
+      "text": "Isso não é um ator que a gente contratou ontem."
+    },
+    {
+      "start": 2.74,
+      "end": 4.94,
+      "text": "Isso é a nossa máquina rodando."
+    },
+    {
+      "start": 4.94,
+      "end": 11.279,
+      "text": "Lip sync perfeito, legenda na safe zone pra não ficar escondida atrás do carrinho do TikTok."
+    },
+    {
+      "start": 11.279,
+      "end": 14.719,
+      "text": "Zero cauda de silêncio no final pra forçar o loop."
+    },
+    {
+      "start": 14.719,
+      "end": 19.039,
+      "text": "A gente manda o arquivo pro cliente, ele sobe."
+    },
+    {
+      "start": 19.039,
+      "end": 29.459,
+      "text": "Um minuto depois: \"Cara, ficou absurdo, vou subir agora.\" A gente entrega a munição, você só aperta o gatilho"
+    }
+  ],
+  "full_text": "Isso não é um ator que a gente contratou ontem. Isso é a nossa máquina rodando. Lip sync perfeito, legenda na safe zone pra não ficar escondida atrás do carrinho do TikTok. Zero cauda de silêncio no final pra forçar o loop. A gente manda o arquivo pro cliente, ele sobe. Um minuto depois: \"Cara, ficou absurdo, vou subir agora.\" A gente entrega a munição, você só aperta o gatilho"
+}

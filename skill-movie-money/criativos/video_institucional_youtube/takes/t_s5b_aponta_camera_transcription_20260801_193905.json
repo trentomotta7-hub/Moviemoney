@@ -1,0 +1,32 @@
+{
+  "duration": 10.0053125,
+  "language": "eng",
+  "segments": [
+    {
+      "start": 0.799,
+      "end": 1.959,
+      "text": "Listen to me."
+    },
+    {
+      "start": 1.959,
+      "end": 4.339,
+      "text": "Don't ever let anyone tell you that you can't do it."
+    },
+    {
+      "start": 4.339,
+      "end": 7.519,
+      "text": "You have the power to change your life."
+    },
+    {
+      "start": 7.519,
+      "end": 8.779,
+      "text": "Believe in yourself."
+    },
+    {
+      "start": 8.779,
+      "end": 9.539,
+      "text": "You've got this"
+    }
+  ],
+  "full_text": "Listen to me. Don't ever let anyone tell you that you can't do it. You have the power to change your life. Believe in yourself. You've got this"
+}

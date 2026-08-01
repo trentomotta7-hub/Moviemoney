@@ -1,0 +1,2 @@
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/bloco_s1_debug.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/bloco_s2_debug.mp4'

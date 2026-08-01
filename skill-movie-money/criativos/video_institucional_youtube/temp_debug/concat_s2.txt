@@ -1,0 +1,3 @@
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t2_mentira.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t3_dor.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t3b_dono_negocio.mp4'

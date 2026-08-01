@@ -1,0 +1,2 @@
+[00:00.1 - 00:00.9] Cores mapeadas.
+[00:00.9 - 00:05.8] Seleciona o nicho, seleciona a personagem e aí a mágica acontece

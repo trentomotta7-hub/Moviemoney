@@ -1,0 +1,32 @@
+{
+  "duration": 10.0053125,
+  "language": "eng",
+  "segments": [
+    {
+      "start": 0.14,
+      "end": 1.519,
+      "text": "Look, this is my secret weapon."
+    },
+    {
+      "start": 1.519,
+      "end": 4.099,
+      "text": "First, you automate all of your daily outreach."
+    },
+    {
+      "start": 4.099,
+      "end": 5.519,
+      "text": "Just take a look right here."
+    },
+    {
+      "start": 5.519,
+      "end": 8.679,
+      "text": "Second, you filter all the hot leads, and third, you close them."
+    },
+    {
+      "start": 8.679,
+      "end": 9.82,
+      "text": "It is really that simple"
+    }
+  ],
+  "full_text": "Look, this is my secret weapon. First, you automate all of your daily outreach. Just take a look right here. Second, you filter all the hot leads, and third, you close them. It is really that simple"
+}

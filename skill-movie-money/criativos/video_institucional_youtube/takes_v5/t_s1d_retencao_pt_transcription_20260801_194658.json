@@ -1,0 +1,22 @@
+{
+  "duration": 8,
+  "language": "por",
+  "segments": [
+    {
+      "start": 0.059,
+      "end": 0.159,
+      "text": "Tá."
+    },
+    {
+      "start": 0.159,
+      "end": 4.38,
+      "text": "O algoritmo do TikTok não tá nem aí pros seus seguidores."
+    },
+    {
+      "start": 4.38,
+      "end": 7.98,
+      "text": "Ele liga pra uma única coisa: retenção visual"
+    }
+  ],
+  "full_text": "Tá. O algoritmo do TikTok não tá nem aí pros seus seguidores. Ele liga pra uma única coisa: retenção visual"
+}

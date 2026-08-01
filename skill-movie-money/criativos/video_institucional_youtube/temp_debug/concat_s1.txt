@@ -1,0 +1,4 @@
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t1_hook.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t1b_voiceover_sonho.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t1c_mentira_retencao.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_debug/norm_t_s1d_retencao.mp4'

@@ -1,0 +1,17 @@
+{
+  "duration": 10.0053125,
+  "language": "eng",
+  "segments": [
+    {
+      "start": 0.319,
+      "end": 3.72,
+      "text": "I see so many people making this exact same mistake."
+    },
+    {
+      "start": 3.72,
+      "end": 8.319,
+      "text": "You need to focus on quality first"
+    }
+  ],
+  "full_text": "I see so many people making this exact same mistake. You need to focus on quality first"
+}
