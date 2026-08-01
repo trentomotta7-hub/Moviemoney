@@ -1,6 +1,6 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 01 de agosto de 2026 — Sessão 7 (Diagnóstico Forense v4c + Plano de Refatoração v5)
+**Última atualização:** 01 de agosto de 2026 — Sessão 8 (Vídeo v5 Final — Zero Inglês + Logo Animada)
 
 ## Visão do Projeto
 Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para TikTok Shop e VSL. O foco é retenção visual e conversão através de roteiros validados e lip sync real.
@@ -24,7 +24,9 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 | **Script de Montagem v3** | ✅ Finalizado | `scripts/montar_video1_v3.sh` |
 | **Script de Montagem v4** | ✅ Finalizado | `scripts/montar_video1_v4.sh` |
 | **Script de Montagem v4c** | ✅ Disponível | `scripts/montar_video1_v4c.sh` |
-| **Vídeo YouTube 1 (Quebra-Mitos) v5** | ⏳ Pendente | `criativos/video_institucional_youtube/video1_quebra_mitos_v5_FINAL.mp4` |
+| **Vídeo YouTube 1 (Quebra-Mitos) v5** | ✅ **PRONTO PARA YOUTUBE** | `criativos/video_institucional_youtube/video1_quebra_mitos_v5_FINAL.mp4` |
+| **Contexto Sessão 8** | ✅ Documentado | `references/sessao8_contexto.md` |
+| **Script de Montagem v5** | ✅ Finalizado | `scripts/montar_video1_v5.sh` |
 
 ## Padrão Técnico das Sessões 6 e 7
 - **Zero Loop:** Cada take de Talking Head é único (mínimo 10s).
@@ -67,7 +69,20 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 | Bloco S5 CTA | TH (3 takes) | 27.9s | audio_s5_cta_v2.wav |
 | SC8 Logo Final | SC + Ken Burns | 4.0s | silencioso |
 
-## Backlog Sessão 8 — PRIORIDADE MÁXIMA
+## Backlog Sessão 9
+
+### Vídeo 1 — Refinamentos opcionais
+1. **Crossfade visual entre takes de TH** — jump cuts ainda visíveis. Requer re-encoding com `xfade` em filter_complex.
+2. **Eliminar repetições** — "A gente entrega a munição" aparece 2x (TH + VO SC7).
+
+### Próximas Produções
+1. **Vídeo 2 — "A Máquina por Dentro":** roteiro já escrito em `video2_maquina_por_dentro_roteiro_v1.md`
+2. **Vídeo 3 — VSL Puro:** roteiro disponível
+3. **Legendas karaokê:** implementar `word_timestamps=True`
+
+---
+
+## Histórico de Backlog Anterior (Sessão 8 — CONCLUÍDO)
 
 ### 1. Refatoração do Vídeo 1 — v5 (BLOCKER)
 
