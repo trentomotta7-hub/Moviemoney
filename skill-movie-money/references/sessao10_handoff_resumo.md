@@ -9,15 +9,14 @@
 - **Ação:** Este arquivo foi incluído no repositório excepcionalmente para garantir que o usuário não perca o entregável final.
 
 ## 2. Vídeo 2: "A Máquina por Dentro"
-- **Status:** **EM PRODUÇÃO (Fase de Geração de Takes)**.
+- **Status:** **EM PRODUÇÃO (Modo 50/50 Ativado)**.
 - **Documentação:** O plano completo está em `criativos/video_institucional_youtube/video2_plano_takes.md`.
+- **Nova Skill:** Criada a skill `moviemoney-production` (cópia em `skill-movie-money/skills/moviemoney-production/`).
 - **Progresso Atual:**
-    - [x] Roteiro e Plano de Takes criados.
-    - [x] Takes de Talking Head (Beto) gerados: `v2_t1a`, `v2_t1b`, `v2_t1c`, `v2_t1d`, `v2_t2a`, `v2_t2b`.
-    - [ ] Takes de Talking Head faltantes: `v2_t3a`, `v2_t3b`, `v2_t4a`, `v2_t4b`, `v2_t4c`.
-    - [ ] Geração de VOs (Áudios Fenrir) para os Screen Recordings.
-    - [ ] Geração de Screen Recordings (Screenshots da máquina).
-    - [ ] Montagem Final (Script v1 do Vídeo 2).
+    - [x] Roteiro e Plano de Takes (50/50) criados.
+    - [x] Takes de Talking Head (Beto) gerados: `v2_t1a` até `v2_t2b`.
+    - [ ] Takes de Talking Head faltantes: `v2_t3a` até `v2_t4c`.
+    - [ ] Montagem Final com Crossfade, Ken Burns e Legendas a 320px.
 
 ## 3. Próximos Passos Imediatos
 1. Clonar o repositório.

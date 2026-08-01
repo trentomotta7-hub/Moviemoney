@@ -11,18 +11,19 @@
 | Resolução takes | 1280×720 → upscale 2560×1440 |
 | Duração por take TH | 10–12s |
 | Crossfade entre TH | 0.3s fade |
-| Estrutura | TH + VO + SC intercalados |
+| Estrutura | Equilíbrio 50/50 (Tela/Beto) |
 
 ---
 
-## Regras de Produção (aprendidas no Vídeo 1)
+## Regras de Produção (Skill: moviemoney-production)
 
-1. **Lip sync**: fala exata entre aspas no prompt de geração do vídeo
-2. **Sem takes de gesto**: apenas takes de fala direta — eliminam repetições
-3. **Crossfade 0.3s** entre todos os takes TH para parecer take contínuo
-4. **VO nos SCs**: narração Fenrir por cima das imagens de tela (Ken Burns 1.0→1.08)
-5. **Normalização**: todos os segmentos para 48kHz stereo antes da concatenação
-6. **Cada take máx. 12s** para manter o ritmo do vídeo
+1. **Equilíbrio 50/50:** Alternar entre Beto e Tela a cada 5-7 segundos para máximo dinamismo.
+2. **Lip sync:** Fala exata entre aspas no prompt de geração do vídeo.
+3. **Sem takes de gesto:** Apenas takes de fala direta para evitar redundância.
+4. **Crossfade 0.3s:** Aplicar entre todos os takes TH para simular um vídeo contínuo.
+5. **Ken Burns:** Zoom dinâmico 1.0→1.08 em todos os Screen Recordings.
+6. **Safe Zone:** Legendas posicionadas a 320px da borda inferior.
+7. **Normalização:** Todos os segmentos em 48kHz stereo.
 
 ---
 
