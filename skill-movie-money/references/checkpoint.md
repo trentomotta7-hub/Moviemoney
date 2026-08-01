@@ -1,58 +1,41 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 31 de julho de 2026 — Sessão 5
+**Última atualização:** 01 de agosto de 2026 — Sessão 6 (Conclusão do Vídeo 1 e Refinamento)
 
 ## Visão do Projeto
-
-Movie Money é uma empresa/máquina de produção de criativos de venda para TikTok Shop e plataformas de venda via VSL. O fluxo de negócio: leads trazem um produto (com imagens vindas de site de mineração, contratado externamente) e a máquina monta automaticamente um vídeo de venda em um de dois formatos, tudo produzido dentro da Manus, sem ferramentas de terceiros.
-
-Os dois formatos de criativo são: **POV** (câmera na altura dos olhos/ombro mostrando as mãos usando o produto enquanto narra os benefícios) e **UGC** (um dos 5 personagens do elenco falando sobre a experiência de uso, em tom de relato/venda invisível, com lip sync real).
-
-Estrutura narrativa obrigatória de todo criativo: **Hook fortíssimo nos 4 segundos iniciais** (parar a rolagem) → **Problema** → **Causa** → **Solução** (apresentação do produto) → **CTA forte** no final. Os takes são divididos entre essas seções.
-
-Identidade visual definida: glitch estilo TikTok, fundo preto, cores ciano #25F4EE / magenta #FE2C55, monograma "MM" com botão play entre as letras, tagline "Criativos que vendem no TikTok Shop". Kit em `templates/identidade_visual/` (logo_final.png, perfil_icone.png redondo, capa_banner.png 16:9).
-
-A marca tem um **rosto oficial: o Beto** — avatar de IA do criador (que não quer aparecer pessoalmente). O Beto é o porta-voz institucional: apresenta a empresa, grava os vídeos de campanha/marketing e apresentará os 5 personagens do elenco ao público. Backup completo do projeto no GitHub: repositório privado `trentomotta7-hub/Moviemoney` (branch master).
+Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para TikTok Shop e VSL. O foco é retenção visual e conversão através de roteiros validados e lip sync real.
 
 ## Estado Atual — O Que Já Foi Feito
 
 | Entrega | Status | Localização |
 |---------|--------|-------------|
-| Definição dos 5 personagens UGC | ✅ Concluído | `references/elenco.md` |
-| Imagens-base oficiais (retratos 3:4) | ✅ Concluído | `templates/personagens/` |
-| Banco de cenas (25 imagens 9:16) | ✅ Concluído | `templates/cenas/` |
-| Framework mestre de roteiros | ✅ Concluído | `references/framework_roteiros.md` |
-| Roteiros-exemplo completos | ✅ Concluído | `references/roteiros_exemplo.md` |
-| Beto — rosto oficial da marca | ✅ Concluído | `references/elenco.md` |
-| Kit de identidade visual completo | ✅ Concluído | `templates/identidade_visual/` |
-| Vozes oficiais dos 6 personagens | ✅ Concluído | `references/mapa_vozes.md` |
-| **Banco de Inteligência Narrativa** (71 dores) | ✅ Concluído | `references/banco_narrativo.md` |
-| **Skill de Auditoria Forense Integrada** | ✅ Concluído | `skills/tiktokshop-creative-audit/SKILL.md` |
-| **Criativo 01 v8c FINAL** (Safe Zone + Lip Sync) | ✅ Concluído | `criativos/criativo_01_bodysplash/` |
-| **Estratégia YouTube (Série de 3 vídeos)** | ✅ Concluído | `criativos/video_institucional_youtube/` |
-| **Roteiros YouTube 1 (Dinamico) e 3 (VSL)** | ✅ Concluído | `criativos/video_institucional_youtube/` |
-| **Takes YouTube 1 (t1-t5)** | ✅ Concluído | `criativos/video_institucional_youtube/takes/` |
+| **Vídeo YouTube 1 (Quebra-Mitos)** | ✅ Montado (v3) | `criativos/video_institucional_youtube/` |
+| **Takes de Talking Head (Beto)** | ✅ 17 takes únicos | `criativos/video_institucional_youtube/takes/` |
+| **Narração Beto (Fenrir)** | ✅ Áudios v2 gerados | `criativos/video_institucional_youtube/takes/` |
+| **Screen Recordings/B-Roll** | ✅ 8 assets gerados | `criativos/video_institucional_youtube/takes/` |
+| **Roteiro Vídeo 2 (Máquina)** | ✅ Escrito | `criativos/video_institucional_youtube/video2_maquina_por_dentro_roteiro_v1.md` |
+| **Skill de Auditoria Forense** | ✅ Atualizada | `skills/tiktokshop-creative-audit/SKILL.md` |
+| **Script de Montagem Dinâmica** | ✅ v3 Finalizado | `scripts/montar_video1_v3.sh` |
 
-## Padrão Técnico de Produção (Atualizado Sessão 5)
+## Padrão Técnico da Sessão 6
+- **Zero Loop:** Cada take de Talking Head é único (mínimo 10s).
+- **Lip Sync Real:** Uso da fala exata no prompt para sincronia labial.
+- **Resolução:** 2K (2560x1440) para YouTube.
+- **Identidade:** Marca d'água injetada via script de montagem.
 
-- **Resolução Vertical:** 1080×1920 (TikTok/Reels).
-- **Resolução Horizontal:** 2560x1440 (YouTube 2K).
-- **Lip Sync Real:** SEMPRE incluir a fala exata no prompt entre aspas.
-- **Safe Zone:** MarginV: 320px no ASS para TikTok Shop.
-- **Marca D'água:** `logo_transparente.png` em vídeos institucionais.
-- **Dinâmica:** Alternar Talking Head com Screen Recordings e B-Rolls.
+## Próximos Passos (Backlog para Sessão 7)
+1. **Regerar takes v4:** Finalizar a geração de todos os takes com lip sync perfeito (fala exata no prompt).
+2. **Montagem v4:** Aplicar efeito de zoom dinâmico (Ken Burns) e transições suaves para ocultar cortes.
+3. **Produção Vídeo 2:** Iniciar takes da "Máquina por Dentro".
+4. **Produção Vídeo 3:** Finalizar VSL Puro.
 
-## Próximos Passos Planejados (Backlog)
+## Notas de Contexto
+- O vídeo final v3 (107MB) excede o limite do GitHub e está no `.gitignore`. Deve ser baixado manualmente ou armazenado em LFS.
+- A voz oficial do Beto é a **Fenrir** (pt-BR), com tom enérgico e assertivo.
 
-1. **Montagem final do Vídeo YouTube 1:** Combinar takes do Beto com gravações de tela.
-2. **Automação da Marca D'água:** Script para injetar logo automaticamente.
-3. **Produção YouTube 2 e 3:** Seguir o funil estratégico.
-4. **Sistema de captação de leads:** Site/app da Movie Money.
-
-## Sessão 5 (31/07/2026) — Auditoria, YouTube e Consolidação
-- **Criativo 01 v8c FINAL:** Remontagem completa com lip sync real no take 1 (fala exata no prompt), take 4 (CTA completo do roteiro), legendas elevadas para Safe Zone (320px) e cauda morta removida.
-- **Skill TikTok Shop Audit:** Criada a skill `tiktokshop-creative-audit` que documenta o processo forense de análise e correção de criativos.
-- **Estratégia YouTube:** Criada série de 3 vídeos (Quebra-Mitos, Máquina por Dentro, VSL) com estrutura de funil de vendas perpétuo.
-- **Roteiros YouTube:** Finalizados os roteiros do Vídeo 1 (O Quebra-Mitos) em versão dinâmica e o Vídeo 3 (VSL).
-- **Produção YouTube:** Gerado keyframe 16:9 do Beto e os 5 takes de talking head para o Vídeo 1 com lip sync real.
-- **Repositório:** Sincronização completa de todos os assets, roteiros e inteligência gerada.
+## Sessão 6 (01/08/2026) — Expansão YouTube e Rigor Técnico
+- **Vídeo 1 YouTube:** Montagem completa em 2K com 17 takes únicos de 10s (sem loop).
+- **Narração:** Regeneração de todos os áudios (Beto/Fenrir) com tom mais assertivo e rítmico.
+- **Lip Sync:** Implementação do padrão de "fala exata no prompt" para garantir sincronia labial.
+- **GitHub:** Sincronização de todos os novos assets, áudios e roteiros refinados.
+- **Zoom Dinâmico:** Planejamento do efeito Ken Burns para a v4 da montagem.
