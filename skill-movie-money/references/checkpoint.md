@@ -1,6 +1,6 @@
 # Checkpoint do Projeto Movie Money
 
-**Última atualização:** 01 de agosto de 2026 — Sessão 7 (Montagem v4c — Lip Sync Nativo + Ken Burns + Áudio Normalizado)
+**Última atualização:** 01 de agosto de 2026 — Sessão 7 (Diagnóstico Forense v4c + Plano de Refatoração v5)
 
 ## Visão do Projeto
 Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para TikTok Shop e VSL. O foco é retenção visual e conversão através de roteiros validados e lip sync real.
@@ -11,7 +11,8 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 |---------|--------|-------------|
 | **Vídeo YouTube 1 (Quebra-Mitos) v3** | ✅ Montado | `criativos/video_institucional_youtube/` |
 | **Vídeo YouTube 1 (Quebra-Mitos) v4** | ✅ Montado | `criativos/video_institucional_youtube/video1_quebra_mitos_v4_FINAL.mp4` |
-| **Vídeo YouTube 1 (Quebra-Mitos) v4c** | ✅ **FINAL APROVADO** | `criativos/video_institucional_youtube/video1_quebra_mitos_v4c_FINAL.mp4` |
+| **Vídeo YouTube 1 (Quebra-Mitos) v4c** | ⚠️ **COM FALHAS** | `criativos/video_institucional_youtube/video1_quebra_mitos_v4c_FINAL.mp4` |
+| **Diagnóstico Forense v4c** | ✅ Concluído | `references/sessao7_diagnostico_forense.md` |
 | **Takes de Talking Head (Beto)** | ✅ 17 takes únicos | `criativos/video_institucional_youtube/takes/` |
 | **Narração Beto (Fenrir) v1** | ✅ Gerados | `criativos/video_institucional_youtube/takes/audio_s*.wav` |
 | **Narração Beto (Fenrir) v2** | ✅ Gerados | `criativos/video_institucional_youtube/takes/audio_s*_v2.wav` |
@@ -22,7 +23,8 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 | **Skill de Auditoria Forense** | ✅ Atualizada | `skills/tiktokshop-creative-audit/SKILL.md` |
 | **Script de Montagem v3** | ✅ Finalizado | `scripts/montar_video1_v3.sh` |
 | **Script de Montagem v4** | ✅ Finalizado | `scripts/montar_video1_v4.sh` |
-| **Script de Montagem v4c** | ✅ **FINAL** | `scripts/montar_video1_v4c.sh` |
+| **Script de Montagem v4c** | ✅ Disponível | `scripts/montar_video1_v4c.sh` |
+| **Vídeo YouTube 1 (Quebra-Mitos) v5** | ⏳ Pendente | `criativos/video_institucional_youtube/video1_quebra_mitos_v5_FINAL.mp4` |
 
 ## Padrão Técnico das Sessões 6 e 7
 - **Zero Loop:** Cada take de Talking Head é único (mínimo 10s).
@@ -65,7 +67,31 @@ Movie Money é uma máquina de produção de criativos de venda (UGC e POV) para
 | Bloco S5 CTA | TH (3 takes) | 27.9s | audio_s5_cta_v2.wav |
 | SC8 Logo Final | SC + Ken Burns | 4.0s | silencioso |
 
-## Próximos Passos (Backlog para Sessão 8)
+## Backlog Sessão 8 — PRIORIDADE MÁXIMA
+
+### 1. Refatoração do Vídeo 1 — v5 (BLOCKER)
+
+O vídeo v4c tem **5 takes com áudio em inglês** que impedem a publicação. Detalhes completos em `references/sessao7_diagnostico_forense.md`.
+
+**Takes com áudio em inglês (a corrigir):**
+
+| Take | Timestamp | Solução |
+|------|-----------|----------|
+| `t_s1d_retencao.mp4` | 00:28-00:37 | Substituir áudio por `audio_s1_hook_v2.wav` (trecho 26s-36s) |
+| `t_s3c_aponta_tela.mp4` | 01:52-02:02 | Substituir áudio por `audio_s3_maquina_v2.wav` (trecho 20s-30s) |
+| `t_s2c_bracos_cruzados.mp4` | 02:02-02:12 | Substituir áudio por `audio_s3_maquina_v2.wav` (trecho 30s-40s) |
+| `t_s4b_sorriso_canto.mp4` | 03:01-03:11 | Substituir áudio por `audio_s4_resultado_v2.wav` (trecho 20s-30s) |
+| `t_s5b_aponta_camera.mp4` | 03:34-03:44 | Substituir áudio por `audio_s5_cta_v2.wav` (trecho 20s-30s) |
+
+**Outras melhorias planejadas para v5:**
+- Logo animada no início (zoom out + fade, 4s)
+- Crossfade 0.16s entre takes de TH consecutivos
+- Eliminar repetições de conteúdo
+- Estrutura dinâmico com narração contínua + B-roll como insert cuts
+
+### 2. Backlog Original (após v5 aprovado)
+
+**Prioridade Original Sessão 8:**
 
 1. **Produção Vídeo 2:** Iniciar takes da "Máquina por Dentro" (roteiro já escrito em `video2_maquina_por_dentro_roteiro_v1.md`).
 2. **Produção Vídeo 3:** Finalizar VSL Puro (roteiro em `roteiro_v1.md`).
