@@ -1,0 +1,6 @@
+[00:00.1 - 00:01.6] E não para por aí.
+[00:01.6 - 00:03.1] Legendas.
+[00:03.1 - 00:08.7] A gente queima as legendas em amarelo e branco no estilo karaokê.
+[00:08.7 - 00:11.5] Mas repara na posição.
+[00:11.5 - 00:21.6] A gente eleva as legendas trezentos e vinte pixels acima da borda inferior, pra não ficar escondida atrás daquele
+[00:21.6 - 00:24.6] carrinho laranja do TikTok Shop

@@ -1,0 +1,37 @@
+{
+  "duration": 25.08,
+  "language": "por",
+  "segments": [
+    {
+      "start": 0.099,
+      "end": 1.639,
+      "text": "E não para por aí."
+    },
+    {
+      "start": 1.639,
+      "end": 3.139,
+      "text": "Legendas."
+    },
+    {
+      "start": 3.139,
+      "end": 8.679,
+      "text": "A gente queima as legendas em amarelo e branco no estilo karaokê."
+    },
+    {
+      "start": 8.679,
+      "end": 11.5,
+      "text": "Mas repara na posição."
+    },
+    {
+      "start": 11.5,
+      "end": 21.639,
+      "text": "A gente eleva as legendas trezentos e vinte pixels acima da borda inferior, pra não ficar escondida atrás daquele"
+    },
+    {
+      "start": 21.639,
+      "end": 24.639,
+      "text": "carrinho laranja do TikTok Shop"
+    }
+  ],
+  "full_text": "E não para por aí. Legendas. A gente queima as legendas em amarelo e branco no estilo karaokê. Mas repara na posição. A gente eleva as legendas trezentos e vinte pixels acima da borda inferior, pra não ficar escondida atrás daquele carrinho laranja do TikTok Shop"
+}

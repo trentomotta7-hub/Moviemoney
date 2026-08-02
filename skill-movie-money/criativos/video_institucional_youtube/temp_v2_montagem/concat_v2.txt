@@ -1,0 +1,25 @@
+# SEÇÃO 1 — Hook da Prova Lógica
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t1a_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc1_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t1b_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t1c_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t1d_norm.mp4'
+# SEÇÃO 2 — A Arquitetura do Repositório
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc2_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc3_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t2a_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t2b_norm.mp4'
+# SEÇÃO 3 — O Banco Narrativo
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc4_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc5_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc6_final.mp4'
+# SEÇÃO 4 — Lip Sync e Safe Zone
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t3a_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc7_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc8_final.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t3b_norm.mp4'
+# SEÇÃO 5 — CTA de Transição
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t4a_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t4b_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/t4c_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/temp_v2_montagem/sc9_logo.mp4'
