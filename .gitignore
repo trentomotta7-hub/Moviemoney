@@ -2,3 +2,8 @@
 # Vídeos finais grandes (>100MB) — armazenar externamente
 skill-movie-money/criativos/**/*_FINAL.mp4
 skill-movie-money/criativos/**/*_v*.mp4
+
+# Temporários de montagem
+skill-movie-money/criativos/**/temp_v*/
+__pycache__/
+*.pyc
