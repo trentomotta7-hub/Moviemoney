@@ -1,0 +1,9 @@
+Com base na análise do vídeo fornecido, aqui estão as respostas para as suas perguntas:
+
+1. **Marca d'água visível?** Sim, a marca d'água com o logo "M M MOVIE MONEY CRIATIVOS QUE VENDEM NO TIKTOK SHOP" está visível de forma consistente no canto inferior direito durante quase todo o vídeo, tanto nas cenas em que o apresentador fala quanto nas telas de demonstração.
+2. **Alternação entre Beto falando e telas de demonstração?** Sim, o vídeo apresenta uma dinâmica clara de alternância. Ele corta frequentemente entre o apresentador (Beto) falando diretamente para a câmera em um ambiente de escritório e várias telas de demonstração. Essas telas incluem exemplos de anúncios genéricos, editores de código (Visual Studio Code), terminais executando scripts, e gráficos explicativos sobre personas e "safe zones" do TikTok.
+3. **Logo final aparece no fim?** Sim. Nos segundos finais do vídeo (a partir de 03:52), a tela escurece e uma animação final é exibida no centro da tela com o texto "MOVIE MONEY", seguido por "ASSISTA AO VÍDEO 3 — A OFERTA" e o site "movie-money.com.br".
+4. **Qualidade geral do vídeo montado:** A qualidade geral do vídeo é alta e profissional.
+    * **Imagem:** As cenas com o apresentador possuem boa iluminação, foco nítido e um enquadramento adequado. As capturas de tela e os gráficos inseridos são de alta resolução e fáceis de ler.
+    * **Áudio:** A captação de áudio da voz do apresentador é clara, sem ruídos de fundo perceptíveis, garantindo que a mensagem seja facilmente compreendida.
+    * **Edição:** A montagem é dinâmica e mantém um bom ritmo. Os cortes entre o apresentador e as demonstrações visuais são precisos e ajudam a ilustrar os pontos que estão sendo explicados, tornando o conteúdo mais engajador.

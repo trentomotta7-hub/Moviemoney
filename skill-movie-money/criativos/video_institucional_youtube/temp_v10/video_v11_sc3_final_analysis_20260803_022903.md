@@ -1,0 +1,1 @@
+A voz no vídeo é masculina.

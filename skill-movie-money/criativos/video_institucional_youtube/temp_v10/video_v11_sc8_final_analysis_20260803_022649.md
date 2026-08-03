@@ -1,0 +1,1 @@
+A voz no vídeo é masculina e soa natural, como a de uma pessoa real falando, com entonação e ritmo próprios da fala humana.

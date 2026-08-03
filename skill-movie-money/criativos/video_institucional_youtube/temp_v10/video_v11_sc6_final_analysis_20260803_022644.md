@@ -1,0 +1,1 @@
+A voz no vídeo é masculina. Ela soa robótica e artificial, com uma entonação monótona que sugere ter sido gerada por um sistema de conversão de texto em fala (TTS).

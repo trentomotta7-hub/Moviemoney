@@ -1,0 +1,1 @@
+A voz é masculina. Com certeza absoluta, trata-se de um timbre característico de um homem adulto, com uma tonalidade média-grave, clara e firme.

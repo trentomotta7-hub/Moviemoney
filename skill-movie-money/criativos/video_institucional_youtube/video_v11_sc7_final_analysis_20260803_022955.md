@@ -1,0 +1,1 @@
+A voz no vídeo é masculina e soa bastante natural. A entonação e a pronúncia são claras e expressivas, parecendo ser a gravação de um locutor humano, sem características robóticas ou artificiais evidentes.

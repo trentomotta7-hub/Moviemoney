@@ -1,0 +1,3 @@
+A voz no vídeo é **masculina**.
+
+Ela soa bastante **natural**. Apesar de o texto na tela indicar que é uma voz gerada por inteligência artificial (TTS - Text-to-Speech), ela tem uma qualidade muito alta. A entonação é adequada, com pausas naturais e um tom de voz conversacional e explicativo, sem a monotonia típica de vozes robóticas mais antigas. A qualidade do áudio é clara e nítida, facilitando a compreensão de cada palavra.
