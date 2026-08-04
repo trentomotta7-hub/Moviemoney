@@ -36,9 +36,9 @@ A Movie Money é uma empresa de produção de criativos de alta conversão para 
 |---|---|---|
 | **Vídeo 1 — Quebrando Mitos** | ✅ PRONTO | `criativos/video_institucional_youtube/video1_quebra_mitos_FINAL.mp4` (54 MB) |
 | **Vídeo 2 — A Máquina por Dentro** | ✅ PRONTO (v12) | `criativos/video_institucional_youtube/` — aprovado QA, 3min58s, 20 segmentos |
-| **Landing Page** | ✅ NO AR | [moviemoney-dwepojx6.manus.space](https://moviemoney-dwepojx6.manus.space) — dark glitch, 9 seções |
+| **Landing Page** | ✅ NO AR (v3.0) | [moviemoney-dwepojx6.manus.space](https://moviemoney-dwepojx6.manus.space) — dark glitch, 13 seções, vídeo Beto integrado, mobile corrigido |
 | **Roteiro POV Sunscreen Stick** | ✅ PRONTO | `criativos/roteiros/POV_sunscreen_stick_spf_v1.md` |
-| **Vídeo CEO (Beto apresentação)** | 🔄 EM PRODUÇÃO | `criativos/video_beto_ceo/` — take1 gerado, montagem pendente |
+| **Vídeo CEO (Beto apresentação)** | ✅ PRONTO | `criativos/video_beto_ceo/video_beto_ceo_v1_FINAL.mp4` (7.1 MB, 38s, QA aprovado) |
 | **Vídeo POV Sunscreen Stick** | ❌ NÃO INICIADO | Roteiro pronto, produção não começou |
 | **Vídeo 3 — A Oferta (VSL)** | ❌ NÃO INICIADO | Próxima campanha |
 | **Backend de leads (landing)** | ❌ NÃO INICIADO | Formulário não salva no banco ainda |
@@ -47,10 +47,10 @@ A Movie Money é uma empresa de produção de criativos de alta conversão para 
 
 ## Próximas Ações IMEDIATAS (Sessão 15 em andamento)
 
-1. **[EM ANDAMENTO]** Gerar vídeo do Beto como CEO — abordagem psicológica "as pessoas mentem que é fácil vender no TikTok Shop" — takes + montagem + upload
-2. **[PENDENTE]** Corrigir bug mobile da landing page (no mobile não aparece vídeo nem imagens)
-3. **[PENDENTE]** Integrar vídeo do Beto CEO na landing page (seção hero ou seção dedicada)
-4. **[PENDENTE]** Commit + push completo no GitHub
+1. **[✅ CONCLUÍDO]** Vídeo do Beto CEO gerado, montado e aprovado em QA (38s, 4 takes)
+2. **[✅ CONCLUÍDO]** Landing page recriada com correção mobile (playsinline, muted, poster fallback)
+3. **[✅ CONCLUÍDO]** Vídeo do Beto integrado no hero + seção dedicada com player controls
+4. **[✅ CONCLUÍDO]** Checkpoint salvo (677ccddb) e commit no GitHub
 
 ---
 

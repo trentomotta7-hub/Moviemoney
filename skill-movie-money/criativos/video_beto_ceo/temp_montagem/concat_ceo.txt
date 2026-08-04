@@ -1,0 +1,4 @@
+file '01_take1_hook.mp4'
+file '02_take2_verdade.mp4'
+file '03_take3_solucao.mp4'
+file '04_take4_cta.mp4'
