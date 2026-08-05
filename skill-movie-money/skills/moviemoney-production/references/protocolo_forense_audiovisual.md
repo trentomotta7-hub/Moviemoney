@@ -121,18 +121,22 @@ generate_video(generate_audio=False)  # gera boca para áudio interno invisível
 
 ---
 
-## Limitação Técnica Confirmada
+## O Padrão v5 de Lip Sync (Testado e Aprovado)
 
-> **`gemini-omni-flash-preview` gera movimentos labiais em inglês, independentemente do idioma do prompt.**
-> Testado e confirmado em 05/08/2026. Não há workaround disponível sem serviço externo.
+**Para vídeos GC (rosto visível):**
+A única forma de garantir lip sync real (boca movendo idêntico à palavra do roteiro) é **NUNCA** separar áudio e vídeo.
+1. Divida o roteiro em takes curtos (um por frase).
+2. Use `generate_audio=True` em cada take.
+3. Coloque o texto EXATO do roteiro no prompt.
+4. O modelo gerará o vídeo e o áudio nativo juntos.
+5. Concatene as streams completas (vídeo + áudio nativo) no ffmpeg.
 
-**Solução definitiva para lip sync real em português:**
-- Integrar HeyGen, Rask.ai ou D-ID para video translation com lip sync nativo
-- Enquanto não integrado: usar formato voice-over (personagem em ação sem falar + áudio TTS sobreposto)
+**Para vídeos POV (sem rosto):**
+`generate_audio=False` + TTS externo (Sulafat) continua sendo a melhor abordagem, pois não há boca para sincronizar.
 
 ## Registro de Bugs de Lip Sync
 
 | Data | Vídeo | Causa | Correção |
 |------|-------|-------|----------|
-| 05/08/2026 | sunscreen_stick_marina_GC_v1/v2/v3 | gemini-omni gera lábios em inglês | Usar voice-over ou integrar HeyGen |
+| 05/08/2026 | sunscreen_stick_marina_GC_v1-v4 | TTS externo sobre vídeo sem áudio | Aplicado Padrão v5: generate_audio=True + áudio nativo |
 | 04/08/2026 | video_beto_ceo_v1 (BUG-007) | Keyframes diferentes por take | Keyframe mestre único + atempo |

@@ -22,23 +22,25 @@ Esta skill automatiza o rigor técnico e o estilo visual dos vídeos da Movie Mo
 
 O protocolo completo com comandos exatos está em: `references/protocolo_forense_audiovisual.md`
 
-### Causa raiz do lip sync fora (BUG documentado e limitação técnica)
+### Causa raiz do lip sync fora e Estratégia Definitiva
 
-**Limitação permanente do `gemini-omni-flash-preview`:** O modelo gera movimentos labiais em inglês, independentemente do idioma do prompt. Não há como obter lip sync nativo em português com este modelo. Isso foi testado e confirmado em 05/08/2026.
+**A Regra de Ouro do Lip Sync (Padrão v5):**
+Para garantir que o movimento da boca seja idêntico à palavra dita pelo roteiro, **NUNCA** gere takes com `generate_audio=False` para depois sobrepor áudio externo em vídeos de rosto falante.
 
-**Estratégias válidas por formato:**
+**O Pipeline Definitivo (Testado e Aprovado):**
+1. O roteiro deve ser dividido frase por frase (um take por frase).
+2. Em cada take, o texto **EXATO** da fala deve ser incluído no prompt.
+3. **OBRIGATÓRIO:** Usar `generate_audio=True` em todos os takes de rosto falante.
+4. O modelo gerará o vídeo com o áudio nativo correspondente.
+5. Na montagem, **NÃO EXTRAIA** o áudio. Concatene os takes originais completos (vídeo + áudio nativo).
+6. Ajuste o volume final com `loudnorm -16 LUFS`.
 
-| Formato | Estratégia | Lip Sync |
-|---------|-----------|----------|
-| **POV** (mãos, sem rosto) | `generate_audio=False` + TTS externo | N/A — sem boca |
-| **GC** (rosto visível) | Takes com personagem em movimento natural (sem falar) + narração em voice-over | Não há boca falando = sem problema |
-| **GC com lip sync real** | Integração com HeyGen / Rask.ai / D-ID (serviço externo) | Real |
+**Tabela de Estratégias por Formato:**
 
-**Regra de ouro para GC sem serviço externo:**
-- Gerar takes com a personagem em ação (demonstrando produto, gesticulando, reagindo) — SEM falar diretamente
-- Adicionar narração em voice-over (TTS Sulafat/Aoede) sobre as imagens
-- Resultado: vídeo coerente, sem lip sync falso, visualmente profissional
-- Isso é amplamente usado em UGC profissional e não prejudica a conversão
+| Formato | Estratégia de Áudio | Lip Sync |
+|---------|---------------------|----------|
+| **POV** (mãos, sem rosto) | `generate_audio=False` + TTS externo (Sulafat/Aoede) | N/A — sem boca |
+| **GC** (rosto visível) | `generate_audio=True` + Texto exato no prompt + Áudio nativo | **Real** (gerado junto com o vídeo) |
 
 ---
 
@@ -117,11 +119,9 @@ Siga EXATAMENTE este pipeline bash para garantir qualidade profissional:
    - Obrigatório: `-video_track_timescale 24000` para evitar dessincronia.
 
 3. **Áudio (Voz e Normalização):**
-   - Para personagens (ex: Marina Costa), **NÃO USAR VOZ ROBÓTICA**.
-   - Testar e escolher vozes naturais com emoção e respiração (ex: `Sulafat`, `Aoede`, `Vindemiatrix`).
-   - Ajustar velocidade do áudio com `-af "atempo=X"` para caber na duração visual.
-   - Juntar áudio e vídeo concatenado.
-   - Normalizar áudio final para **-16 LUFS** (`-af "loudnorm=I=-16:TP=-1.5:LRA=11"`).
+   - **Para GC (Rosto visível):** Manter o áudio nativo gerado junto com o vídeo (`generate_audio=True`). Concatenar as streams juntas.
+   - **Para POV (Sem rosto):** Usar vozes naturais (`Sulafat`, `Aoede`, `Vindemiatrix`). Ajustar velocidade com `-af "atempo=X"` e juntar ao vídeo concatenado.
+   - Normalizar áudio final de ambos os formatos para **-16 LUFS** (`-af "loudnorm=I=-16:TP=-1.5:LRA=11"`).
 
 4. **Overlays Finais (Marca d'água e Preço):**
    - Marca d'água "MOVIE MONEY": `x=w-tw-20:y=h-th-20:fontsize=18:fontcolor=white:alpha=0.5`
@@ -135,7 +135,8 @@ Siga EXATAMENTE este pipeline bash para garantir qualidade profissional:
 ## Regras de Ouro de Produção
 
 - **Lip Sync:** A fala no prompt deve ser idêntica ao roteiro. Gerar take de vídeo com lip sync, não usar TTS robótico.
-- **Vozes Naturais:** Nunca use TTS robótico sem emoção. Para UGC, use vozes com pausas naturais, respiração e entonação de "amiga/amigo" (ex: vozes da skill tts-prompter com instruções de atuação). Ajuste a velocidade (`atempo`) no ffmpeg para manter o dinamismo.
+- **Vozes Naturais (POV):** Nunca use TTS robótico. Use vozes com pausas naturais (ex: `Sulafat`). Ajuste a velocidade (`atempo`) no ffmpeg.
+- **Lip Sync Real (GC):** Para vídeos GC, o áudio deve ser nativo (`generate_audio=True`), gerado a partir do texto exato do roteiro no prompt. Não use TTS externo para vídeos com rosto falante.
 - **Dinamismo:** Alternar entre personagem e tela a cada 5-7 segundos.
 - **Transições:** Crossfade de 0.3s entre takes do mesmo personagem.
 - **Safe Zone:** Legendas e elementos críticos acima de 320px da base.
