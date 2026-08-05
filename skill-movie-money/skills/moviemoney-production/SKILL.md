@@ -9,23 +9,25 @@ Esta skill automatiza o rigor técnico e o estilo visual dos vídeos da Movie Mo
 
 ---
 
-## ⚠️ REGRAS CRÍTICAS DE PRODUTO — LEIA ANTES DE QUALQUER PRODUÇÃO
+## ⚠️ REGRAS CRÍTICAS DE PRODUTO E QUALIDADE — LEIA ANTES DE PRODUZIR
 
-### Regra 1 — Consistência de Imagem do Produto (Anti-Strike)
+### Regra 1 — Consistência de Imagem do Produto (A Regra de Ouro Anti-Strike)
 
-> **O produto que aparece nos vídeos e nas fotos dos criativos DEVE SER IDÊNTICO ao produto minerado.**
+> **O produto que aparece nos vídeos DEVE SER IDÊNTICO ao produto minerado em TODOS OS TAKES.**
 
-Isso significa:
+Esta é a regra perpétua mais importante da Movie Money. Se o produto mudar de cor, formato, tampa ou rótulo entre os takes, o vídeo será REPROVADO no QA.
+
+**O que isso significa na prática:**
 - A embalagem, cor, formato e design do produto no criativo devem ser **pixel-perfect** iguais ao produto listado na loja.
-- **Nunca** usar imagens genéricas ou similares de outros fornecedores.
-- **Nunca** alterar digitalmente a embalagem de forma que o produto pareça diferente do que o cliente vai receber.
-- Usar sempre a imagem oficial do produto minerado como referência visual para todos os takes.
-- Motivo: divergência entre o produto anunciado e o produto entregue gera **strike de anúncio falso** no TikTok Shop e pode resultar em suspensão da conta.
+- **Nunca** usar imagens genéricas ou similares. Se o produto é um "Sunscreen Stick branco com base azul", ele NÃO PODE aparecer como um "tubo branco" ou "bastão todo azul" em takes subsequentes.
+- Para geração com IA (`generate_video` ou `generate_image`), você **DEVE** passar a imagem oficial do produto no parâmetro `references` ou `keyframes` em **CADA CHAMADA** de geração onde o produto apareça.
+- Motivo: divergência visual gera **strike de anúncio falso** no TikTok Shop, banimento da conta e reprovação imediata no QA.
 
-**Fluxo correto:**
-1. Minerar o produto → salvar as imagens oficiais em `criativos/{produto}/imagens_produto/`
-2. Usar essas imagens como referência visual em TODOS os takes e criativos daquele produto
-3. Verificar antes de publicar: o produto no vídeo é idêntico ao produto na página da loja?
+**Fluxo obrigatório:**
+1. Minerar o produto → salvar a foto oficial frontal como `produto_frente.png`
+2. Gerar keyframes para cada take passando `produto_frente.png` como referência
+3. Gerar vídeos passando os keyframes consistentes
+4. QA obrigatório: "O produto é exatamente o mesmo do início ao fim?"
 
 ---
 
@@ -67,20 +69,40 @@ Isso significa:
 - **SC:** Usar imagens oficiais do produto minerado (Regra 1). Nunca usar imagens genéricas.
 - **VO:** Gerar take de Beto/persona falando o texto do VO com lip sync real. O áudio do VO é extraído e aplicado sobre o SC.
 
-### Fase 3 — Processamento e Montagem
-1. Normalizar todos os takes para 1280x720, loudnorm -16 LUFS
-2. Gerar SCs animados (Ken Burns ou animação de produto)
-3. Combinar SC visual + áudio do take VO (lip sync real, não TTS)
-4. Concatenar na ordem do roteiro
-5. Aplicar marca d'água
-6. Verificar com `manus-analyze-video` antes de entregar
+### Fase 3 — Pipeline de Edição e Montagem (Padrão Ouro)
+
+Siga EXATAMENTE este pipeline bash para garantir qualidade profissional:
+
+1. **Normalização de Takes (Vídeo):**
+   - Resolução: 720x1280 (9:16)
+   - FPS: 30fps
+   - Codec: H.264 (`-c:v libx264 -preset fast -crf 23`)
+   - Prevenir problemas de concat: remover áudio original (`-an`) e forçar aspect ratio.
+
+2. **Concatenação:**
+   - Usar `concat_list.txt` e `ffmpeg -f concat`.
+   - Obrigatório: `-video_track_timescale 24000` para evitar dessincronia.
+
+3. **Áudio (Voz e Normalização):**
+   - Para personagens (ex: Marina Costa), **NÃO USAR VOZ ROBÓTICA**.
+   - Testar e escolher vozes naturais com emoção e respiração (ex: `Sulafat`, `Aoede`, `Vindemiatrix`).
+   - Ajustar velocidade do áudio com `-af "atempo=X"` para caber na duração visual.
+   - Juntar áudio e vídeo concatenado.
+   - Normalizar áudio final para **-16 LUFS** (`-af "loudnorm=I=-16:TP=-1.5:LRA=11"`).
+
+4. **Overlays Finais (Marca d'água e Preço):**
+   - Marca d'água "MOVIE MONEY": `x=w-tw-20:y=h-th-20:fontsize=18:fontcolor=white:alpha=0.5`
+   - Overlay de preço (CTA final): `x=(w-tw)/2:y=h-th-80:fontsize=30:fontcolor=white:alpha=0.95:enable='gte(t,TEMPO_CTA)'`
+
+5. **QA Final:**
+   - Sempre rodar `manus-analyze-video` exigindo nota nos critérios: consistência do produto, áudio natural, ritmo, e overlay de preço.
 
 ---
 
 ## Regras de Ouro de Produção
 
 - **Lip Sync:** A fala no prompt deve ser idêntica ao roteiro. Gerar take de vídeo com lip sync, não usar TTS robótico.
-- **Áudio SC:** Sempre usar o áudio extraído de um take de vídeo do personagem, nunca TTS de terceiros.
+- **Vozes Naturais:** Nunca use TTS robótico sem emoção. Para UGC, use vozes com pausas naturais, respiração e entonação de "amiga/amigo" (ex: vozes da skill tts-prompter com instruções de atuação). Ajuste a velocidade (`atempo`) no ffmpeg para manter o dinamismo.
 - **Dinamismo:** Alternar entre personagem e tela a cada 5-7 segundos.
 - **Transições:** Crossfade de 0.3s entre takes do mesmo personagem.
 - **Safe Zone:** Legendas e elementos críticos acima de 320px da base.
