@@ -1,0 +1,4 @@
+file 'take1_hook_norm.mp4'
+file 'take2_problema_norm.mp4'
+file 'take3_solucao_norm.mp4'
+file 'take4_cta_norm.mp4'
