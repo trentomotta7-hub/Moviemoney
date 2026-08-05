@@ -46,23 +46,26 @@ Para garantir que o movimento da boca seja idêntico à palavra dita pelo roteir
 
 ## ⚠️ REGRAS CRÍTICAS DE PRODUTO E QUALIDADE — LEIA ANTES DE PRODUZIR
 
-### Regra 1 — Consistência de Imagem do Produto (A Regra de Ouro Anti-Strike)
+### Regra 1 — Produto Âncora Obrigatório (A Regra de Ouro Anti-Strike)
 
 > **O produto que aparece nos vídeos DEVE SER IDÊNTICO ao produto minerado em TODOS OS TAKES.**
 
-Esta é a regra perpétua mais importante da Movie Money. Se o produto mudar de cor, formato, tampa ou rótulo entre os takes, o vídeo será REPROVADO no QA.
+Esta é a regra perpétua mais importante da Movie Money. Se o produto mudar de cor, formato, tampa ou rótulo entre os takes, o vídeo será REPROVADO no QA. O TikTok Shop processa anunciantes por "anúncio falso" (strike grave) se o produto do vídeo diferir do produto entregue.
 
-**O que isso significa na prática:**
-- A embalagem, cor, formato e design do produto no criativo devem ser **pixel-perfect** iguais ao produto listado na loja.
-- **Nunca** usar imagens genéricas ou similares. Se o produto é um "Sunscreen Stick branco com base azul", ele NÃO PODE aparecer como um "tubo branco" ou "bastão todo azul" em takes subsequentes.
-- Para geração com IA (`generate_video` ou `generate_image`), você **DEVE** passar a imagem oficial do produto no parâmetro `references` ou `keyframes` em **CADA CHAMADA** de geração onde o produto apareça.
-- Motivo: divergência visual gera **strike de anúncio falso** no TikTok Shop, banimento da conta e reprovação imediata no QA.
+**O Sistema de Produto Âncora:**
+1. Para cada novo produto, rode o script: `bash skills/moviemoney-production/scripts/criar_projeto_produto.sh "nome_produto"`
+2. Salve a imagem oficial do produto minerado em: `criativos/nome_produto/produto_ancora/produto_referencia.png`
+3. Esta imagem é a sua **ÂNCORA VISUAL**. Ela nunca muda.
 
-**Fluxo obrigatório:**
-1. Minerar o produto → salvar a foto oficial frontal como `produto_frente.png`
-2. Gerar keyframes para cada take passando `produto_frente.png` como referência
-3. Gerar vídeos passando os keyframes consistentes
-4. QA obrigatório: "O produto é exatamente o mesmo do início ao fim?"
+**Uso Obrigatório em Geração (IA):**
+- Você **DEVE** passar o `produto_referencia.png` no parâmetro `references` (para imagens) ou `keyframes` (para vídeos) em **CADA CHAMADA** de geração onde o produto apareça.
+- **Nunca** gere takes com produto baseado apenas em texto (prompt). O modelo vai alucinar designs diferentes a cada take.
+
+**Checklist Anti-Strike:**
+- [ ] O arquivo `produto_referencia.png` foi passado como referência no Take 1?
+- [ ] O arquivo `produto_referencia.png` foi passado como referência no Take 2?
+- [ ] O arquivo `produto_referencia.png` foi passado como referência no Take N?
+- [ ] QA forense confirmou que o produto é 100% idêntico do início ao fim?
 
 ---
 
@@ -135,8 +138,10 @@ Siga EXATAMENTE este pipeline bash para garantir qualidade profissional:
 ## Regras de Ouro de Produção
 
 - **Lip Sync:** A fala no prompt deve ser idêntica ao roteiro. Gerar take de vídeo com lip sync, não usar TTS robótico.
-- **Vozes Naturais (POV):** Nunca use TTS robótico. Use vozes com pausas naturais (ex: `Sulafat`). Ajuste a velocidade (`atempo`) no ffmpeg.
-- **Lip Sync Real (GC):** Para vídeos GC, o áudio deve ser nativo (`generate_audio=True`), gerado a partir do texto exato do roteiro no prompt. Não use TTS externo para vídeos com rosto falante.
+- **Atuação Vocal (Prompt de Áudio Obrigatório):** O áudio (seja via TTS externo ou `generate_audio=True`) **NUNCA** deve receber apenas o texto puro. Você deve fornecer instruções de atuação, emoção, ritmo e respeitar pontuações (vírgulas, pontos).
+  - *Exemplo Ruim:* "Compre agora tá barato"
+  - *Exemplo Padrão Ouro:* "Fale em português brasileiro com um tom de amiga sincera e urgente. Faça uma pequena pausa após a vírgula para dar ênfase: 'Tá menos de trinta e cinco reais, [pausa leve] e dura uns dois meses!'"
+- **Lip Sync Real (GC):** Para vídeos GC, o áudio deve ser nativo (`generate_audio=True`). O prompt de áudio deve conter as instruções de atuação + o texto EXATO do roteiro. Não use TTS externo para vídeos com rosto falante.
 - **Dinamismo:** Alternar entre personagem e tela a cada 5-7 segundos.
 - **Transições:** Crossfade de 0.3s entre takes do mesmo personagem.
 - **Safe Zone:** Legendas e elementos críticos acima de 320px da base.
