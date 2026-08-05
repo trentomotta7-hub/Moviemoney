@@ -1,0 +1,5 @@
+file 'beat1_hook_raw_norm.mp4'
+file 'beat2_problema_raw_norm.mp4'
+file 'beat3_causa_raw_norm.mp4'
+file 'beat4_solucao_raw_norm.mp4'
+file 'beat5_cta_extended.mp4'

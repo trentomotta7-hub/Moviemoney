@@ -12,8 +12,8 @@
 | **Projeto** | Movie Money — Criativos que Vendem no TikTok Shop |
 | **Repositório** | `trentomotta7-hub/Moviemoney` |
 | **Branch ativa** | `master` |
-| **Última sessão** | Sessão 15 — 04/08/2026 |
-| **Último commit** | `4e39f35` — roteiro POV Sunscreen Stick SPF |
+| **Última sessão** | Sessão 16 — 05/08/2026 |
+| **Último commit** | `sessao16` — vídeo POV Sunscreen Stick SPF v2 (QA 9.8/10) |
 | **Landing page** | [moviemoney-dwepojx6.manus.space](https://moviemoney-dwepojx6.manus.space) |
 
 ---
@@ -39,28 +39,29 @@ A Movie Money é uma empresa de produção de criativos de alta conversão para 
 | **Landing Page** | ✅ NO AR (v3.0) | [moviemoney-dwepojx6.manus.space](https://moviemoney-dwepojx6.manus.space) — dark glitch, 13 seções, vídeo Beto integrado, mobile corrigido |
 | **Roteiro POV Sunscreen Stick** | ✅ PRONTO | `criativos/roteiros/POV_sunscreen_stick_spf_v1.md` |
 | **Vídeo CEO (Beto apresentação)** | ✅ PRONTO | `criativos/video_beto_ceo/video_beto_ceo_v1_FINAL.mp4` (7.1 MB, 38s, QA aprovado) |
-| **Vídeo POV Sunscreen Stick** | ❌ NÃO INICIADO | Roteiro pronto, produção não começou |
+| **Vídeo POV Sunscreen Stick** | ✅ PRONTO (v2) | `criativos/sunscreen_stick_spf/POV/montagem/sunscreen_stick_spf_pov_v2_FINAL.mp4` (6.4 MB, 32s, QA 9.8/10) |
 | **Vídeo 3 — A Oferta (VSL)** | ❌ NÃO INICIADO | Próxima campanha |
 | **Backend de leads (landing)** | ❌ NÃO INICIADO | Formulário não salva no banco ainda |
 
 ---
 
-## Próximas Ações IMEDIATAS (Sessão 15 em andamento)
+## Próximas Ações IMEDIATAS (Sessão 16 — CONCLUÍDA)
 
-1. **[✅ CONCLUÍDO]** Vídeo do Beto CEO gerado, montado e aprovado em QA (38s, 4 takes)
-2. **[✅ CONCLUÍDO]** Landing page recriada com correção mobile (playsinline, muted, poster fallback)
-3. **[✅ CONCLUÍDO]** Vídeo do Beto integrado no hero + seção dedicada com player controls
-4. **[✅ CONCLUÍDO]** Checkpoint salvo (677ccddb) e commit no GitHub
+1. **[✅ CONCLUÍDO]** Vídeo POV Sunscreen Stick SPF v1 produzido (QA 5.4/10)
+2. **[✅ CONCLUÍDO]** Correções aplicadas: CTA completo, áudio regravado, duração estendida
+3. **[✅ CONCLUÍDO]** Vídeo POV Sunscreen Stick SPF v2 aprovado em QA (9.8/10)
+4. **[✅ CONCLUÍDO]** Checkpoint salvo e commit no GitHub
 
 ---
 
 ## Próximas Ações FUTURAS (Sessões seguintes)
 
-1. Produzir vídeo POV Sunscreen Stick SPF (roteiro pronto em `criativos/roteiros/`)
-2. Produzir Vídeo 3 "A Oferta" (VSL de vendas)
-3. Integrar backend de leads na landing page (web-db-user)
-4. Adicionar countdown de urgência no CTA da landing
-5. Criar criativos GC + POV para produto #2 (a definir)
+1. Criar variações A/B do POV Sunscreen Stick (5 hooks x 4 CTAs = 20 vídeos)
+2. Produzir criativo GC do Sunscreen Stick (Marina Costa, formato depoimento)
+3. Produzir Vídeo 3 "A Oferta" (VSL de vendas, 8-12 min, Beto CEO)
+4. Integrar backend de leads na landing page (web-db-user)
+5. Adicionar countdown de urgência no CTA da landing
+6. Criar criativos GC + POV para produto #2 (a definir)
 
 ---
 

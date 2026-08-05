@@ -5,30 +5,31 @@
 
 ---
 
-## 🔴 URGENTE — Sessão 15 (em andamento)
+## 🔴 URGENTE — Sessão 17 (próxima)
 
-### 1. Finalizar vídeo do Beto CEO
-- Take 1 gerado: `criativos/video_beto_ceo/beto_ceo_take1_hook.mp4`
-- Gerar takes 2, 3 e 4 (corpo + CTA)
-- Montar vídeo completo com ffmpeg
-- Aplicar marca d'água Movie Money
-- Rodar `manus-analyze-video` para QA
-- Salvar como `video_beto_ceo_v1_FINAL.mp4`
+### 1. Criar variações A/B do POV Sunscreen Stick
+- Roteiro base pronto: `criativos/sunscreen_stick_spf/POV/montagem/sunscreen_stick_spf_pov_v2_FINAL.mp4`
+- Gerar 5 hooks alternativos (ver roteiro, seção "Variações de Hook")
+- Gerar 4 CTAs alternativos (ver roteiro, seção "Variações de CTA")
+- Montar 20 variações (corpo único + hook/CTA trocados)
+- Publicar no TikTok Shop com tags: #sunscreen #spf #skincare #protetor
 
-### 2. Corrigir bug mobile da landing page
-- No mobile: vídeo hero não aparece, imagens não carregam
-- Causa provável: `<video autoplay>` sem `playsinline` no iOS / imagens sem `loading="lazy"` adequado
-- Solução: adicionar `playsinline muted` no video tag + fallback de imagem para mobile
-- Recriar projeto webdev ou usar ID do projeto existente
+### 2. Produzir criativo GC do Sunscreen Stick
+- Personagem: Marina Costa (A Amiga Sincera)
+- Formato: GC (Generated Content) — depoimento/review, câmera estática
+- Duração: 30-45 segundos
+- Seguir pipeline da skill moviemoney-production
 
-### 3. Integrar vídeo do Beto CEO na landing page
-- Adicionar seção "Conheça o CEO" ou substituir placeholder de vídeo no hero
-- Usar player HTML5 com poster frame (keyframe do Beto)
-- Garantir que funcione em mobile (controls, playsinline)
+### 3. Produzir Vídeo 3 "A Oferta" (VSL)
+- Roteiro a criar
+- Formato: 8-12 minutos, Beto como apresentador
+- CTA direto para landing page
+- Usar voz Fenrir (oficial do Beto)
 
-### 4. Commit + push completo
-- Incluir `.project-memory/` no commit
-- Mensagem: `checkpoint(sessão-15): vídeo CEO + correção mobile landing + sistema de memória`
+### 4. Integrar backend de leads na landing page
+- Migrar para `web-db-user` (com banco de dados)
+- Formulário salva no MySQL
+- Email de confirmação automático
 
 ---
 
