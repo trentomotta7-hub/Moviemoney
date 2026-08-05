@@ -1,0 +1,4 @@
+file 'gc_v2_take1_hook_norm.mp4'
+file 'gc_v2_take2_problema_norm.mp4'
+file 'gc_v2_take3_solucao_norm.mp4'
+file 'gc_v2_take4_cta_norm.mp4'

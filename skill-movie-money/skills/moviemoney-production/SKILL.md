@@ -1,11 +1,44 @@
 ---
 name: moviemoney-production
-description: "Produção de vídeos institucionais e criativos de alta conversão para a marca Movie Money. Use para: criar vídeos do YouTube com o personagem Beto, aplicar o Modo 50/50, configurar lip sync perfeito, transições crossfade e legendas na Safe Zone de 320px. Inclui regras de mineração de produto, consistência de imagem e obrigatoriedade de dois criativos por produto (GC + POV)."
+description: "Produção de vídeos institucionais e criativos de alta conversão para a marca Movie Money. Use para: criar vídeos do YouTube com o personagem Beto, aplicar o Modo 50/50, configurar lip sync perfeito, transições crossfade e legendas na Safe Zone de 320px. Inclui regras de mineração de produto, consistência de imagem, obrigatoriedade de dois criativos por produto (GC + POV) e protocolo forense audiovisual obrigatório antes de qualquer entrega."
 ---
 
 # Movie Money Video Production
 
 Esta skill automatiza o rigor técnico e o estilo visual dos vídeos da Movie Money, garantindo consistência entre o porta-voz (Beto) e as demonstrações técnicas.
+
+---
+
+## 🚨 REGRA PERPÉTUA — AUDITORIA FORENSE ANTES DE QUALQUER ENTREGA
+
+> **ORDEM PERMANENTE: Nenhum vídeo pode ser entregue ao usuário sem passar pelo protocolo forense completo.**
+> Entregar vídeo com lip sync fora, cauda morta ou produto inconsistente desperdiça crédito e prejudica a operação.
+
+**Antes de entregar qualquer vídeo, execute obrigatoriamente:**
+1. `ffprobe` — verificar drift entre stream de vídeo e áudio (deve ser < 0.1s)
+2. `silencedetect` — verificar cauda morta no final (silêncio > 0.3s = reprovar)
+3. `manus-analyze-video` com prompt de auditoria forense de lip sync (nota >= 7/10)
+4. `manus-analyze-video` com prompt de consistência de produto (APROVADO obrigatório)
+
+O protocolo completo com comandos exatos está em: `references/protocolo_forense_audiovisual.md`
+
+### Causa raiz do lip sync fora (BUG documentado e limitação técnica)
+
+**Limitação permanente do `gemini-omni-flash-preview`:** O modelo gera movimentos labiais em inglês, independentemente do idioma do prompt. Não há como obter lip sync nativo em português com este modelo. Isso foi testado e confirmado em 05/08/2026.
+
+**Estratégias válidas por formato:**
+
+| Formato | Estratégia | Lip Sync |
+|---------|-----------|----------|
+| **POV** (mãos, sem rosto) | `generate_audio=False` + TTS externo | N/A — sem boca |
+| **GC** (rosto visível) | Takes com personagem em movimento natural (sem falar) + narração em voice-over | Não há boca falando = sem problema |
+| **GC com lip sync real** | Integração com HeyGen / Rask.ai / D-ID (serviço externo) | Real |
+
+**Regra de ouro para GC sem serviço externo:**
+- Gerar takes com a personagem em ação (demonstrando produto, gesticulando, reagindo) — SEM falar diretamente
+- Adicionar narração em voice-over (TTS Sulafat/Aoede) sobre as imagens
+- Resultado: vídeo coerente, sem lip sync falso, visualmente profissional
+- Isso é amplamente usado em UGC profissional e não prejudica a conversão
 
 ---
 
