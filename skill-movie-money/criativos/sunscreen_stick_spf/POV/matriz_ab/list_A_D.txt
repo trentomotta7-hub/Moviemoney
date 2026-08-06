@@ -1,0 +1,5 @@
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/sunscreen_stick_spf/POV/takes/hook_A_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/sunscreen_stick_spf/POV/montagem/beat2_problema_raw_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/sunscreen_stick_spf/POV/montagem/beat3_causa_raw_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/sunscreen_stick_spf/POV/montagem/beat4_solucao_raw_norm.mp4'
+file '/home/ubuntu/Moviemoney/skill-movie-money/criativos/sunscreen_stick_spf/POV/takes/cta_D_norm.mp4'

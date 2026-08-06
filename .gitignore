@@ -5,5 +5,8 @@ skill-movie-money/criativos/**/*_v*.mp4
 
 # Temporários de montagem
 skill-movie-money/criativos/**/temp_v*/
+skill-movie-money/criativos/sunscreen_stick_spf/GC/montagem_v6/norm/
+skill-movie-money/criativos/sunscreen_stick_spf/GC/takes_v6/*.mp4
+skill-movie-money/criativos/video_institucional_youtube/VSL_Beto/audio/*.wav
 __pycache__/
 *.pyc

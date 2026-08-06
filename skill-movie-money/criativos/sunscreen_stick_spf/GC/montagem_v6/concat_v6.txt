@@ -1,0 +1,7 @@
+file 'norm/01_hook.mp4'
+file 'norm/02_problema.mp4'
+file 'norm/03_solucao_demo.mp4'
+file 'norm/04_make.mp4'
+file 'norm/05_portabilidade.mp4'
+file 'norm/06_oferta.mp4'
+file 'norm/07_cta.mp4'

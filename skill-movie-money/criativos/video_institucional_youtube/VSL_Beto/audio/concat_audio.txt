@@ -1,0 +1,4 @@
+file 'vsl_pt1.wav'
+file 'vsl_pt2.wav'
+file 'vsl_pt3.wav'
+file 'vsl_pt4.wav'
