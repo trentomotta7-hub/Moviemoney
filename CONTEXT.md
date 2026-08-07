@@ -1,138 +1,57 @@
-# CONTEXT.md — MovieMoney-Original
+# CONTEXT.md — Movie Money
 
-> **Documento de continuidade perpétua.** Atualizado automaticamente a cada checkpoint.
-> Qualquer sessão nova deve ler este arquivo para absorver o contexto completo do projeto.
+> Última atualização: 2026-08-07 19:30 UTC
+> Sessão: Continuidade — site webdev salvo permanentemente no repositório
 
----
+## Estado atual do projeto
 
-## Última Atualização
+O projeto **Movie Money** é uma plataforma full-stack de geração de criativos para TikTok Shop, com landing page dark/glitch, captura de leads com countdown de 72h, painel admin e exportação CSV.
 
-| Campo | Valor |
-|-------|-------|
-| **Data** | 2026-08-07 18:33:13 UTC |
-| **Branch** | master |
-| **Total de Commits** | 77 |
-| **Último Commit Hash** | `3da59125e7f218d33d1a88f6d8485ed6274b161d` |
-| **Remote URL** | https://github.com/trentomotta7-hub/Moviemoney.git |
+### Onde está o código
 
----
+- **Repositório GitHub:** https://github.com/trentomotta7-hub/Moviemoney.git
+- **Branch:** master
+- **Código do site web (full-stack):** `apps/movie-money-fullstack/`
+- **Stack:** React 19 + Tailwind 4 + Express 4 + tRPC 11 + Drizzle ORM + MySQL
 
-## Visão Geral do Projeto
+### Projeto webdev ativo
 
-**Repositório:** MovieMoney-Original
-**URL:** https://github.com/trentomotta7-hub/Moviemoney.git
+- **Nome:** movie-money-deploy
+- **Checkpoint atual:** manus-webdev://4579fb0b
+- **URL de preview:** https://3000-i62c3k0x74fmr0ofzne0y-25c53c3b.us2.manus.computer
+- **Caminho local:** /home/ubuntu/movie-money-deploy
 
----
+### O que está implementado
 
-## Arquivos Rastreados
+1. Landing page com 13 seções dark/glitch com parallax visível
+2. Copy focada em geração de vídeos sem precisar de tempo/equipe
+3. Formulário de captura de leads com consentimento LGPD obrigatório
+4. Página de oferta com countdown de 72h resistente a recarga
+5. Painel admin com métricas, busca, status LGPD e exportação CSV
+6. Banco de dados: tabela `leads` com token opaco 64 chars
+7. Notificação por e-mail com fallback seguro (RESEND_API_KEY pendente)
+8. 10 testes Vitest aprovados, TypeScript sem erros, build OK
+9. Parallax com hook useParallax reescrito (parentElement como referência)
+10. Componente ParallaxSection com scroll reveal
+11. Tipografia Outfit (arredondada), bordas arredondadas em todos os elementos
+12. Logo h-20 no header (h-28), 5 imagens de fundo cyberpunk
 
-```
-.gitignore
-.project-memory/.gitkeep
-.project-memory/bugs-and-fixes.md
-.project-memory/checkpoints/20260804-225000-sessao15-sistema-memoria.md
-.project-memory/checkpoints/20260804-231500-sessao15-completa.md
-.project-memory/checkpoints/20260804-232500-sessao15-video-v2.md
-.project-memory/checkpoints/20260805-182200-sessao16-pov-sunscreen.md
-.project-memory/checkpoints/20260806-015547-sessao17-fullstack-gc-vsl.md
-.project-memory/checkpoints/20260807-154518-sessao19-auditoria-audiovisual.md
-.project-memory/checkpoints/20260807-173000-sessao20-auditoria-completa.md
-.project-memory/current-context.md
-.project-memory/decisions.md
-.project-memory/next-actions.md
-.project-memory/repository-map.md
-.project-memory/sessao18-melhorias.md
-.project-memory/timeline.md
-CHANGELOG.md
-CONTEXT.md
-FRAMEWORK_ROTEIROS.md
-GUIA_POV.md
-README.md
-ROTEIROS_EXEMPLO.md
-apps/movie-money-fullstack/.githooks/pre-commit
-apps/movie-money-fullstack/.gitignore
-apps/movie-money-fullstack/.gitkeep
-apps/movie-money-fullstack/.prettierignore
-apps/movie-money-fullstack/.prettierrc
-apps/movie-money-fullstack/.project-memory/CONTINUITY_PROTOCOL.md
-apps/movie-money-fullstack/.project-memory/PERMISSIONS.md
-apps/movie-money-fullstack/.project-memory/checkpoints/20260806-013511-fullstack-continuity-baseline.md
-apps/movie-money-fullstack/.project-memory/checkpoints/20260806-015547-fullstack-landing-admin-final.md
-apps/movie-money-fullstack/.project-memory/checkpoints/20260806-015823-auto-main.md
-apps/movie-money-fullstack/.project-memory/checkpoints/TEMPLATE.md
-apps/movie-money-fullstack/.project-memory/current-context.md
-apps/movie-money-fullstack/.project-memory/next-actions.md
-apps/movie-money-fullstack/ONBOARDING.md
-apps/movie-money-fullstack/README.md
-apps/movie-money-fullstack/client/index.html
-apps/movie-money-fullstack/client/public/.gitkeep
-apps/movie-money-fullstack/client/public/__manus__/debug-collector.js
-apps/movie-money-fullstack/client/src/App.tsx
-apps/movie-money-fullstack/client/src/_core/hooks/useAuth.ts
-apps/movie-money-fullstack/client/src/components/AIChatBox.tsx
-apps/movie-money-fullstack/client/src/components/DashboardLayout.tsx
-apps/movie-money-fullstack/client/src/components/DashboardLayoutSkeleton.tsx
-apps/movie-money-fullstack/client/src/components/ErrorBoundary.tsx
-apps/movie-money-fullstack/client/src/components/ManusDialog.tsx
-apps/movie-money-fullstack/client/src/components/Map.tsx
-apps/movie-money-fullstack/client/src/components/ui/accordion.tsx
-apps/movie-money-fullstack/client/src/components/ui/alert-dialog.tsx
-apps/movie-money-fullstack/client/src/components/ui/alert.tsx
-apps/movie-money-fullstack/client/src/components/ui/aspect-ratio.tsx
-apps/movie-money-fullstack/client/src/components/ui/avatar.tsx
-apps/movie-money-fullstack/client/src/components/ui/badge.tsx
-apps/movie-money-fullstack/client/src/components/ui/breadcrumb.tsx
-apps/movie-money-fullstack/client/src/components/ui/button-group.tsx
-apps/movie-money-fullstack/client/src/components/ui/button.tsx
-apps/movie-money-fullstack/client/src/components/ui/calendar.tsx
-apps/movie-money-fullstack/client/src/components/ui/card.tsx
-apps/movie-money-fullstack/client/src/components/ui/carousel.tsx
-```
+### Pendências
 
----
+- [ ] Configurar RESEND_API_KEY e EMAIL_FROM para notificação por e-mail
+- [ ] Publicar o site (botão Publish na UI do webdev)
 
-## Histórico Recente de Commits
+### Como retomar na próxima sessão
 
-```
-[33m3da5912[m Checkpoint de continuidade — projeto MovieMoney restaurado e site webdev pronto para publicar [2026-08-07 18:26:50 UTC]
-[33m604801e[m docs: análises perceptuais sessão 20 — GC v5, POV v1, Video1, Video2, Bodysplash v8c, Beto v4
-[33m5f02df5[m checkpoint: auditoria completa sessão 20 — todos os masters com veredito REJECTED
-[33m1e7e83e[m checkpoint: auditoria audiovisual e gate obrigatório de qualidade
-[33m4af218d[m fix: remover placeholder de analytics do build
-[33m513e634[m checkpoint: atualização automática de continuidade [2026-08-07 03:38:23 UTC]
-[33me829ed6[m docs: sessão 18 — code-splitting, otimização de bundle e landing pronta para publicação
-[33ma1d8a5b[m feat: code-splitting e otimização de bundle
-[33me5423d7[m feat: conclude session 17 full-stack and creative pipeline
-[33me7edfe7[m feat(skill): produto âncora + atuação vocal — regras perpétuas anti-strike
-[33m05ab9e1[m docs(skill): padrão v5 definitivo — lip sync real, pipeline GC+POV, protocolo forense
-[33m9669ac4[m feat(gc-v5): GC Sunscreen Stick v5 FINAL — padrão definitivo de produção
-[33mb11b869[m fix(lip-sync): protocolo forense perpétuo + GC v4 + limitação técnica documentada
-[33m975c5fc[m feat(sunscreen-stick-gc): GC v1 FINAL — Marina Costa, 30s, QA 10/10 + skill atualizada
-[33m9211216[m feat(sunscreen-stick): POV v2 FINAL — Marina Costa, 32s, QA 9.8/10
-```
+1. Clonar o repositório: `gh repo clone trentomotta7-hub/Moviemoney`
+2. O código completo do site está em `apps/movie-money-fullstack/`
+3. Para rodar localmente: `cd apps/movie-money-fullstack && pnpm install && pnpm dev`
+4. O projeto webdev ativo pode ser restaurado pelo checkpoint: manus-webdev://4579fb0b
 
----
+### Assets
 
-## Contexto da Sessão Atual
-
-SESSÃO ATUAL (2026-08-07): PROJETO WEBDEV movie-money-deploy ativo. Melhorias: parallax em 6 secoes, logo maior, 5 imagens de fundo cyberpunk, hooks useParallax/useScrollReveal, glow animations, gradient text, scanlines. Arquivos: index.css, Home.tsx, useParallax.ts. Proximos passos: salvar checkpoint webdev, publicar site, configurar RESEND_API_KEY.
-
----
-
-## Como Retomar Este Projeto
-
-Para retomar este projeto exatamente onde parou, cole o seguinte prompt na próxima sessão:
-
-```
-CONTINUITY PROMPT — MovieMoney-Original
-Repositório: https://github.com/trentomotta7-hub/Moviemoney.git
-Branch: master
-Commit: 3da59125e7f218d33d1a88f6d8485ed6274b161d
-
-Por favor, clone o repositório acima, faça checkout do commit indicado,
-leia o arquivo CONTEXT.md e me informe que o contexto foi restaurado.
-```
-
----
-
-*Gerado automaticamente pelo Continuity Sync — trentomotta7-hub*
+Os assets (logo, personagens, vídeos, backgrounds) estão no storage do webdev:
+- Logo: /manus-storage/logo_a27ea66a.png
+- 6 personagens: beto, marina, lucas, rafael, beatriz, diego
+- 2 vídeos: pov-sunscreen, gc-sunscreen
+- 5 backgrounds cyberpunk: bg-hero, bg-stats, bg-problem, bg-offer, bg-cast

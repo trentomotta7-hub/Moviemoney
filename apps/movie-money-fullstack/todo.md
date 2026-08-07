@@ -21,7 +21,7 @@
 - [x] Validar landing, oferta e painel em desktop e mobile por capturas visuais.
 - [x] Atualizar documentação do projeto e registrar limitações operacionais da automação de e-mail.
 - [ ] Configurar `RESEND_API_KEY` e `EMAIL_FROM` quando houver uma conta/remetente de e-mail disponível.
-- [ ] Salvar checkpoint final e entregar a versão da aplicação.
+- [x] Salvar checkpoint final e entregar a versão da aplicação.
 - [x] Inicializar a estrutura `.project-memory` e os templates do protocolo de continuidade.
 - [x] Criar e preencher `ONBOARDING.md` como ponto único de retomada do projeto.
 - [x] Documentar contexto atual, próximas ações e permissões de colaboração.
@@ -34,3 +34,34 @@
 - [x] Capturar o painel autenticado com `role=admin` e um lead técnico visível em desktop e mobile.
 - [x] Verificar no banco que a identidade exibida nas capturas do painel possui `role=admin`.
 - [x] Registrar que os logs públicos sem cookie vieram dos testes `curl`, enquanto o navegador exibiu o dashboard autenticado completo.
+
+
+## Melhorias visuais — site tecnológico e imersivo
+
+- [x] Gerar imagens de fundo tecnológicas (cyberpunk/dark glitch) para parallax
+- [x] Implementar efeito de parallax nas seções principais
+- [x] Aumentar o tamanho da logo no header
+- [x] Adicionar imagens de fundo com overlay nas seções
+- [x] Melhorar transições e animações entre seções
+- [x] Deixar o visual mais tecnológico e sofisticado
+
+## Refinamento visual — orgânico e dinâmico
+
+- [x] Trocar tipografia para fontes arredondadas (Outfit + Inter)
+- [x] Arredondar bordas de todos os elementos (cards, botões, inputs, terminal)
+- [x] Implementar parallax real e visível (movimento amplo ao rolar)
+- [x] Suavizar transições e animações (curvas orgânicas)
+- [x] Visual mais natural e menos rígido/quadrado
+
+## Correções urgentes — feedback do usuário
+
+- [x] Aumentar logo do header significativamente (h-12 → h-20, header h-18 → h-28)
+- [x] Refazer headline: "Vídeos que vendem enquanto você dorme" + descrição focada em geração de vídeos sem precisar de tempo/equipe
+- [x] Garantir parallax visível: speed 0.4→0.8, inset -15%→-25%, scale 1.1→1.15, overlay mais transparente
+
+## Segunda rodada de correções — site mais convincente e parallax visível
+
+- [x] Reescrever copy do hero e seções para ser mais convincente e impactante
+- [x] Implementar parallax com movimento claramente visível ao rolar (background se move)
+- [x] Adicionar elementos dinâmicos: gradientes animados, orbs flutuantes, transições
+- [x] Tornar o site mais impactante e convincente no geral
