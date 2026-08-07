@@ -9,10 +9,10 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Data** | 2026-08-07 18:26:50 UTC |
+| **Data** | 2026-08-07 18:33:13 UTC |
 | **Branch** | master |
-| **Total de Commits** | 76 |
-| **Último Commit Hash** | `604801e2a603944f90cfe3a5cce4249984c271fb` |
+| **Total de Commits** | 77 |
+| **Último Commit Hash** | `3da59125e7f218d33d1a88f6d8485ed6274b161d` |
 | **Remote URL** | https://github.com/trentomotta7-hub/Moviemoney.git |
 
 ---
@@ -94,6 +94,7 @@ apps/movie-money-fullstack/client/src/components/ui/carousel.tsx
 ## Histórico Recente de Commits
 
 ```
+[33m3da5912[m Checkpoint de continuidade — projeto MovieMoney restaurado e site webdev pronto para publicar [2026-08-07 18:26:50 UTC]
 [33m604801e[m docs: análises perceptuais sessão 20 — GC v5, POV v1, Video1, Video2, Bodysplash v8c, Beto v4
 [33m5f02df5[m checkpoint: auditoria completa sessão 20 — todos os masters com veredito REJECTED
 [33m1e7e83e[m checkpoint: auditoria audiovisual e gate obrigatório de qualidade
@@ -108,14 +109,13 @@ apps/movie-money-fullstack/client/src/components/ui/carousel.tsx
 [33mb11b869[m fix(lip-sync): protocolo forense perpétuo + GC v4 + limitação técnica documentada
 [33m975c5fc[m feat(sunscreen-stick-gc): GC v1 FINAL — Marina Costa, 30s, QA 10/10 + skill atualizada
 [33m9211216[m feat(sunscreen-stick): POV v2 FINAL — Marina Costa, 32s, QA 9.8/10
-[33m5975c2d[m fix(BUG-007): vídeo CEO v2 — keyframe único + áudio natural + crossfades + lip sync corrigido. QA aprovado 7/7
 ```
 
 ---
 
 ## Contexto da Sessão Atual
 
-Projeto MovieMoney fullstack restaurado do repositório original. Site webdev criado em movie-money-deploy com landing page dark/glitch completa (13 seções), assets re-uploaded (imagens personagens, vídeos POV/GC, logo), formulário de captura de leads, página de oferta com countdown 72h, painel admin, exportação CSV. 10 testes aprovados. Checkpoint webdev salvo: a0db9c61. Próximo passo: publicar o site no Manus webdev.
+SESSÃO ATUAL (2026-08-07): PROJETO WEBDEV movie-money-deploy ativo. Melhorias: parallax em 6 secoes, logo maior, 5 imagens de fundo cyberpunk, hooks useParallax/useScrollReveal, glow animations, gradient text, scanlines. Arquivos: index.css, Home.tsx, useParallax.ts. Proximos passos: salvar checkpoint webdev, publicar site, configurar RESEND_API_KEY.
 
 ---
 
@@ -127,7 +127,7 @@ Para retomar este projeto exatamente onde parou, cole o seguinte prompt na próx
 CONTINUITY PROMPT — MovieMoney-Original
 Repositório: https://github.com/trentomotta7-hub/Moviemoney.git
 Branch: master
-Commit: 604801e2a603944f90cfe3a5cce4249984c271fb
+Commit: 3da59125e7f218d33d1a88f6d8485ed6274b161d
 
 Por favor, clone o repositório acima, faça checkout do commit indicado,
 leia o arquivo CONTEXT.md e me informe que o contexto foi restaurado.

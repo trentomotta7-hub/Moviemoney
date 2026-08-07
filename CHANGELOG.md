@@ -1,4 +1,7 @@
 # CHANGELOG — Moviemoney
+## [3da5912] — 2026-08-07 18:33:13 UTC
+
+- Checkpoint de continuidade — melhorias visuais: parallax, logo maior, imagens de fundo, glow effects
 ## [604801e] — 2026-08-07 18:26:50 UTC
 
 - Checkpoint de continuidade — projeto MovieMoney restaurado e site webdev pronto para publicar
