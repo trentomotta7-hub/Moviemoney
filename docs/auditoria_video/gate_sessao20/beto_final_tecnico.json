@@ -1,0 +1,133 @@
+{
+  "video": "/home/ubuntu/Moviemoney/skill-movie-money/templates/videos/beto_institucional_final.mp4",
+  "sha256": "20dbc8fa3a2356e90e3cf2563d01ea09248e2d2d965c32099874777d3e5d2fbc",
+  "format_profile": "youtube",
+  "duration_seconds": 27.049333,
+  "video_duration_seconds": 27.041667,
+  "audio_duration_seconds": 27.049333,
+  "width": 720,
+  "height": 1280,
+  "fps": 24.0,
+  "sample_rate": 48000,
+  "integrated_lufs": -19.1,
+  "true_peak_dbtp": -3.4,
+  "lra_lu": 2.1,
+  "checks": [
+    {
+      "name": "integridade_decodificacao",
+      "status": "PASS",
+      "value": "0",
+      "limit": "0",
+      "detail": ""
+    },
+    {
+      "name": "resolucao",
+      "status": "FAIL",
+      "value": "720x1280",
+      "limit": ">=1280x720",
+      "detail": ""
+    },
+    {
+      "name": "aspect_ratio",
+      "status": "FAIL",
+      "value": "0.5625",
+      "limit": "16:9 ±0,01",
+      "detail": ""
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "value": "24.000",
+      "limit": "24–60 fps",
+      "detail": ""
+    },
+    {
+      "name": "sample_rate",
+      "status": "PASS",
+      "value": "48000 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    },
+    {
+      "name": "drift_duracao",
+      "status": "PASS",
+      "value": "0.008 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "delta_inicio",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.020 s",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "FAIL",
+      "value": "0.871 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "FAIL",
+      "value": "-19.1 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    },
+    {
+      "name": "true_peak",
+      "status": "PASS",
+      "value": "-3.4 dBTP",
+      "limit": "<= -1.0 dBTP",
+      "detail": ""
+    },
+    {
+      "name": "freeze_nao_intencional",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    },
+    {
+      "name": "black_frame",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    }
+  ],
+  "technical_verdict": "TECHNICALLY_REJECTED",
+  "failures": [
+    {
+      "name": "resolucao",
+      "status": "FAIL",
+      "value": "720x1280",
+      "limit": ">=1280x720",
+      "detail": ""
+    },
+    {
+      "name": "aspect_ratio",
+      "status": "FAIL",
+      "value": "0.5625",
+      "limit": "16:9 ±0,01",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "FAIL",
+      "value": "0.871 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "FAIL",
+      "value": "-19.1 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    }
+  ],
+  "mandatory_next_gate": "Auditoria perceptual e de compliance; este script não autoriza entrega sozinho."
+}

@@ -1,19 +1,23 @@
 # Próximas ações — Movie Money
 
-**Atualizado em:** 07/08/2026 — Sessão 19.
+**Atualizado em:** 07/08/2026 — Sessão 20.
 
-## Prioridade audiovisual
+## Prioridade audiovisual (pós-auditoria completa sessão 20)
+
+Todos os masters foram auditados e estão REJECTED. A fila abaixo é a ordem de reconstrução.
 
 | Ordem | Ação | Evidência de conclusão |
 |---:|---|---|
-| 1 | Criar dossiê de mineração atualizado do Sunscreen Stick, com SKU, oferta, imagens e claims comprovados | `mineracao_produto.md` preenchido e aprovado |
-| 2 | Refazer o GC como `CANDIDATE`, aprovando cada take isoladamente | Lip sync ≥ 9/10, produto, mãos, voz e realismo em PASS |
-| 3 | Refazer o POV com um único produto âncora e CTA integral | Produto idêntico, mãos/física em PASS e transcrição completa |
-| 4 | Executar gate técnico e certificado perceptual nos dois candidatos | `TECHNICALLY_APPROVED` + `APPROVED` |
-| 5 | Corrigir ou reconstruir o Vídeo 1 institucional | Zero drift/cauda/freeze e certificado aprovado |
-| 6 | Reauditar o Vídeo 2 institucional antes de qualquer uso | Relatórios técnico e perceptual vinculados ao checksum |
-| 7 | Expandir a VSL para 8–12 minutos e auditá-la pelo mesmo protocolo | Roteiro, áudio e master aprovados |
-| 8 | Somente depois gerar a matriz POV de 20 variações | Master-base aprovado e manifesto A/B completo |
+| 1 | Criar dosiê de mineração do Sunscreen Stick (SKU, oferta, imagens, claims comprovados) | `mineracao_produto.md` preenchido |
+| 2 | Regerar GC Sunscreen Stick: takes com áudio nativo 48 kHz, lip sync ≥ 9/10 por take | Cada take aprovado individualmente |
+| 3 | Montar GC CANDIDATE e executar gate técnico + perceptual | `TECHNICALLY_APPROVED` + `APPROVED` |
+| 4 | Regerar POV: produto âncora único, rótulo em português, narração completa com CTA | Gate técnico + perceptual aprovados |
+| 5 | Corrigir Vídeo 2 (repetição 0:07, glitch 1:30, freeze, loudness, cauda) | Gate técnico aprovado |
+| 6 | Corrigir Vídeo 1 (cauda 7,45 s, freeze 12,5 s, loudness -19 LUFS) | Gate técnico aprovado |
+| 7 | Regerar Criativo 01 Bodysplash com produto âncora e rótulo visível | Gate técnico + perceptual aprovados |
+| 8 | Regerar Beto institucional em 16:9, normalizar, adicionar encerramento | Gate técnico + perceptual aprovados |
+| 9 | Expandir a VSL para 8–12 minutos e auditá-la | Roteiro, áudio e master aprovados |
+| 10 | Gerar matriz POV de 20 variações somente após master-base aprovado | Manifesto A/B completo |
 
 ## Bloqueado — requer proprietário
 

@@ -9,7 +9,7 @@
 | Projeto | Movie Money — Criativos que Vendem no TikTok Shop |
 | Repositório | `trentomotta7-hub/Moviemoney` |
 | Branch ativa | `master` |
-| Última sessão | Sessão 19 — auditoria audiovisual e gate obrigatório |
+| Última sessão | Sessão 20 — auditoria completa de todos os masters |
 | Aplicação full-stack | `apps/movie-money-fullstack/` |
 | Checkpoint web gerenciado | `4132e698` |
 
@@ -22,10 +22,13 @@
 | E-mail real | Código pronto; credenciais pendentes | `apps/movie-money-fullstack/docs/email-setup.md` |
 | Pipeline audiovisual | Reestruturado da mineração à entrega | `skill-movie-money/skills/moviemoney-production/` |
 | Gate técnico | Implementado e validado | `scripts/qa_gate.py` |
-| GC Sunscreen Stick v6 | **REJECTED** — tecnicamente íntegro, perceptualmente inadequado | `docs/auditoria_video/gate/` |
-| POV Sunscreen Stick v2 | **REJECTED** — produto inconsistente e narração truncada | `docs/auditoria_video/gate/` |
-| Vídeo 1 institucional | **REJECTED** — drift, cauda e freeze prolongado | `docs/auditoria_video/gate/` |
-| Vídeo 2 institucional | Não reauditado nesta sessão; não presumir aprovação | Aplicar o protocolo antes de qualquer uso |
+| GC Sunscreen Stick v5 | **REJECTED** — sample rate 96 kHz, drift, lip sync, produto, claims | `docs/auditoria_video/gate_sessao20/` |
+| GC Sunscreen Stick v6 | **REJECTED** (sessão 19) — tecnicamente íntegro, perceptualmente inadequado; .mp4 não existe no repo | `docs/auditoria_video/gate/` |
+| POV Sunscreen Stick v1 | **REJECTED** — sample rate 96 kHz, produto inconsistente, narração truncada, texto em inglês | `docs/auditoria_video/gate_sessao20/` |
+| Vídeo 1 institucional | **REJECTED** — drift 7,45 s, freeze 12,5 s, loudness -19 LUFS, continuidade quebrada | `docs/auditoria_video/gate_sessao20/` |
+| Vídeo 2 institucional | **REJECTED** — drift 9,68 s, freeze 19,4 s, glitch de áudio, repetição de fala | `docs/auditoria_video/gate_sessao20/` |
+| Criativo 01 Bodysplash v8c | **REJECTED** — loudness -20,3 LUFS, lip sync 3/10, produto sem rótulo | `docs/auditoria_video/gate_sessao20/` |
+| Beto institucional v4 | **REJECTED** — aspect ratio 9:16 (não 16:9), loudness -20 LUFS, lip sync 2/10 | `docs/auditoria_video/gate_sessao20/` |
 | Vídeo 3 / VSL | Rascunho de aproximadamente 5 minutos; incompleto | `skill-movie-money/criativos/video_institucional_youtube/VSL_Beto/` |
 
 ## Regra perpétua audiovisual

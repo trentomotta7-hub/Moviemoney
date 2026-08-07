@@ -1,0 +1,140 @@
+{
+  "video": "/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/video1_quebra_mitos_MONTADO.mp4",
+  "sha256": "777271a74b51e4a29078d6f39ff43a5441f2bf30014fd3f259c60493e83a8520",
+  "format_profile": "youtube",
+  "duration_seconds": 87.5,
+  "video_duration_seconds": 87.5,
+  "audio_duration_seconds": 80.046667,
+  "width": 2560,
+  "height": 1440,
+  "fps": 30.0,
+  "sample_rate": 48000,
+  "integrated_lufs": -19.0,
+  "true_peak_dbtp": -0.9,
+  "lra_lu": 2.5,
+  "checks": [
+    {
+      "name": "integridade_decodificacao",
+      "status": "PASS",
+      "value": "0",
+      "limit": "0",
+      "detail": ""
+    },
+    {
+      "name": "resolucao",
+      "status": "PASS",
+      "value": "2560x1440",
+      "limit": ">=1280x720",
+      "detail": ""
+    },
+    {
+      "name": "aspect_ratio",
+      "status": "PASS",
+      "value": "1.7778",
+      "limit": "16:9 ±0,01",
+      "detail": ""
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "value": "30.000",
+      "limit": "24–60 fps",
+      "detail": ""
+    },
+    {
+      "name": "sample_rate",
+      "status": "PASS",
+      "value": "48000 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    },
+    {
+      "name": "drift_duracao",
+      "status": "FAIL",
+      "value": "7.453 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "delta_inicio",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.020 s",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "FAIL",
+      "value": "7.453 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "FAIL",
+      "value": "-19.0 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    },
+    {
+      "name": "true_peak",
+      "status": "FAIL",
+      "value": "-0.9 dBTP",
+      "limit": "<= -1.0 dBTP",
+      "detail": ""
+    },
+    {
+      "name": "freeze_nao_intencional",
+      "status": "FAIL",
+      "value": "12.533 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    },
+    {
+      "name": "black_frame",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    }
+  ],
+  "technical_verdict": "TECHNICALLY_REJECTED",
+  "failures": [
+    {
+      "name": "drift_duracao",
+      "status": "FAIL",
+      "value": "7.453 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "FAIL",
+      "value": "7.453 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "FAIL",
+      "value": "-19.0 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    },
+    {
+      "name": "true_peak",
+      "status": "FAIL",
+      "value": "-0.9 dBTP",
+      "limit": "<= -1.0 dBTP",
+      "detail": ""
+    },
+    {
+      "name": "freeze_nao_intencional",
+      "status": "FAIL",
+      "value": "12.533 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    }
+  ],
+  "mandatory_next_gate": "Auditoria perceptual e de compliance; este script não autoriza entrega sozinho."
+}

@@ -1,0 +1,112 @@
+{
+  "video": "/home/ubuntu/Moviemoney/skill-movie-money/criativos/sunscreen_stick_spf/POV/montagem/video_normalizado.mp4",
+  "sha256": "4d3d30c8b5789285dfb8fd8457838d44b5197057a32d54100a3da283bbeb8d6f",
+  "format_profile": "short",
+  "duration_seconds": 29.0,
+  "video_duration_seconds": 29.0,
+  "audio_duration_seconds": 29.0,
+  "width": 720,
+  "height": 1280,
+  "fps": 30.0,
+  "sample_rate": 96000,
+  "integrated_lufs": -16.7,
+  "true_peak_dbtp": -1.3,
+  "lra_lu": 2.7,
+  "checks": [
+    {
+      "name": "integridade_decodificacao",
+      "status": "PASS",
+      "value": "0",
+      "limit": "0",
+      "detail": ""
+    },
+    {
+      "name": "resolucao",
+      "status": "PASS",
+      "value": "720x1280",
+      "limit": ">=720x1280",
+      "detail": ""
+    },
+    {
+      "name": "aspect_ratio",
+      "status": "PASS",
+      "value": "0.5625",
+      "limit": "9:16 ±0,01",
+      "detail": ""
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "value": "30.000",
+      "limit": "24–60 fps",
+      "detail": ""
+    },
+    {
+      "name": "sample_rate",
+      "status": "FAIL",
+      "value": "96000 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    },
+    {
+      "name": "drift_duracao",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "delta_inicio",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.020 s",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "PASS",
+      "value": "0.147 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "PASS",
+      "value": "-16.7 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    },
+    {
+      "name": "true_peak",
+      "status": "PASS",
+      "value": "-1.3 dBTP",
+      "limit": "<= -1.0 dBTP",
+      "detail": ""
+    },
+    {
+      "name": "freeze_nao_intencional",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    },
+    {
+      "name": "black_frame",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    }
+  ],
+  "technical_verdict": "TECHNICALLY_REJECTED",
+  "failures": [
+    {
+      "name": "sample_rate",
+      "status": "FAIL",
+      "value": "96000 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    }
+  ],
+  "mandatory_next_gate": "Auditoria perceptual e de compliance; este script não autoriza entrega sozinho."
+}

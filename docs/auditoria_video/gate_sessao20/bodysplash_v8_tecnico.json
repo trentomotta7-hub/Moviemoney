@@ -1,0 +1,126 @@
+{
+  "video": "/home/ubuntu/Moviemoney/skill-movie-money/criativos/criativo_01_bodysplash/criativo01_v8_FINAL.mp4",
+  "sha256": "575dc2cfe91c64fada011a645ecfe574986da7d062b1c57e48f83bc8bf024b59",
+  "format_profile": "short",
+  "duration_seconds": 28.072993,
+  "video_duration_seconds": 27.133333,
+  "audio_duration_seconds": 28.072993,
+  "width": 720,
+  "height": 1280,
+  "fps": 30.0,
+  "sample_rate": 44100,
+  "integrated_lufs": -19.7,
+  "true_peak_dbtp": -1.4,
+  "lra_lu": 4.3,
+  "checks": [
+    {
+      "name": "integridade_decodificacao",
+      "status": "PASS",
+      "value": "0",
+      "limit": "0",
+      "detail": ""
+    },
+    {
+      "name": "resolucao",
+      "status": "PASS",
+      "value": "720x1280",
+      "limit": ">=720x1280",
+      "detail": ""
+    },
+    {
+      "name": "aspect_ratio",
+      "status": "PASS",
+      "value": "0.5625",
+      "limit": "9:16 ±0,01",
+      "detail": ""
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "value": "30.000",
+      "limit": "24–60 fps",
+      "detail": ""
+    },
+    {
+      "name": "sample_rate",
+      "status": "FAIL",
+      "value": "44100 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    },
+    {
+      "name": "drift_duracao",
+      "status": "FAIL",
+      "value": "0.940 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "delta_inicio",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.020 s",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "FAIL",
+      "value": "-19.7 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    },
+    {
+      "name": "true_peak",
+      "status": "PASS",
+      "value": "-1.4 dBTP",
+      "limit": "<= -1.0 dBTP",
+      "detail": ""
+    },
+    {
+      "name": "freeze_nao_intencional",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    },
+    {
+      "name": "black_frame",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    }
+  ],
+  "technical_verdict": "TECHNICALLY_REJECTED",
+  "failures": [
+    {
+      "name": "sample_rate",
+      "status": "FAIL",
+      "value": "44100 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    },
+    {
+      "name": "drift_duracao",
+      "status": "FAIL",
+      "value": "0.940 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "FAIL",
+      "value": "-19.7 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    }
+  ],
+  "mandatory_next_gate": "Auditoria perceptual e de compliance; este script não autoriza entrega sozinho."
+}
