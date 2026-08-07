@@ -1,0 +1,112 @@
+{
+  "video": "/home/ubuntu/Moviemoney/skill-movie-money/criativos/video_institucional_youtube/montagem_v2_corrigida/video2_maquina_por_dentro_CANDIDATE_v2.mp4",
+  "sha256": "0d1f1bcf058a1d50522ba7c8ef1db11ace6db95499b55fa23a2ce9f1652c9ae8",
+  "format_profile": "youtube",
+  "duration_seconds": 223.0,
+  "video_duration_seconds": 223.0,
+  "audio_duration_seconds": 222.991,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "sample_rate": 48000,
+  "integrated_lufs": -16.0,
+  "true_peak_dbtp": -1.2,
+  "lra_lu": 5.6,
+  "checks": [
+    {
+      "name": "integridade_decodificacao",
+      "status": "PASS",
+      "value": "0",
+      "limit": "0",
+      "detail": ""
+    },
+    {
+      "name": "resolucao",
+      "status": "PASS",
+      "value": "1280x720",
+      "limit": ">=1280x720",
+      "detail": ""
+    },
+    {
+      "name": "aspect_ratio",
+      "status": "PASS",
+      "value": "1.7778",
+      "limit": "16:9 ±0,01",
+      "detail": ""
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "value": "24.000",
+      "limit": "24–60 fps",
+      "detail": ""
+    },
+    {
+      "name": "sample_rate",
+      "status": "PASS",
+      "value": "48000 Hz",
+      "limit": "48000 Hz",
+      "detail": ""
+    },
+    {
+      "name": "drift_duracao",
+      "status": "PASS",
+      "value": "0.009 s",
+      "limit": "<= 0.050 s",
+      "detail": ""
+    },
+    {
+      "name": "delta_inicio",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.020 s",
+      "detail": ""
+    },
+    {
+      "name": "cauda_silenciosa",
+      "status": "PASS",
+      "value": "0.009 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    },
+    {
+      "name": "loudness_integrado",
+      "status": "PASS",
+      "value": "-16.0 LUFS",
+      "limit": "-16.0 ± 1.0 LUFS",
+      "detail": ""
+    },
+    {
+      "name": "true_peak",
+      "status": "PASS",
+      "value": "-1.2 dBTP",
+      "limit": "<= -1.0 dBTP",
+      "detail": ""
+    },
+    {
+      "name": "freeze_nao_intencional",
+      "status": "FAIL",
+      "value": "19.417 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    },
+    {
+      "name": "black_frame",
+      "status": "PASS",
+      "value": "0.000 s",
+      "limit": "<= 0.200 s",
+      "detail": ""
+    }
+  ],
+  "technical_verdict": "TECHNICALLY_REJECTED",
+  "failures": [
+    {
+      "name": "freeze_nao_intencional",
+      "status": "FAIL",
+      "value": "19.417 s",
+      "limit": "<= 0.500 s",
+      "detail": ""
+    }
+  ],
+  "mandatory_next_gate": "Auditoria perceptual e de compliance; este script não autoriza entrega sozinho."
+}
