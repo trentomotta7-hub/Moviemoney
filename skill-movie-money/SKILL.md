@@ -1,59 +1,43 @@
 ---
 name: movie-money
-description: "Máquina de produção de criativos de venda (UGC e POV) para TikTok Shop e VSL do projeto Movie Money. Use para: produzir vídeos de venda com personagens UGC e lip sync real, gerar criativos no formato POV, escrever roteiros de venda (Hook→Problema→Causa→Solução→CTA), escalar personagens do elenco oficial (Beto + 5 UGC), gerar vídeos institucionais com o Beto (rosto da marca), usar a identidade visual da Movie Money, ou continuar qualquer trabalho do projeto Movie Money."
+description: Operação Movie Money para mineração, roteiros, produção, auditoria e entrega de criativos GC, POV e vídeos institucionais. Use para qualquer trabalho audiovisual do projeto, incluindo Beto, elenco UGC, TikTok Shop, VSL, lip sync, narração, produto e QA.
 ---
 
-# Movie Money — Skill de Produção de Criativos
+# Movie Money
 
-Skill do projeto Movie Money: empresa de criativos de venda para TikTok Shop e plataformas de venda via VSL. Produz vídeos UGC (personagem do elenco falando com lip sync real, venda invisível) e POV (câmera em primeira pessoa mostrando mãos usando o produto), 100% dentro da Manus, sem ferramentas externas. As imagens de produto vêm sempre de site de mineração fornecido pelo lead.
+Produzir vídeos de venda e institucionais com rastreabilidade da mineração à entrega. Usar Beto como porta-voz institucional e o elenco oficial nos criativos UGC.
 
-A marca tem um rosto oficial: o **Beto**, avatar de IA do criador (que não aparece pessoalmente). Beto é o porta-voz institucional — apresenta a empresa, grava campanhas e apresenta os personagens ao público. Backup completo do projeto no GitHub: repositório privado `trentomotta7-hub/Moviemoney` (branch master).
+## Regra de entrada
 
-## Checkpoint Rápido
+Ler `skills/moviemoney-production/SKILL.md` antes de planejar, gerar, montar, auditar ou entregar qualquer vídeo. Essa skill contém o pipeline vigente e substitui procedimentos antigos que permitiam aprovação apenas por metadados ou nota média.
 
-Ler `references/checkpoint.md` no início de qualquer sessão do projeto para o estado completo. Resumo atualizado (sessão 5 — jul/2026):
+## Regra perpétua de qualidade
 
-| Pronto | Pendente (backlog) |
-|--------|--------------------|
-| Elenco completo: Beto (rosto da marca) + 5 personagens UGC | **Vídeo YouTube 1 completo (Montagem final)** |
-| Banco de cenas: 25 imagens 9:16 + Keyframe Beto 16:9 | Vídeos YouTube 2 e 3 (Produção) |
-| Vozes oficiais TTS dos 6 personagens | Automação de Marca D'água no Pipeline |
-| Identidade visual: logo final, ícone, marca d'água transparente | Sistema de captação de leads (site/app) |
-| **Skill de Auditoria Forense Integrada** (TikTok Shop) | Melhorias do motor de roteiros (VSL longa) |
-| **Criativo 01 v8c** (Legendas Safe Zone, Lip Sync Real) | |
-| **Roteiros YouTube (Série de 3 vídeos)** | |
+> Nenhum vídeo pode ser entregue, publicado ou chamado de final sem gate técnico e certificado perceptual aprovados e vinculados ao checksum do master.
 
-## Recursos da Skill
+Uma falha crítica reprova. Não compensar lip sync fora, produto diferente, mão deformada, voz truncada, texto alucinado, claim sem prova, drift ou freeze com notas altas de ritmo, hook ou edição.
 
-| Recurso | Caminho | Quando usar |
-|---------|---------|-------------|
-| **Skill de Auditoria Forense** | `skills/tiktokshop-creative-audit/SKILL.md` | **OBRIGATÓRIO** para auditar e corrigir criativos TikTok Shop |
-| Elenco completo | `references/elenco.md` | Antes de escalar personagem ou gerar qualquer criativo |
-| Checkpoint do projeto | `references/checkpoint.md` | No início de qualquer sessão do projeto |
-| Pipeline de produção | `references/pipeline_producao.md` | Ao produzir um criativo de venda |
-| Estratégia YouTube | `criativos/video_institucional_youtube/estrategia_canal_v1.md` | Ao planejar conteúdo para o canal da marca |
-| Banco Narrativo | `references/banco_narrativo.md` | **OBRIGATÓRIO** antes de escrever qualquer roteiro |
-| Identidade Visual | `templates/identidade_visual/` | Em qualquer material da marca Movie Money |
+## Formatos
 
-## Regras Invioláveis
+| Formato | Estratégia |
+|---|---|
+| GC/UGC com rosto | Fala e áudio nativos no mesmo take; QA de lip sync ≥ 9/10 |
+| POV sem rosto | TTS externo permitido; QA rígido de mãos, física e produto |
+| Institucional/YouTube | Beto + screen recordings/B-roll; continuidade, voz e acabamento completos |
 
-1. **Produção 100% interna na Manus.** Nunca pedir ao usuário para enviar material próprio.
-2. **Formato:** TikTok/Reels = 9:16 (Vertical). YouTube = 16:9 (Horizontal).
-3. **Lip Sync Real:** O prompt de geração **DEVE** conter a fala exata do roteiro entre aspas para garantir sincronia labial absoluta.
-4. **Safe Zone (TikTok Shop):** Legendas `.ass` devem ter `MarginV: 320` para não ficarem atrás do carrinho laranja.
-5. **Loop Perfeito:** Remover qualquer silêncio (cauda morta) no final do vídeo para forçar o loop imediato no TikTok.
-6. **Keyframes:** Sempre usar a cena correspondente (`templates/cenas/`) como primeiro keyframe, nunca o retrato 3:4.
-7. **Dinâmica YouTube:** Intercalar Talking Head (Beto) com Screen Recordings (bastidores reais) e B-Rolls de criativos prontos.
-8. **Marca D'água:** Usar `logo_transparente.png` discretamente em todos os vídeos institucionais.
+TikTok/Reels usa 9:16. YouTube usa 16:9. Manter elementos críticos na Safe Zone e usar marca d'água conforme a identidade Movie Money.
 
-## Fluxo de Auditoria e Correção
+## Recursos obrigatórios
 
-Sempre que analisar um vídeo pronto, use a skill `tiktokshop-creative-audit`. O processo envolve:
-1. Diagnóstico visual via IA (`manus-analyze-video`).
-2. Verificação de Drift e Cauda Morta via `ffprobe`/`ffmpeg`.
-3. Ajuste de legendas para Safe Zone.
-4. Refação de takes com lip sync falho usando o padrão de "fala exata no prompt".
+| Recurso | Quando ler |
+|---|---|
+| `skills/moviemoney-production/SKILL.md` | Sempre |
+| `skills/moviemoney-production/references/pipeline_ponta_a_ponta.md` | Da mineração à entrega |
+| `skills/moviemoney-production/references/protocolo_forense_audiovisual.md` | Antes de montar, auditar ou entregar |
+| `references/elenco.md` | Antes de escolher personagem |
+| `references/banco_narrativo.md` | Antes de escrever roteiro |
+| `references/checkpoint.md` e `.project-memory/` | Ao retomar sessão |
 
-## Atualização do Checkpoint
+## Continuidade
 
-Ao concluir qualquer entrega, atualizar `references/checkpoint.md`. Sincronizar o repositório GitHub `trentomotta7-hub/Moviemoney` após cada mudança significativa (commit e push no master).
+Ao concluir uma mudança significativa, atualizar o checkpoint e usar a skill segura `continuity-sync` primeiro em modo de prévia. Sincronizar somente arquivos autorizados; não incluir segredos, dependências, builds, caches ou masters pesados no Git.

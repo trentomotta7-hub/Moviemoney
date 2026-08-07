@@ -1,142 +1,136 @@
-# Protocolo Forense Audiovisual — Movie Money
-## REGRA PERPÉTUA: Obrigatório antes de qualquer entrega de vídeo
+# Protocolo forense audiovisual obrigatório
 
-> **Esta análise é OBRIGATÓRIA. Nenhum vídeo pode ser entregue ao usuário sem passar por este protocolo completo.**
-> Entregar vídeo com lip sync fora, cauda morta ou drift de áudio consome crédito à toa e prejudica a operação.
+> Nenhum vídeo pode ser entregue, publicado ou chamado de final sem aprovação técnica e perceptual vinculada ao checksum do master.
 
----
+## Princípio de decisão
 
-## Por que lip sync falha (causa raiz documentada)
+O protocolo usa **falhas bloqueadoras**, não média compensatória. Ritmo, hook ou edição não compensam lip sync fora, produto diferente, mãos deformadas, narração truncada, claims sem prova, drift ou congelamento.
 
-O erro mais comum e mais grave é gerar vídeos com `generate_audio=false` e depois substituir o áudio por TTS externo. O modelo de vídeo gera os movimentos labiais para um áudio interno invisível — quando você troca o áudio, a boca não condiz com nada.
+| Classe | Critérios | Regra |
+|---|---|---|
+| Técnico | Integridade, formato, drift, início, sample rate, loudness, true peak, cauda, freeze e black frames | Todos devem passar |
+| Perceptual | Realismo, lip sync, produto, mãos, olhos, dentes, texto, física, voz, continuidade e acabamento | Todos os críticos devem passar |
+| Compliance | SKU, preço, claims, escassez, eficácia e interface da plataforma | Toda afirmação deve ter evidência |
+| Entrega | Checksum, relatórios, versão e URL | Devem corresponder ao mesmo arquivo |
 
-**Regra de ouro para lip sync real:**
-- Para takes com rosto falando (Talking Head / GC): SEMPRE usar `generate_audio=true` com o texto exato da fala no prompt.
-- O modelo sincroniza a boca com o áudio que ele mesmo gera — esse é o único lip sync real disponível.
-- Depois de gerado, extrair o áudio nativo do take com ffmpeg e usar na montagem.
-- **NUNCA** gerar take com `generate_audio=false` e depois sobrepor TTS externo em vídeos com rosto falando.
+## Gate 1 — Auditoria técnica executável
 
----
-
-## Checklist Forense Obrigatório (executar ANTES de entregar)
-
-### Passo 1 — Metadados e Drift de Stream
+Executar o script oficial:
 
 ```bash
-ffprobe -v quiet -print_format json -show_format -show_streams VIDEO.mp4 | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
-streams = {s['codec_type']: s for s in d['streams']}
-v_dur = float(streams.get('video', {}).get('duration', 0))
-a_dur = float(streams.get('audio', {}).get('duration', 0))
-drift = abs(v_dur - a_dur)
-print(f'Vídeo: {v_dur:.3f}s | Áudio: {a_dur:.3f}s | Drift: {drift:.3f}s')
-print('APROVADO' if drift < 0.1 else f'REPROVADO — drift {drift:.3f}s > 0.1s')
-"
+python3 skills/moviemoney-production/scripts/qa_gate.py VIDEO \
+  --format short \
+  --report qa/qa_tecnico.md \
+  --json-report qa/qa_tecnico.json
 ```
 
-**Critério:** Drift entre stream de vídeo e áudio deve ser < 0.1s. Acima disso, o áudio vai descolar progressivamente.
+Usar `--format youtube` em masters 16:9. O script retorna código `0` somente quando todos os critérios técnicos passam.
 
----
+### Limites padrão
 
-### Passo 2 — Cauda Morta (Tail Silence)
+| Critério | Limite |
+|---|---:|
+| Drift entre durações de áudio/vídeo | ≤ 0,05 s |
+| Diferença de `start_time` | ≤ 0,02 s |
+| Cauda silenciosa | ≤ 0,20 s |
+| Loudness integrado | -16,0 ± 1,0 LUFS |
+| True peak | ≤ -1,0 dBTP |
+| Sample rate | 48 kHz |
+| Freeze não documentado | ≤ 0,50 s |
+| Black frame não documentado | ≤ 0,20 s |
+| Shorts | ≥ 720×1280, 9:16 |
+| YouTube | ≥ 1280×720, 16:9 |
+
+Uma tela estática planejada ainda deve possuir movimento perceptível de cursor, zoom, destaque ou composição. Se o detector apontar freeze intencional, documentar a exceção e revisar o trecho integralmente; não aprovar automaticamente.
+
+## Gate 2 — Transcrição e narração
+
+Executar transcrição independente e comparar com o roteiro aprovado. Reprovar qualquer palavra ausente, CTA cortado, frase incompleta, idioma indevido ou erro que altere a oferta.
+
+Avaliar separadamente:
+
+| Dimensão | Aprovação |
+|---|---|
+| Dicção | Todas as palavras inteligíveis |
+| Prosódia | Ênfases e pausas coerentes com a intenção |
+| Emoção | Tom correspondente à persona e à cena |
+| Ritmo | Natural, sem velocidade mecanicamente constante |
+| Respiração | Sem ausência artificial evidente ou cortes abruptos |
+| Timbre | Consistente entre takes do mesmo personagem |
+| Completude | Roteiro e CTA integralmente presentes |
+
+Áudio tecnicamente limpo não equivale a voz humana convincente.
+
+## Gate 3 — Lip sync GC e Talking Head
+
+Avaliar frase por frase e take por take. Observar fechamento labial em `/p/`, `/b/`, `/m/`, contato dentes-lábio em `/f/` e `/v/`, ataques de palavra, pausas e término da articulação.
+
+| Status | Definição |
+|---|---|
+| PASS | ≥ 9/10, sem fonema crítico visivelmente errado e sem atraso perceptível |
+| FAIL | Movimento genérico, boca aberta em fonema fechado, início/fim fora, atraso ou continuação após pausa |
+
+Áudio nativo com `generate_audio=True` reduz o risco estrutural, mas **não garante aprovação**. Cada take precisa ser inspecionado. Regerar o take reprovado; não acelerar, cortar ou mascarar a falha como primeira opção.
+
+## Gate 4 — Realismo humano e física
+
+Reprovar qualquer ocorrência perceptível em reprodução normal:
+
+- dedos extras, fundidos, longos ou sem articulação;
+- dentes, língua, olhos ou piscadas deformados;
+- pele plastificada, expressão ocular extrema ou microexpressão ausente;
+- cabelo com flicker, contorno instável ou morphing;
+- objeto flutuando, sem peso, atrito, aderência ou oclusão;
+- ação de aplicação sem contato físico plausível;
+- personagem, roupa ou cenário mudando entre takes.
+
+Usar reprodução integral e inspeção dirigida nos timestamps suspeitos. Gerar folha de contato ou clipes curtos para registrar a evidência.
+
+## Gate 5 — Produto âncora e texto visual
+
+Comparar todos os takes com as imagens oficiais da mineração. A silhueta, tampa, base, cor, rótulo, proporções, textos e variante devem permanecer idênticos.
+
+Reprovar se ocorrer:
+
+- troca de marca, embalagem ou formato;
+- texto ilegível, alucinado, em idioma incorreto ou com ortografia inventada;
+- rótulo tremendo, mudando de espessura ou sofrendo warping;
+- produto genérico em um take e produto oficial em outro;
+- preço, SPF ou especificação visual incompatível com o SKU.
+
+A referência enviada ao modelo não é evidência de consistência. Somente o resultado renderizado é avaliado.
+
+## Gate 6 — Auditoria multimodal
+
+Executar análise com timestamps como uma evidência adicional:
 
 ```bash
-ffmpeg -i VIDEO.mp4 -af silencedetect=noise=-35dB:d=0.3 -f null - 2>&1 | grep silence_start | tail -3
+manus-analyze-video VIDEO "Audite com rigor: realismo, lip sync por fonemas, voz, produto, mãos, olhos, dentes, física, continuidade, texto, hook, CTA, overlays, claims e artefatos. Liste defeitos com timestamps e use REPROVADO quando qualquer critério crítico falhar."
 ```
 
-**Critério:** Se houver `silence_start` nos últimos 0.5s do vídeo, há cauda morta. Cortar com:
-```bash
-ffmpeg -i VIDEO.mp4 -t TEMPO_CORTE -c copy VIDEO_sem_cauda.mp4
-```
+Não usar essa análise como única fonte, pois amostragem de frames pode perder falhas de movimento ou confundir timestamps. Cruzar o resultado com ffmpeg, transcrição e revisão dirigida.
 
----
+## Gate 7 — Compliance
 
-### Passo 3 — Lip Sync (Análise Visual com IA)
+Comparar roteiro, overlays e locução com o dossiê de mineração. Preço, estoque, escassez, duração, eficácia, proteção, antes/depois e comparações precisam de evidência registrada e atual.
 
-```bash
-manus-analyze-video VIDEO.mp4 "Analise o lip sync deste vídeo com máxima precisão técnica. Para cada take com rosto falando: 1) A boca se move em sincronia com o áudio? 2) Os fonemas labiais (p, b, m, f, v) coincidem com o áudio? 3) Há delay perceptível entre o movimento labial e o som? 4) O movimento labial parece genérico (não sincronizado) ou específico (sincronizado)? Dê nota 1-10 para lip sync e indique se está APROVADO (>=7) ou REPROVADO (<7)."
-```
+Reprovar frases absolutas ou não demonstráveis, como “não estraga maquiagem nenhuma”, “proteção de verdade”, “dura dois meses” ou “esgotou duas vezes”, quando não houver comprovação específica do SKU e da oferta.
 
-**Critério:** Nota >= 7/10. Abaixo disso, o take deve ser regerado com `generate_audio=true`.
+## Certificado perceptual
 
----
+Preencher `templates/qa/certificado_perceptual.md`. Marcar `APPROVED` somente quando todos os critérios críticos estiverem em `PASS`. O relatório deve apontar timestamps, correções e responsável pela revisão.
 
-### Passo 4 — Consistência do Produto
+## Promoção para entrega
 
-```bash
-manus-analyze-video VIDEO.mp4 "O produto mostrado (embalagem, cor, formato, rótulo) é IDÊNTICO em todos os takes do vídeo? Liste qualquer diferença visual entre takes. Responda: APROVADO (produto idêntico) ou REPROVADO (produto mudou)."
-```
+1. Produzir `{slug}_CANDIDATE_vN.mp4`.
+2. Executar o gate técnico.
+3. Executar transcrição, revisão temporal, produto e compliance.
+4. Preencher o certificado perceptual.
+5. Se houver qualquer `FAIL`, corrigir e reiniciar os gates afetados.
+6. Somente com dois vereditos positivos — `TECHNICALLY_APPROVED` e `APPROVED` — promover para `{slug}_APPROVED_vN.mp4`.
+7. Calcular SHA-256 e preencher `templates/qa/manifesto_entrega.md`.
+8. Entregar o arquivo e os relatórios correspondentes ao mesmo checksum.
 
-**Critério:** APROVADO obrigatório. Qualquer mudança de embalagem = strike no TikTok Shop.
+## Proibição de falso final
 
----
-
-### Passo 5 — Análise Completa Integrada
-
-Após os passos individuais, rodar a análise completa:
-
-```bash
-manus-analyze-video VIDEO.mp4 "Você é um auditor técnico especialista em criativos para TikTok Shop. Faça uma auditoria forense completa avaliando: 1) Lip sync (nota 1-10 — boca sincronizada com áudio?), 2) Consistência do produto entre takes (APROVADO/REPROVADO), 3) Cauda morta no final (silêncio > 0.3s?), 4) Drift audiovisual perceptível, 5) Hook nos primeiros 3s, 6) CTA claro no final, 7) Overlay de preço visível, 8) Formato 9:16. Para cada item: nota + APROVADO ou REPROVADO. Nota geral. Veredito final: APROVADO PARA PUBLICAÇÃO ou REPROVADO (liste o que precisa corrigir)."
-```
-
----
-
-## Tabela de Critérios de Aprovação
-
-| Critério | Mínimo para Aprovação | Ação se Reprovado |
-|----------|----------------------|-------------------|
-| Lip Sync | >= 7/10 | Regerar takes com `generate_audio=true` e texto exato |
-| Drift de stream | < 0.1s | Re-encode com `-video_track_timescale 24000` |
-| Cauda morta | < 0.3s de silêncio final | Cortar com ffmpeg `-t` |
-| Consistência produto | APROVADO | Regerar take com `references=[produto_frente.png]` |
-| Hook (0-3s) | Presente e impactante | Reescrever roteiro |
-| CTA final | Presente e claro | Adicionar take de CTA |
-| Overlay de preço | Visível nos últimos 5s | Adicionar com drawtext |
-| Formato 9:16 | Obrigatório | Re-encode com scale=720:1280 |
-
----
-
-## Solução Definitiva para Lip Sync Real
-
-Para takes com rosto falando (GC, Talking Head), o único método que garante lip sync é:
-
-```python
-# CORRETO — lip sync real
-generate_video(
-    prompt="[visual] A personagem fala: '[TEXTO EXATO DA FALA]'",
-    generate_audio=True,   # ← OBRIGATÓRIO para lip sync
-    keyframes={"first": "personagem_keyframe.png"}
-)
-
-# Depois: extrair áudio nativo do take
-# ffmpeg -i take.mp4 -vn -c:a aac take_audio.aac
-
-# ERRADO — lip sync zero
-generate_video(generate_audio=False)  # gera boca para áudio interno invisível
-# + sobrepor TTS externo = boca não condiz com nada
-```
-
-**Para POV (mãos sem rosto):** `generate_audio=false` é aceitável, pois não há boca para sincronizar. O TTS externo funciona bem.
-
----
-
-## O Padrão v5 de Lip Sync (Testado e Aprovado)
-
-**Para vídeos GC (rosto visível):**
-A única forma de garantir lip sync real (boca movendo idêntico à palavra do roteiro) é **NUNCA** separar áudio e vídeo.
-1. Divida o roteiro em takes curtos (um por frase).
-2. Use `generate_audio=True` em cada take.
-3. Coloque o texto EXATO do roteiro no prompt.
-4. O modelo gerará o vídeo e o áudio nativo juntos.
-5. Concatene as streams completas (vídeo + áudio nativo) no ffmpeg.
-
-**Para vídeos POV (sem rosto):**
-`generate_audio=False` + TTS externo (Sulafat) continua sendo a melhor abordagem, pois não há boca para sincronizar.
-
-## Registro de Bugs de Lip Sync
-
-| Data | Vídeo | Causa | Correção |
-|------|-------|-------|----------|
-| 05/08/2026 | sunscreen_stick_marina_GC_v1-v4 | TTS externo sobre vídeo sem áudio | Aplicado Padrão v5: generate_audio=True + áudio nativo |
-| 04/08/2026 | video_beto_ceo_v1 (BUG-007) | Keyframes diferentes por take | Keyframe mestre único + atempo |
+Não usar `FINAL`, `PERFEITO`, `PRONTO` ou `APROVADO` no nome ou na documentação antes da conclusão deste protocolo. Um relatório que exclui artefatos visuais, produto ou lip sync não autoriza publicação.

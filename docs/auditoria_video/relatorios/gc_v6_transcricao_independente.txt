@@ -1,0 +1,56 @@
+Starting Speech-to-Text conversion...
+Video file detected: auditoria_video/masters/sunscreen_gc_v6.mp4, file size: 13.44 MB
+File size exceeds limit, converting to audio (64kbps)...
+Converting video to audio (bitrate: 64k)...
+Audio conversion completed. Saved to: auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806.mp3
+Transcribing audio file: auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806.mp3, file size: 0.31 MB
+Transcription may take some time depending on file size and audio length...
+Transcription completed successfully!
+
+TRANSCRIPTION RESULT:
+Total Duration: 40.4 seconds
+Language: por
+Timestamped segments:
+[00:00.2 - 00:04.2] Gente, eu precisava te mostrar esse protetor que mudou minha rotina de skincare.
+[00:04.2 - 00:11.1] Antes eu usava protetor líquido e simplesmente não reaplicava, porque suja a mão, estraga a maquiagem, é uma bagunça.
+[00:11.1 - 00:12.4] E aí minha pele começou a manchar.
+[00:12.4 - 00:14.7] Aí eu descobri esse bastão SPF50.
+[00:14.7 - 00:15.7] Olha como é fácil.
+[00:15.7 - 00:19.4] Abre aqui, passa direto no rosto e fecha.
+[00:19.4 - 00:22.7] Mão completamente limpa, não estraga maquiagem nenhuma.
+[00:22.7 - 00:25.9] Eu reaplico no carro, no trabalho, em qualquer lugar.
+[00:25.9 - 00:28.2] Quinze segundos e tô protegida de verdade.
+[00:28.2 - 00:31.4] Tá menos de trinta e cinco reais e dura uns dois meses.
+[00:31.4 - 00:35.3] Eu recomendo de verdade pra quem usa maquiagem e não consegue reaplicar protetor.
+[00:35.3 - 00:37.4] Toca no carrinho laranja ali embaixo.
+[00:37.4 - 00:40.3] Já esgotou duas vezes esse mês, então corre.
+Complete transcription result saved to: /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806_transcription_20260807_152809.json
+Plain text transcription saved to: /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806_transcription_20260807_152809.txt
+
+The video has been automatically converted to an audio file and saved at auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806.mp3
+[2J[H[3Jmanus-speech-to-text auditoria_video/masters/sunscreen_gc_v6.mp4
+Starting Speech-to-Text conversion...
+Video file detected: auditoria_video/masters/sunscreen_gc_v6.mp4, file size: 13.44 MB
+File size exceeds limit, converting to audio (64kbps)...
+Transcribing audio file: auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806.mp3, file size: 0.31 MB
+Transcription may take some time depending on file size and audio length...
+
+Snippet of transcribed content:
+[00:00.2 - 00:04.2] Gente, eu precisava te mostrar esse protetor que mudou minha rotina de skincare.
+[00:04.2 - 00:11.1] Antes eu usava protetor líquido e simplesmente não reaplicava, porque suja a mão, estraga a maquiagem, é uma bagunça.
+[00:11.1 - 00:12.4] E aí minha pele começou a manchar.
+[00:12.4 - 00:14.7] Aí eu descobri esse bastão SPF50.
+[00:14.7 - 00:15.7] Olha como é fácil.
+[00:15.7 - 00:19.4] Abre aqui, passa direto no rosto e fecha.
+[00:19.4 - 00:22.7] Mão completamente limpa, não estraga maquiagem nenhuma.
+[00:22.7 - 00:25.9] Eu reaplico no carro, no trabalho, em qualquer lugar.
+[00:25.9 - 00:28.2] Quinze segundos e tô protegida de verdade.
+[00:28.2 - 00:31.4] Tá menos de trinta e cinco reais e dura uns dois meses.
+[00:31.4 - 00:35.3] Eu recomendo de verdade pra quem usa maquiagem e não consegue reaplicar protetor.
+[00:35.3 - 00:37.4] Toca no carrinho laranja ali embaixo.
+[00:37.4 - 00:40.3] Já esgotou duas vezes esse mês, então corre.
+
+The video has been automatically converted to an audio file and saved at auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806.mp3
+
+Completed transcription, JSON saved to /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806_transcription_20260807_152809.json
+Plain text transcription saved to /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_gc_v6_converted_20260807_152806_transcription_20260807_152809.txt

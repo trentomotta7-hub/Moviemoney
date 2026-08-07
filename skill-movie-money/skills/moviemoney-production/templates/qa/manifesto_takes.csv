@@ -1,0 +1,9 @@
+take_id,formato,funcao,duracao_alvo_s,fala_exata,emocao_atuacao,acao_visual,personagem_cena,produto_ancora,referencias_obrigatorias,claims_evidencia,criterio_aprovacao,status
+T01,GC,hook,4.0,,,,,,,,,PENDENTE
+T02,GC,problema,6.0,,,,,,,,,PENDENTE
+T03,GC,solucao,6.0,,,,,,,,,PENDENTE
+T04,GC,cta,5.0,,,,,,,,,PENDENTE
+T01,POV,hook,4.0,,,,,,,,,PENDENTE
+T02,POV,problema,6.0,,,,,,,,,PENDENTE
+T03,POV,demonstracao,8.0,,,,,,,,,PENDENTE
+T04,POV,cta,5.0,,,,,,,,,PENDENTE

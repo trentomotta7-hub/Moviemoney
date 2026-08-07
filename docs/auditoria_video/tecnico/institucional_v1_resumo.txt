@@ -1,0 +1,54 @@
+### institucional_v1
+index=0
+codec_name=h264
+codec_type=video
+width=2560
+height=1440
+r_frame_rate=30/1
+avg_frame_rate=30/1
+start_time=0.000000
+duration=87.500000
+index=1
+codec_name=aac
+codec_type=audio
+sample_rate=48000
+channels=2
+r_frame_rate=0/0
+avg_frame_rate=0/0
+start_time=0.000000
+duration=80.046667
+filename=skill-movie-money/criativos/video_institucional_youtube/video1_quebra_mitos_FINAL.mp4
+start_time=0.000000
+duration=87.500000
+size=56259721
+bit_rate=5143745
+--- SILENCE ---
+[silencedetect @ 0x557c938aad40] silence_start: 0.27025
+[silencedetect @ 0x557c938aad40] silence_end: 0.659833 | silence_duration: 0.389583
+[silencedetect @ 0x557c938aad40] silence_start: 1.00625
+[silencedetect @ 0x557c938aad40] silence_end: 1.40519 | silence_duration: 0.398938
+[silencedetect @ 0x557c938aad40] silence_start: 9.46487
+[silencedetect @ 0x557c938aad40] silence_end: 9.84679 | silence_duration: 0.381917
+[silencedetect @ 0x557c938aad40] silence_start: 26.3542
+[silencedetect @ 0x557c938aad40] silence_end: 26.8199 | silence_duration: 0.465687
+[silencedetect @ 0x557c938aad40] silence_start: 44.8904
+[silencedetect @ 0x557c938aad40] silence_end: 45.2292 | silence_duration: 0.33875
+[silencedetect @ 0x557c938aad40] silence_start: 52.161
+[silencedetect @ 0x557c938aad40] silence_end: 52.6994 | silence_duration: 0.538312
+[silencedetect @ 0x557c938aad40] silence_start: 60.2847
+[silencedetect @ 0x557c938aad40] silence_end: 60.7293 | silence_duration: 0.444646
+--- LOUDNESS ---
+Input Integrated:    -19.0 LUFS
+Input True Peak:      -0.9 dBTP
+Input LRA:             2.5 LU
+Input Threshold:     -29.2 LUFS
+--- BLACK/FREEZE ---
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_start: 9.93333
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_duration: 2.56667
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_end: 12.5
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_start: 35
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_duration: 8.76667
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_end: 43.7667
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_start: 68.7333
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_duration: 12.5333
+[freezedetect @ 0x5646b027cec0] lavfi.freezedetect.freeze_end: 81.2667

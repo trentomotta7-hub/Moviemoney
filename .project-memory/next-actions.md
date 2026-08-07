@@ -1,37 +1,36 @@
-# Movie Money — Próximas Ações
+# Próximas ações — Movie Money
 
-> Atualizado em: 06/08/2026 — encerramento da Sessão 17.
-
-## Bloqueado — requer ação do proprietário
-
-| Ordem | Ação | Evidência de conclusão |
-|---:|---|---|
-| 1 | Configurar `RESEND_API_KEY` e `EMAIL_FROM` na aplicação full-stack | Cadastro controlado muda o status para `SENT` |
-| 2 | Revisar o checkpoint web `4132e698` | Aprovação visual do proprietário |
-| 3 | Publicar a aplicação pela interface gerenciada | URL pública ativa |
+**Atualizado em:** 07/08/2026 — Sessão 19.
 
 ## Prioridade audiovisual
 
-| Ordem | Ação | Estado atual |
+| Ordem | Ação | Evidência de conclusão |
 |---:|---|---|
-| 1 | Expandir o roteiro e a locução do Vídeo 3 para 8–12 minutos | Áudio-base tem aproximadamente 5 minutos |
-| 2 | Gerar e auditar as 20 variações POV (5 hooks × 4 CTAs) | Pipeline e listas preparados; masters não produzidos |
-| 3 | Fazer revisão perceptual final do GC v6 | QA técnico, transcrição e master disponíveis |
-| 4 | Definir produto #2 por mineração atualizada | Ainda não selecionado |
+| 1 | Criar dossiê de mineração atualizado do Sunscreen Stick, com SKU, oferta, imagens e claims comprovados | `mineracao_produto.md` preenchido e aprovado |
+| 2 | Refazer o GC como `CANDIDATE`, aprovando cada take isoladamente | Lip sync ≥ 9/10, produto, mãos, voz e realismo em PASS |
+| 3 | Refazer o POV com um único produto âncora e CTA integral | Produto idêntico, mãos/física em PASS e transcrição completa |
+| 4 | Executar gate técnico e certificado perceptual nos dois candidatos | `TECHNICALLY_APPROVED` + `APPROVED` |
+| 5 | Corrigir ou reconstruir o Vídeo 1 institucional | Zero drift/cauda/freeze e certificado aprovado |
+| 6 | Reauditar o Vídeo 2 institucional antes de qualquer uso | Relatórios técnico e perceptual vinculados ao checksum |
+| 7 | Expandir a VSL para 8–12 minutos e auditá-la pelo mesmo protocolo | Roteiro, áudio e master aprovados |
+| 8 | Somente depois gerar a matriz POV de 20 variações | Master-base aprovado e manifesto A/B completo |
 
-## Evolução da aplicação
+## Bloqueado — requer proprietário
 
-| Ação futura | Gatilho |
-|---|---|
-| Histórico de versões do consentimento | Exigência operacional ou jurídica de auditoria |
-| Paginação server-side do painel | Volume de leads justificar |
-| Métricas reais de campanha | Fonte autorizada disponível |
-| Divisão de código do bundle | Otimização de performance priorizada |
+| Ordem | Ação | Evidência de conclusão |
+|---:|---|---|
+| 1 | Configurar `RESEND_API_KEY` e `EMAIL_FROM` | Cadastro controlado muda status para `SENT` |
+| 2 | Revisar e publicar a aplicação | URL pública ativa |
+| 3 | Ativar analytics, se desejado | Variáveis configuradas e build validado |
+
+## Proibição de continuidade incorreta
+
+Não tratar GC v6, POV v2 ou Vídeo 1 institucional como prontos. Não usar os nomes `FINAL` ou notas históricas como evidência. Não iniciar lote A/B a partir de um master-base reprovado.
 
 ## Checklist de início de sessão
 
 1. Ler `.project-memory/current-context.md`.
-2. Ler o checkpoint mais recente em `.project-memory/checkpoints/`.
-3. Verificar `git status` e o histórico recente.
-4. Para produção de criativos, atualizar trends, Top Ads e benchmarks.
-5. Retomar a primeira ação desbloqueada da tabela correspondente.
+2. Ler o checkpoint mais recente.
+3. Ler `skill-movie-money/skills/moviemoney-production/SKILL.md`.
+4. Verificar `git status` e histórico.
+5. Retomar a primeira ação desbloqueada desta lista.

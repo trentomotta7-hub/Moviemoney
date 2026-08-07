@@ -1,46 +1,54 @@
-# Movie Money — Contexto Atual do Projeto
+# Contexto atual — Movie Money
 
-> **LEIA ESTE ARQUIVO PRIMEIRO ao iniciar qualquer nova sessão.**
+> Ler este arquivo primeiro ao iniciar qualquer nova sessão.
 
 ## Identificação
 
 | Campo | Valor |
 |---|---|
-| **Projeto** | Movie Money — Criativos que Vendem no TikTok Shop |
-| **Repositório** | `trentomotta7-hub/Moviemoney` |
-| **Branch ativa** | `master` |
-| **Última sessão** | Sessão 17 — 06/08/2026 |
-| **Aplicação full-stack** | `apps/movie-money-fullstack/` |
-| **Checkpoint web gerenciado** | `4132e698` |
+| Projeto | Movie Money — Criativos que Vendem no TikTok Shop |
+| Repositório | `trentomotta7-hub/Moviemoney` |
+| Branch ativa | `master` |
+| Última sessão | Sessão 19 — auditoria audiovisual e gate obrigatório |
+| Aplicação full-stack | `apps/movie-money-fullstack/` |
+| Checkpoint web gerenciado | `4132e698` |
 
 ## Estado consolidado
 
-| Entrega | Estado | Evidência |
+| Área | Estado | Evidência |
 |---|---|---|
-| Vídeo 1 — Quebrando Mitos | Concluído | `skill-movie-money/criativos/video_institucional_youtube/` |
-| Vídeo 2 — A Máquina por Dentro | Concluído | `skill-movie-money/criativos/video_institucional_youtube/` |
-| POV Sunscreen Stick v2 | Master reconstruído | `skill-movie-money/criativos/sunscreen_stick_spf/POV/montagem/` |
-| Matriz POV A/B | Pipeline e matriz 5 × 4 preparados; vídeos ainda não gerados | `skill-movie-money/criativos/sunscreen_stick_spf/POV/matriz_ab/` |
-| GC Sunscreen Stick v6 | Master com áudio nativo e QA técnico concluído | `skill-movie-money/criativos/sunscreen_stick_spf/GC/montagem_v6/` |
-| Vídeo 3 — A Oferta | Roteiro expandido e áudio-base de aproximadamente 5 minutos; abaixo do alvo de 8–12 minutos | `skill-movie-money/criativos/video_institucional_youtube/VSL_Beto/` |
-| Landing full-stack | Concluída e validada em desktop/mobile | `apps/movie-money-fullstack/client/src/pages/Home.tsx` |
-| Backend de leads | Concluído e migrado para MySQL | `apps/movie-money-fullstack/server/`, `drizzle/` |
-| Countdown de 72 horas | Concluído, persistente e resistente a recadastro | `apps/movie-money-fullstack/shared/lead.ts` |
-| Painel administrativo | Concluído, protegido por `role=admin`, com CSV | `apps/movie-money-fullstack/client/src/pages/Admin.tsx` |
-| E-mail de confirmação | Código pronto; envio real bloqueado por credenciais externas | `apps/movie-money-fullstack/docs/email-setup.md` |
+| Aplicação full-stack | Implementada, testada e otimizada | `apps/movie-money-fullstack/` |
+| Backend de leads, oferta e admin | Concluído | `apps/movie-money-fullstack/server/`, `drizzle/` |
+| E-mail real | Código pronto; credenciais pendentes | `apps/movie-money-fullstack/docs/email-setup.md` |
+| Pipeline audiovisual | Reestruturado da mineração à entrega | `skill-movie-money/skills/moviemoney-production/` |
+| Gate técnico | Implementado e validado | `scripts/qa_gate.py` |
+| GC Sunscreen Stick v6 | **REJECTED** — tecnicamente íntegro, perceptualmente inadequado | `docs/auditoria_video/gate/` |
+| POV Sunscreen Stick v2 | **REJECTED** — produto inconsistente e narração truncada | `docs/auditoria_video/gate/` |
+| Vídeo 1 institucional | **REJECTED** — drift, cauda e freeze prolongado | `docs/auditoria_video/gate/` |
+| Vídeo 2 institucional | Não reauditado nesta sessão; não presumir aprovação | Aplicar o protocolo antes de qualquer uso |
+| Vídeo 3 / VSL | Rascunho de aproximadamente 5 minutos; incompleto | `skill-movie-money/criativos/video_institucional_youtube/VSL_Beto/` |
 
-## Verificações da aplicação
+## Regra perpétua audiovisual
 
-A aplicação full-stack passou em 10 testes Vitest, checagem TypeScript, build de produção, teste ponta a ponta de cadastro/recadastro e QA visual das rotas `/`, `/oferta/:token` e `/admin`. O checkpoint gerenciado entregável é `manus-webdev://4132e698`.
+Nenhum arquivo pode ser entregue, publicado ou chamado de final sem `TECHNICALLY_APPROVED` e certificado perceptual `APPROVED`, ambos vinculados ao SHA-256 do master. Uma única falha crítica reprova; notas de ritmo, hook ou edição não compensam lip sync, produto, realismo, narração, claims, drift ou freeze.
 
-## Decisões que não devem regredir
-
-O prazo da oferta é calculado no servidor e não reinicia para um e-mail já cadastrado. O consentimento LGPD é obrigatório. Tokens de oferta são opacos e não expõem o e-mail do lead. Rotas administrativas usam autorização server-side. A prova social da landing não contém avaliações, depoimentos ou números inventados. Assets web permanecem no armazenamento gerenciado, não no bundle local.
+A montagem deve produzir `CANDIDATE`. Somente após todos os gates o arquivo pode ser promovido para `APPROVED` e receber manifesto de entrega.
 
 ## Como retomar
 
-Leia o checkpoint mais recente em `.project-memory/checkpoints/` e `.project-memory/next-actions.md`. Para a aplicação, entre em `apps/movie-money-fullstack/` e execute `pnpm install`, `pnpm test`, `pnpm check` e `pnpm build`. Para audiovisual, siga a skill em `skill-movie-money/skills/moviemoney-production/` e preserve o protocolo forense.
+1. Ler o checkpoint mais recente em `.project-memory/checkpoints/`.
+2. Ler `skill-movie-money/skills/moviemoney-production/SKILL.md`.
+3. Para nova produção, iniciar pelo dossiê de mineração e pelo manifesto de takes.
+4. Aprovar cada take isoladamente antes da montagem.
+5. Executar `qa_gate.py`, transcrição, revisão multimodal, inspeção dirigida, comparação com produto âncora e compliance.
+6. Não reutilizar os vereditos antigos de `FINAL`, `PRONTO`, `9,8/10` ou `QA técnico` como autorização de entrega.
+
+## Decisões que não devem regredir
+
+Na aplicação, o countdown é calculado no servidor e não reinicia no recadastro; LGPD é obrigatória; tokens não expõem o e-mail; admin usa autorização server-side; prova social não contém números inventados.
+
+No audiovisual, produto âncora, lip sync ≥ 9/10, narração completa, realismo, claims comprovados, gate técnico, certificado perceptual e checksum são obrigatórios.
 
 ## Bloqueios externos
 
-O envio real de confirmação depende de `RESEND_API_KEY` e `EMAIL_FROM`. Sem essas variáveis, o lead é salvo normalmente e o painel registra o e-mail como `PENDING`. A publicação da aplicação deve ser feita pelo proprietário no botão **Publish** da interface gerenciada.
+O envio de confirmação depende de `RESEND_API_KEY` e `EMAIL_FROM`. A publicação da aplicação depende do proprietário. A refação dos vídeos não está bloqueada externamente, mas deve seguir o pipeline novo desde a mineração.

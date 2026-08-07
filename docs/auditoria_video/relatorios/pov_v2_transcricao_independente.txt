@@ -1,0 +1,54 @@
+Starting Speech-to-Text conversion...
+Video file detected: auditoria_video/masters/sunscreen_pov_v2.mp4, file size: 5.96 MB
+File size exceeds limit, converting to audio (64kbps)...
+Converting video to audio (bitrate: 64k)...
+Audio conversion completed. Saved to: auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821.mp3
+Transcribing audio file: auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821.mp3, file size: 0.22 MB
+Transcription may take some time depending on file size and audio length...
+Transcription completed successfully!
+
+TRANSCRIPTION RESULT:
+Total Duration: 29.0 seconds
+Language: por
+Timestamped segments:
+[00:00.2 - 00:03.9] Gente, eu passava protetor solar uma vez de manhã e achava que tava protegido o dia inteiro.
+[00:03.9 - 00:06.5] Aí eu vi que minha pele tava manchando mesmo usando protetor.
+[00:06.5 - 00:10.2] E reaplicar no meio do dia, com maquiagem, com as mãos sujas, é impossível.
+[00:10.2 - 00:12.6] O problema é que protetor líquido não foi feito pra reaplicar.
+[00:12.6 - 00:16.0] Suja a mão, estraga a make e a gente simplesmente não reaplica.
+[00:16.0 - 00:16.7] E aí o sol ganha.
+[00:16.7 - 00:18.3] Aí eu descobri esse bastão.
+[00:18.3 - 00:21.3] Olha, abre, passa direto no rosto, fecha e guarda.
+[00:21.3 - 00:24.1] Quinze segundos, sem sujar a mão, sem estragar maquiagem.
+[00:24.1 - 00:25.9] SPF cinquenta de verdade.
+[00:25.9 - 00:27.9] Eu reaplico no carro, no trabalho, em qualquer lugar.
+[00:27.9 - 00:28.8] Meninas
+Complete transcription result saved to: /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821_transcription_20260807_152824.json
+Plain text transcription saved to: /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821_transcription_20260807_152824.txt
+
+The video has been automatically converted to an audio file and saved at auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821.mp3
+[2J[H[3Jmanus-speech-to-text auditoria_video/masters/sunscreen_pov_v2.mp4
+Starting Speech-to-Text conversion...
+Video file detected: auditoria_video/masters/sunscreen_pov_v2.mp4, file size: 5.96 MB
+File size exceeds limit, converting to audio (64kbps)...
+Transcribing audio file: auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821.mp3, file size: 0.22 MB
+Transcription may take some time depending on file size and audio length...
+
+Snippet of transcribed content:
+[00:00.2 - 00:03.9] Gente, eu passava protetor solar uma vez de manhã e achava que tava protegido o dia inteiro.
+[00:03.9 - 00:06.5] Aí eu vi que minha pele tava manchando mesmo usando protetor.
+[00:06.5 - 00:10.2] E reaplicar no meio do dia, com maquiagem, com as mãos sujas, é impossível.
+[00:10.2 - 00:12.6] O problema é que protetor líquido não foi feito pra reaplicar.
+[00:12.6 - 00:16.0] Suja a mão, estraga a make e a gente simplesmente não reaplica.
+[00:16.0 - 00:16.7] E aí o sol ganha.
+[00:16.7 - 00:18.3] Aí eu descobri esse bastão.
+[00:18.3 - 00:21.3] Olha, abre, passa direto no rosto, fecha e guarda.
+[00:21.3 - 00:24.1] Quinze segundos, sem sujar a mão, sem estragar maquiagem.
+[00:24.1 - 00:25.9] SPF cinquenta de verdade.
+[00:25.9 - 00:27.9] Eu reaplico no carro, no trabalho, em qualquer lugar.
+[00:27.9 - 00:28.8] Meninas
+
+The video has been automatically converted to an audio file and saved at auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821.mp3
+
+Completed transcription, JSON saved to /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821_transcription_20260807_152824.json
+Plain text transcription saved to /home/ubuntu/Moviemoney/auditoria_video/masters/sunscreen_pov_v2_converted_20260807_152821_transcription_20260807_152824.txt

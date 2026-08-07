@@ -1,0 +1,55 @@
+### pov_v2
+index=0
+codec_name=h264
+codec_type=video
+width=720
+height=1280
+r_frame_rate=30/1
+avg_frame_rate=30/1
+start_time=0.000000
+duration=29.000000
+index=1
+codec_name=aac
+codec_type=audio
+sample_rate=96000
+channels=1
+r_frame_rate=0/0
+avg_frame_rate=0/0
+start_time=0.000000
+duration=29.000000
+filename=auditoria_video/masters/sunscreen_pov_v2.mp4
+start_time=0.000000
+duration=29.000000
+size=6250052
+bit_rate=1724152
+--- SILENCE ---
+[silencedetect @ 0x5642af087380] silence_start: 0.521271
+[silencedetect @ 0x5642af087380] silence_end: 0.848156 | silence_duration: 0.326885
+[silencedetect @ 0x5642af087380] silence_start: 3.93107
+[silencedetect @ 0x5642af087380] silence_end: 4.47869 | silence_duration: 0.547615
+[silencedetect @ 0x5642af087380] silence_start: 6.48879
+[silencedetect @ 0x5642af087380] silence_end: 7.07329 | silence_duration: 0.5845
+[silencedetect @ 0x5642af087380] silence_start: 10.1807
+[silencedetect @ 0x5642af087380] silence_end: 10.7583 | silence_duration: 0.577615
+[silencedetect @ 0x5642af087380] silence_start: 12.5276
+[silencedetect @ 0x5642af087380] silence_end: 12.8804 | silence_duration: 0.352771
+[silencedetect @ 0x5642af087380] silence_start: 15.635
+[silencedetect @ 0x5642af087380] silence_end: 16.0367 | silence_duration: 0.401781
+[silencedetect @ 0x5642af087380] silence_start: 16.6149
+[silencedetect @ 0x5642af087380] silence_end: 17.2534 | silence_duration: 0.638479
+[silencedetect @ 0x5642af087380] silence_start: 18.2034
+[silencedetect @ 0x5642af087380] silence_end: 18.5734 | silence_duration: 0.37
+[silencedetect @ 0x5642af087380] silence_start: 20.2376
+[silencedetect @ 0x5642af087380] silence_end: 20.5459 | silence_duration: 0.308312
+[silencedetect @ 0x5642af087380] silence_start: 21.2723
+[silencedetect @ 0x5642af087380] silence_end: 21.7126 | silence_duration: 0.440292
+[silencedetect @ 0x5642af087380] silence_start: 25.507
+[silencedetect @ 0x5642af087380] silence_end: 25.9586 | silence_duration: 0.451594
+[silencedetect @ 0x5642af087380] silence_start: 27.8766
+[silencedetect @ 0x5642af087380] silence_end: 28.5617 | silence_duration: 0.685104
+--- LOUDNESS ---
+Input Integrated:    -16.7 LUFS
+Input True Peak:      -1.3 dBTP
+Input LRA:             2.7 LU
+Input Threshold:     -26.9 LUFS
+--- BLACK/FREEZE ---
